@@ -1,0 +1,51 @@
+msgid "IDS_CCL_OPT_CONVERT_TO"
+msgstr "Μετατροπή σε"
+
+msgid "IDS_CCL_POP_SYNTAX_ERROR"
+msgstr "Σφάλμα σύνταξης"
+
+msgid "IDS_CCL_POP_UP_TO_5_DECIMALS_AVAILABLE"
+msgstr "Διαθέσιμα μέχρι 5 δεκαδικά ψηφία"
+
+msgid "IDS_CCL_POP_UP_TO_20_OPERATORS_AVAILABLE"
+msgstr "Μέχρι 20 διαθέσιμοι παροχείς"
+
+msgid "IDS_CCL_POP_UNABLE_TO_DIVIDE_BY_ZERO"
+msgstr "Δεν είναι δυνατή η διαίρεση με μηδέν"
+
+msgid "IDS_CCL_POP_NO_NUMBER_ERROR"
+msgstr "Εισάγετε πρώτα αριθμό"
+
+msgid "IDS_CCL_POP_ERROR"
+msgstr "Εκτός εμβέλειας"
+
+msgid "IDS_CCL_POP_ENTER_NUMBER_AFTER_OPERATOR"
+msgstr "Εισάγετε αριθμό μετά τον παροχέα"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_SQUARE_ROOT_FUNCTION"
+msgstr "Μη έγκυρη εισαγωγή για συνάρτηση τετραγωνικής ρίζας"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_LOG_FUNCTION"
+msgstr "Μη έγκυρη εισαγωγή για συνάρτηση αρχείου καταγραφής"
+
+msgid "IDS_CCL_BODY_NATURAL_NUMBER_ONLY_FOR_X_E_FUNCTION"
+msgstr "Φυσικός αριθμός μόνο για συνάρτηση x!"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_1_X_FUNCTION"
+msgstr "Εισαγωγή αριθμού πριν από την εισαγωγή συνάρτησης 1/x"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X2_FUNCTION"
+msgstr "Εισαγωγή αριθμού πριν από την εισαγωγή συνάρτησης x^2"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_XY_FUNCTION"
+msgstr "Εισαγωγή αριθμού πριν από την εισαγωγή συνάρτησης x^y"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X_E_FUNCTION"
+msgstr "Εισαγωγή αριθμού πριν από την εισαγωγή συνάρτησης x!"
+
+msgid "IDS_CCL_POP_NO_OPERATOR_ERROR"
+msgstr "Εισαγ.συμβόλου πρώτα"
+
+msgid "IDS_CCL_POP_UP_TO_15_DIGITS_AVAILABLE"
+msgstr "Διαθέσιμα μέχρι 15 ψηφία"
+

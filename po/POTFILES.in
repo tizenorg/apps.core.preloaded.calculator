@@ -1,0 +1,8 @@
+# List of source files containing translatable strings.
+calculator.h
+calculator.c
+calculator_edje.c
+calculator_parser.h
+calculator_parser.c
+calculator_def.h
+strtbl.h
