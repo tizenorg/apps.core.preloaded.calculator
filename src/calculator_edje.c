@@ -806,7 +806,7 @@ __calculator_control_normal_func_clicked(Evas_Object * entry,
 		return;
 
 	}
-    if(!strcmp(op_item->op_sym, "x")||!strcmp(op_item->op_sym, "/")){
+    if(!strcmp(op_item->op_sym, "x") || !strcmp(op_item->op_sym, "/") || !strcmp(op_item->op_sym, "+")){
 		if(!__calculator_string_digit_in(calculator_input_str)){ return; }
 	}
 	int nCntOp = calc_expr_get_operator_num(all_input);
@@ -955,11 +955,17 @@ static void __calculator_symbol_negative_clicked(Evas_Object * entry)
 static char * __calculator_search_prev_input(char *input_str)
 {
 	int i = strlen(input_str) - 1;
+	int rightbracket = 0;	
 	char *prev_input = NULL;
 	for ( ; i > 0; i--){
-		if(CALCULATOR_CHAR_IS_PLUS_DEDUCT(input_str[i])
-			||CALCULATOR_CHAR_IS_MULTI_DIVIDE_OPERATOR(input_str[i])){
-			prev_input = &input_str[i];
+		if (input_str[i] == ')') {
+			rightbracket++;
+		} else if (input_str[i] == '(') {		
+			rightbracket--;
+		}
+		if ((CALCULATOR_CHAR_IS_PLUS_DEDUCT(input_str[i])
+			||CALCULATOR_CHAR_IS_MULTI_DIVIDE_OPERATOR(input_str[i])) && (rightbracket == 0)){
+			prev_input = &input_str[i];			
 			return prev_input;
 		}
 	}
@@ -1702,60 +1708,6 @@ static int _calculator_get_input_item(Evas_Object * evas_obj, Evas_Object * obj)
 	return val;
 }
 
-/////////////////////////// input text finish ////////////////////////////
-
-#ifdef __i386__
-/**
-* @describe
-*
-*
-* @param    evas_obj
-* @param    obj
-* @return    void
-* @exception
-*/
-static int _calculator_get_input_item_hd(char *keyname, Evas_Object * obj)
-{
-	int val = 0;
-	if (0 == strcmp(keyname, "7")) {
-		val = OP_NUM_7;
-	} else if (0 == strcmp(keyname, "8")) {
-		val = OP_NUM_8;
-	} else if (0 == strcmp(keyname, "9")) {
-		val = OP_NUM_9;
-	} else if (0 == strcmp(keyname, "4")) {
-		val = OP_NUM_4;
-	} else if (0 == strcmp(keyname, "5")) {
-		val = OP_NUM_5;
-	} else if (0 == strcmp(keyname, "6")) {
-		val = OP_NUM_6;
-	} else if (0 == strcmp(keyname, "1")) {
-		val = OP_NUM_1;
-	} else if (0 == strcmp(keyname, "2")) {
-		val = OP_NUM_2;
-	} else if (0 == strcmp(keyname, "3")) {
-		val = OP_NUM_3;
-	} else if (0 == strcmp(keyname, "comma")) {
-		val = OP_DOT;
-	} else if (0 == strcmp(keyname, "equal")) {
-		val = OP_EQUAL;
-	} else if (0 == strcmp(keyname, "KP_Add")) {
-		val = OP_PLUS;
-	} else if (0 == strcmp(keyname, "KP_Subtract")) {
-		val = OP_MINUS;
-	} else if (0 == strcmp(keyname, "minus")) {
-		val = OP_MINUS;
-	} else if (0 == strcmp(keyname, "KP_Multiply")) {
-		val = OP_MULTIPLY;
-	} else if (0 == strcmp(keyname, "slash")) {
-		val = OP_DIVIDE;
-	} else if (0 == strcmp(keyname, "KP_Divide")) {
-		val = OP_DIVIDE;
-	}
-	return val;
-}
-#endif
-
 /**
 * @description
 *   Interpret all of our different signals, and do things !
@@ -2003,13 +1955,14 @@ static void
 _calc_view_input_entry_keyup_cb(void *data, Evas * e, Evas_Object * entry,
 				void *event_info)
 {
-	calculator_cursor_pos = calc_view_cursor_get_position(entry);	//for hardkey input
-	int val = 0;
+	calculator_cursor_pos = calc_view_cursor_get_position(entry);	//for hardkey input	
 	if (data) {
-		Evas_Object *obj = (Evas_Object *) data;
 		Evas_Event_Key_Up *evt = (Evas_Event_Key_Up *) event_info;
 		printf("keyname: %s\n", (char *)evt->keyname);
-		if (0 == strcmp(evt->keyname, "XF86Phone")) {
+		if ((0 == strcmp(evt->keyname, "XF86Phone"))||
+			(0 == strcmp(evt->keyname, "XF86PowerOff"))|| 
+			(0 == strcmp(evt->keyname, "XF86AudioRaiseVolume"))||
+			(0 == strcmp(evt->keyname, "XF86AudioLowerVolume"))){
 			return;
 		}
 		_calc_entry_backspace(ad->input_entry);
