@@ -4,6 +4,7 @@ Version:	0.1.4
 Release: 3
 Summary: Calculator application
 Source: %{name}-%{version}.tar.gz
+Source1001: packaging/org.tizen.calculator.manifest 
 License: Samsung Proprietary License
 Group: Applications
 BuildRequires: cmake
@@ -28,6 +29,7 @@ SLP Calculator application
 %setup -q
 
 %build
+cp %{SOURCE1001} .
 
 LDFLAGS+="-Wl,--rpath=%{_app_prefix}/lib -Wl,--as-needed -Wl,--hash-style=both"; export LDFLAGS
 
@@ -48,6 +50,7 @@ mkdir -p %{buildroot}%{_app_prefix}/data
 %find_lang calculator
 
 %files -f calculator.lang
+%manifest org.tizen.calculator.manifest
 %{_app_prefix}/data
 /opt/apps/org.tizen.calculator/bin/calculator
 /opt/apps/org.tizen.calculator/res/edje/calculator.edj
