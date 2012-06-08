@@ -1,0 +1,198 @@
+/*
+  * Copyright 2012  Samsung Electronics Co., Ltd
+  * 
+  * Licensed under the Flora License, Version 1.0 (the "License");
+  * you may not use this file except in compliance with the License.
+  * You may obtain a copy of the License at
+  * 
+  *     http://www.tizenopensource.org/license
+  * 
+  * Unless required by applicable law or agreed to in writing, software
+  * distributed under the License is distributed on an "AS IS" BASIS,
+  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  * See the License for the specific language governing permissions and
+  * limitations under the License.
+  */
+
+#ifndef __EDC_MACRO_H__
+#define __EDC_MACRO_H__
+
+/* Basic */
+#define EDC_COLOR(nR, nG, nB, nA)           nR nG nB nA
+#define EDC_SIZE(nW, nH)                    nW nH
+#define EDC_COOR(nX, nY)                    nX nY   /* coordinate */
+#define EDC_IMAGE_BORDER(nL, nR, nT, nB)    nL nR nT nB
+
+/* Image */
+#define EDC_IMAGE(sImage)\
+    image.normal: sImage;
+#define EDC_IMAGE_WITH_BORDER(sImage, imgBorder)\
+    image {normal: sImage; border: imgBorder; border_scale: 1;}
+
+/* Text */
+#define EDC_TEXT(sText, nSize, sFont, crFill) \
+    color: crFill;\
+    text { \
+        text: sText; \
+        size: nSize; \
+        align: 0.5 0.5; \
+        font: sFont; \
+    }
+
+#define EDC_TEXT_SHADOW(sText, nSize, sFont, crFill, crShadow) \
+    color2: crShadow;\
+    EDC_TEXT(sText, nSize, sFont, crFill)
+
+
+/* Relative */
+#define EDC_REL_TO_XY(fpRelX, fpRelY, coorOffset, sToPartX, sToPartY)\
+    relative: fpRelX fpRelY; offset: coorOffset; to_x: sToPartX; to_y: sToPartY
+
+#define EDC_REL_TO(fpRelX, fpRelY, coorOffset, sToPart)\
+    relative: fpRelX fpRelY; offset: coorOffset; to: sToPart
+
+#define EDC_REL_ABSOLUTE(coorOffset, sToPart)\
+    EDC_REL_TO(0.0, 0.0, coorOffset, sToPart)
+
+#define EDC_REL_RELATIVE(fpRelX, fpRelY, sToPart)\
+    relative: fpRelX fpRelY; to: sToPart
+
+/* state */
+#define EDC_STATE_BASE(sName, sizeMin, bFixW, bFixH, fpAlignX, fpAlignY,\
+        relTopLeft, relBottomRight, other)\
+    description {\
+        state: sName 0.0;\
+        min: sizeMin;\
+        fixed: bFixW bFixH;\
+        align: fpAlignX fpAlignY;\
+        rel1 { relTopLeft; }\
+        rel2 { relBottomRight; } \
+        other \
+    }
+
+/* state - padding top-left */
+#define EDC_STATE_PADDING_TL(sName, sizeMin, sToPart) \
+    EDC_STATE_BASE(sName, sizeMin, 1, 1, 0.0, 0.0, \
+        EDC_REL_RELATIVE(0.0, 0.0, sToPart), \
+        EDC_REL_RELATIVE(0.0, 0.0, sToPart), visible: 0;)
+
+/* state - padding bottom-right */
+#define EDC_STATE_PADDING_BR(sName, sizeMin, sToPart) \
+    EDC_STATE_BASE(sName, sizeMin, 1, 1, 1.0, 1.0, \
+        EDC_REL_RELATIVE(1.0, 1.0, sToPart), \
+        EDC_REL_RELATIVE(1.0, 1.0, sToPart), visible: 0;)
+
+
+#define EDC_STATE_COMMON(sName, relTopLeft, relBottomRight, other) \
+    EDC_STATE_BASE(sName, EDC_SIZE(0, 0), 0, 0, 0.5, 0.5, relTopLeft, relBottomRight, other)
+
+#define EDC_STATE_COMMON_RECT(sName, relTopLeft, relBottomRight, crFill) \
+    EDC_STATE_COMMON(sName, relTopLeft, relBottomRight, color: crFill;)
+
+#define EDC_STATE_COMMON_IMAGE(sName, relTopLeft, relBottomRight, img) \
+    EDC_STATE_COMMON(sName, relTopLeft, relBottomRight, img)
+
+#define EDC_STATE_COMMON_TEXT(sName, relTopLeft, relBottomRight, txt) \
+    EDC_STATE_COMMON(sName, relTopLeft, relBottomRight, txt)
+
+/* Background */
+#define EDC_PART_BG(sName)\
+    part {\
+        name: sName;\
+        type: RECT;\
+        mouse_events: 0;\
+        description {\
+            state: "default" 0.0;\
+            rel1 { relative: 0.0 0.0;}\
+            rel2 { relative: 1.0 1.0;}\
+            color: 0 0 0 0;\
+        }\
+    }
+
+/* Part */
+#define EDC_PART_BASE(sName, enumType, bMouse, bRepeat, stateDefault, stateOther...) \
+    part {\
+        name: sName;\
+        type: enumType;\
+        mouse_events: bMouse;\
+        repeat_events: bRepeat;\
+        scale: 1;\
+        stateDefault\
+        ##stateOther\
+    }
+
+#define EDC_PART_PADDING_TL(sName, sizeMin, sToPart) \
+    EDC_PART_BASE(sName, RECT, 1, 0, \
+        EDC_STATE_PADDING_TL("default", sizeMin, sToPart))
+
+#define EDC_PART_PADDING_BR(sName, sizeMin, sToPart) \
+    EDC_PART_BASE(sName, RECT, 1, 0, \
+        EDC_STATE_PADDING_BR("default", sizeMin, sToPart))
+
+/* Part - Rectagnle */
+#define EDC_PART_RECT_COMMON(sName, relTopLeft, relBottomRight) \
+    EDC_PART_BASE(sName, RECT, 1, 1, \
+        EDC_STATE_COMMON_RECT("default", relTopLeft, relBottomRight, EDC_COLOR(0, 0, 0, 0)))
+
+#define EDC_PART_RECT_ABSOLUTE(sName, sToPart, coorTopLeft, coorBottomRight) \
+    EDC_PART_RECT_COMMON(sName, \
+        EDC_REL_ABSOLUTE(coorTopLeft, sToPart),\
+        EDC_REL_ABSOLUTE(coorBottomRight, sToPart))
+
+#define EDC_PART_RECT_RELATIVE(sName, sToPart, fpRel1X, fpRel1Y, fpRel2X, fpRel2Y) \
+    EDC_PART_RECT_COMMON(sName, \
+        EDC_REL_RELATIVE(fpRel1X, fpRel1Y, sToPart), \
+        EDC_REL_RELATIVE(fpRel2X, fpRel2Y, sToPart))
+
+#define EDC_PART_RECT_PADDING(sName, sToPart, coorTopLeft, coorBottomRight) \
+    EDC_PART_PADDING_TL(sName"_padding_tl", coorTopLeft, sToPart)\
+    EDC_PART_PADDING_BR(sName"_padding_br", coorBottomRight, sToPart)\
+    EDC_PART_RECT_COMMON(sName, \
+        EDC_REL_RELATIVE(1.0, 1.0, sName"_padding_tl"), \
+        EDC_REL_RELATIVE(0.0, 0.0, sName"_padding_br"))
+
+#define EDC_PART_RECT_COLOR(sName, sToPart, crFill) \
+    EDC_PART_BASE(sName, RECT, 1, 0, \
+        EDC_STATE_COMMON_RECT("default", \
+            EDC_REL_RELATIVE(0.0, 0.0, sToPart), \
+            EDC_REL_RELATIVE(1.0, 1.0, sToPart), crFill))
+
+/* Part - Image */
+#define EDC_PART_IMAGE(sName, sToPart, img)\
+    EDC_PART_BASE(sName, IMAGE, 1, 0, \
+        EDC_STATE_COMMON_IMAGE("default", \
+            EDC_REL_RELATIVE(0.0, 0.0, sToPart), \
+            EDC_REL_RELATIVE(1.0, 1.0, sToPart), img))
+
+/* Part - Text */
+#define EDC_PART_TEXT(sName, sToPart, enumEffect, txt)\
+    EDC_PART_BASE(sName, TEXT, 1, 1, \
+        effect: enumEffect;\
+        EDC_STATE_COMMON_TEXT("default", \
+            EDC_REL_RELATIVE(0.0, 0.0, sToPart), \
+            EDC_REL_RELATIVE(1.0, 1.0, sToPart), txt))
+
+/* Two state part */
+#define EDC_PART_TWO_STATE(sName, enumType, sToPart, sStateName2, state1Do, state2Do)\
+    EDC_PART_BASE(sName, enumType, 1, 1, \
+        EDC_STATE_COMMON("default", \
+            EDC_REL_RELATIVE(0.0, 0.0, sToPart), \
+            EDC_REL_RELATIVE(1.0, 1.0, sToPart), state1Do;)\
+        EDC_STATE_COMMON(sStateName2, \
+            EDC_REL_RELATIVE(0.0, 0.0, sToPart), \
+            EDC_REL_RELATIVE(1.0, 1.0, sToPart), state2Do;))
+
+#define EDC_PART_BUTTON_IMG(sName, sToPart, imgNormal, imgPressed) \
+    EDC_PART_TWO_STATE(sName, IMAGE, sToPart, "pressed", imgNormal, imgPressed)
+
+#define EDC_PART_TWO_IMG(sName, sToPart, sState, imgNormal, imgPressed) \
+    EDC_PART_TWO_STATE(sName, IMAGE, sToPart, sState, imgNormal, imgPressed)
+
+#define EDC_PART_SWALLOW_SHOW_HIDE(sName, sToPart) \
+    EDC_PART_TWO_STATE(sName, SWALLOW, sToPart, "hide", visible: 1;, visible: 0;)
+
+#define EDC_PART_SWALLOW_HIDE_SHOW(sName, sToPart) \
+    EDC_PART_TWO_STATE(sName, SWALLOW, sToPart, "show", visible: 0;, visible: 1;)
+
+
+#endif /* __EDC_MACRO_H__ */

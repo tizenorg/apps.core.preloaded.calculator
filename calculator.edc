@@ -1,0 +1,89 @@
+/*
+  * Copyright 2012  Samsung Electronics Co., Ltd
+  * 
+  * Licensed under the Flora License, Version 1.0 (the "License");
+  * you may not use this file except in compliance with the License.
+  * You may obtain a copy of the License at
+  * 
+  *     http://www.tizenopensource.org/license
+  * 
+  * Unless required by applicable law or agreed to in writing, software
+  * distributed under the License is distributed on an "AS IS" BASIS,
+  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  * See the License for the specific language governing permissions and
+  * limitations under the License.
+  */
+ 
+
+
+#include "edc/edc-macro.edc"
+
+#define WIDTH					720
+#define HEIGHT					1280
+#define WIDTH_LAN				1280
+#define HEIGHT_LAN				720
+#define WIDTH_POR				720
+#define HEIGHT_POR				1280
+images {
+        /*portrait*/
+
+        image: "images/P04_calculator_bg.png" COMP;
+        image: "images/P04_calculator_keypad_bg.png" COMP;
+        image: "images/P04_calculator_btn_01.png" COMP;
+        image: "images/P04_calculator_btn_01_press.png" COMP;
+        image: "images/P04_calculator_btn_02.png" COMP;
+        image: "images/P04_calculator_btn_02_press.png" COMP;
+        image: "images/P04_calculator_btn_03.png" COMP;
+        image: "images/P04_calculator_btn_03_press.png" COMP;
+        image: "images/P04_calculator_btn_04.png" COMP;
+        image: "images/P04_calculator_btn_04_press.png" COMP;
+        image: "images/P04_calculator_btn_05.png" COMP;
+        image: "images/P04_calculator_btn_05_press.png" COMP;
+        image: "images/P04_calculator_btn_06.png" COMP;
+        image: "images/P04_calculator_btn_06_press.png" COMP;
+        image: "images/P04_calculator_btn_07.png" COMP;
+        image: "images/P04_calculator_btn_07_press.png" COMP;
+        image: "images/P04_calculator_btn_08.png" COMP;
+        image: "images/P04_calculator_btn_08_press.png" COMP;
+        image: "images/P04_calculator_btn_09.png" COMP;
+        image: "images/P04_calculator_btn_09_press.png" COMP;
+        image: "images/P04_calculator_btn_10.png" COMP;
+        image: "images/P04_calculator_btn_10_press.png" COMP;
+        image: "images/P04_calculator_btn_n00.png" COMP;
+        image: "images/P04_calculator_btn_n00_press.png" COMP;
+        image: "images/P04_calculator_btn_n01.png" COMP;
+        image: "images/P04_calculator_btn_n01_press.png" COMP;
+        image: "images/P04_calculator_btn_n02.png" COMP;
+        image: "images/P04_calculator_btn_n02_press.png" COMP;
+        image: "images/P04_calculator_btn_n03.png" COMP;
+        image: "images/P04_calculator_btn_n03_press.png" COMP;
+        image: "images/P04_calculator_btn_n04.png" COMP;
+        image: "images/P04_calculator_btn_n04_press.png" COMP;
+        image: "images/P04_calculator_btn_n05.png" COMP;
+        image: "images/P04_calculator_btn_n05_press.png" COMP;
+        image: "images/P04_calculator_btn_n06.png" COMP;
+        image: "images/P04_calculator_btn_n06_press.png" COMP;
+        image: "images/P04_calculator_btn_n07.png" COMP;
+        image: "images/P04_calculator_btn_n07_press.png" COMP;
+        image: "images/P04_calculator_btn_n08.png" COMP;
+        image: "images/P04_calculator_btn_n08_press.png" COMP;
+        image: "images/P04_calculator_btn_n09.png" COMP;
+        image: "images/P04_calculator_btn_n09_press.png" COMP;
+
+        image: "images/P04_calculator_down_arrow.png" COMP;
+        image: "images/P04_calculator_up_arrow.png" COMP;
+       // image: "P04_calculator_up_arrow.png" COMP;
+
+        image: "images/P04_calculator_input_bg.png" COMP;
+        image: "images/P04_calculator_input_bg_02.png" COMP;
+
+        image: "images/P04_calculator_button_clear.png" COMP;
+        image: "images/P04_calculator_button_clear_dim.png" COMP;
+        image: "images/P04_calculator_button_clear_focus.png" COMP;
+        image: "images/P04_calculator_button_clear_press.png" COMP;
+
+    }
+collections {
+	#include "edc/Inc.calculator.main.edc"
+	#include "edc/Inc.calculator.pannel.por.edc"
+}

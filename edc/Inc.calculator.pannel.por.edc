@@ -1,0 +1,418 @@
+/*
+  * Copyright 2012  Samsung Electronics Co., Ltd
+  * 
+  * Licensed under the Flora License, Version 1.0 (the "License");
+  * you may not use this file except in compliance with the License.
+  * You may obtain a copy of the License at
+  * 
+  *     http://www.tizenopensource.org/license
+  * 
+  * Unless required by applicable law or agreed to in writing, software
+  * distributed under the License is distributed on an "AS IS" BASIS,
+  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  * See the License for the specific language governing permissions and
+  * limitations under the License.
+  */
+
+#define PANNEL_W_POR			720
+#define PANNEL_H_POR 		   (807+61)		//558
+#define PANNEL_FULL_W_POR		720
+//#define PANNEL_FULL_H_POR 		584
+#define PANNEL_FULL_H_POR 		857
+
+#define PANNEL_X_LOFF_POR		24
+#define PANNEL_Y_LOFF_POR		50//???
+
+#define PANNEL_KEY_W_PAD_POR    16
+#define PANNEL_KEY_H_PAD_POR    18
+#define PANNEL_KEY_W_POR		156
+#define PANNEL_KEY_H_POR		147
+#define PANNEL_KEY_FULL_W_POR   (PANNEL_KEY_W_POR+PANNEL_KEY_W_PAD_POR)
+#define PANNEL_KEY_FULL_H_POR   (PANNEL_KEY_H_POR+PANNEL_KEY_H_PAD_POR)
+
+#define PANNEL_COR_POR_REF1_X(X,Y)   ((PANNEL_X_LOFF_POR+PANNEL_KEY_FULL_W_POR*(Y))/PANNEL_W_POR)
+#define PANNEL_COR_POR_REF1_Y(X,Y)   ((PANNEL_Y_LOFF_POR+PANNEL_KEY_FULL_H_POR*(X))/PANNEL_FULL_H_POR)
+#define PANNEL_COR_POR_REF2_X(X,Y)   ((PANNEL_X_LOFF_POR+PANNEL_KEY_FULL_W_POR*(Y)+PANNEL_KEY_W_POR)/PANNEL_W_POR)
+#define PANNEL_COR_POR_REF2_Y(X,Y)   ((PANNEL_Y_LOFF_POR+PANNEL_KEY_FULL_H_POR*(X)+PANNEL_KEY_H_POR)/PANNEL_FULL_H_POR)
+
+#define KEYPAD_KEY_IMG(key_name, relx1, rely1, relx2, rely2, bg_img, bg_img_press, text_img, text_img_press, to_part) \
+    EDC_PART_RECT_RELATIVE(key_name, to_part, relx1, rely1, relx2, rely2)\
+    EDC_PART_BUTTON_IMG(key_name"_bg", key_name, EDC_IMAGE(bg_img), EDC_IMAGE(bg_img))\
+    EDC_PART_BUTTON_IMG(key_name"_txt", key_name, EDC_IMAGE(text_img), EDC_IMAGE(text_img_press))
+
+#define KEYPAD_KEY_TXT(key_name, relx1, rely1, relx2, rely2, bg_img, bg_img_press, text_txt, text_txt_press, to_part) \
+    EDC_PART_RECT_RELATIVE(key_name, to_part, relx1, rely1, relx2, rely2)\
+    EDC_PART_BUTTON_IMG(key_name"_bg", key_name, EDC_IMAGE(bg_img), EDC_IMAGE(bg_img)))\
+    EDC_PART_TEXT(key_name"_txt", key_name, SHADOW, \
+    EDC_TEXT_SHADOW(text_txt, 67, "SLP:style=Medium", EDC_COLOR(255,255,255,255), EDC_COLOR(0,0,0,255)))\
+
+
+#define KEYPAD_KEY_PROG(key_name) \
+    program { \
+        name: "mouse_down_"key_name; \
+        signal: "mouse,down,1"; \
+        source: key_name; \
+        action: STATE_SET "pressed" 0.0; \
+        target: key_name"_bg"; \
+        target: key_name"_txt"; \
+    } \
+    program { \
+        name: "mouse_up_"key_name; \
+        signal: "mouse,up,1"; \
+        source: key_name; \
+        action: STATE_SET "default" 0.0; \
+        target: key_name"_bg"; \
+        target: key_name"_txt"; \
+    }
+
+///////////////////// prtrait pannel ////////////////////////////////////////
+	group {
+		name: "por_pannel";
+		script {
+			public pannel_state;
+		}
+
+		parts {
+			part {
+				name: "por_pannel/in";
+				type: RECT;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0;
+					visible: 0;
+					rel1 { relative: 0.0 (60+252)/(1280-50));}
+					rel2 { relative: 1.0 (1280-61)/1280; }
+				}
+				description {
+					state: "down" 0.0;
+					inherit: "default" 0.0;
+					rel1 { relative: 0.0 1.0; offset: 0 0;}
+					rel2 { relative: 1.0 1.0; offset: 0 PANNEL_H_POR;}
+				}
+			}
+			part {
+				name: "por_pannel/BG";
+				type: IMAGE;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0;
+					visible: 1;
+					rel1 { relative: 0.0 (60+50+252)/(1280-50);}
+					rel2 { relative: 1.0 1.0; }
+					image { normal: "images/P04_calculator_keypad_bg.png"; }
+				}
+				description {
+					state: "down" 0.0;
+					inherit: "default" 0.0;
+					rel1 { relative: 0.0 1.0; offset: 0 0;}
+					rel2 { relative: 1.0 1.0; offset: 0 PANNEL_H_POR;}
+					image { normal: "images/P04_calculator_keypad_bg.png"; }
+				}
+			}
+
+			/* close&open icon */
+			part {
+				name: "pannel/icon";
+				type: IMAGE;
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: (24+32+291)/720 (60+50+252-16-6-20)/1280;}
+					rel2 { relative: (24+32+291+26)/720 (60+50+252-6-20)/1280;}
+					image { normal: "images/P04_calculator_down_arrow.png"; }
+				}
+				description {
+					state: "open" 0.0;
+					inherit: "default" 0.0;
+					rel1 { relative: (24+32+291)/720 (1280-61-16-6-8)/1280;}
+					rel2 { relative: (24+32+291+26)/720 (1280-61-6-8)/1280;}
+					image { normal: "images/P04_calculator_up_arrow.png"; }
+				}
+			}
+			part {
+				name: "pannel/icon/rect";
+				type: RECT;
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: (24+32+291-50)/720 (60+50+252-16-6-75)/1280;}
+					rel2 { relative: (24+32+291+26+50)/720 (60+50+252-6+75)/1280;}
+					color: 0 0 0 0;
+				}
+				description {
+					state: "open" 0.0;
+					inherit: "default" 0.0;
+					rel1 { relative: (24+32+291-50)/720 (1280-61-6-16-75)/1280;}
+					rel2 { relative: (24+32+291+26+50)/720 (1280-61-6+75)/1280;}
+				}
+			}
+
+
+			/* create pannel keys */
+			// c, /, *, <-
+			KEYPAD_KEY_IMG("item_c",
+				PANNEL_COR_POR_REF1_X(0,0), PANNEL_COR_POR_REF1_Y(0,0),
+                PANNEL_COR_POR_REF2_X(0,0), PANNEL_COR_POR_REF2_Y(0,0),
+				"images/P04_calculator_btn_01.png", "images/P04_calculator_btn_01_press.png",
+				"images/P04_calculator_btn_01.png", "images/P04_calculator_btn_01_press.png",
+				"por_pannel/in");
+			KEYPAD_KEY_IMG("item_div",
+				PANNEL_COR_POR_REF1_X(0,1), PANNEL_COR_POR_REF1_Y(0,1),
+                PANNEL_COR_POR_REF2_X(0,1), PANNEL_COR_POR_REF2_Y(0,1),
+				"images/P04_calculator_btn_02.png", "images/P04_calculator_btn_02_press.png",
+				"images/P04_calculator_btn_02.png", "images/P04_calculator_btn_02_press.png",
+				"por_pannel/in");
+			KEYPAD_KEY_IMG("item_mul",
+				PANNEL_COR_POR_REF1_X(0,2), PANNEL_COR_POR_REF1_Y(0,2),
+                PANNEL_COR_POR_REF2_X(0,2), PANNEL_COR_POR_REF2_Y(0,2),
+				"images/P04_calculator_btn_03.png", "images/P04_calculator_btn_03_press.png",
+				"images/P04_calculator_btn_03.png", "images/P04_calculator_btn_03_press.png",
+				"por_pannel/in");
+			KEYPAD_KEY_IMG("item_del",
+				PANNEL_COR_POR_REF1_X(0,3), PANNEL_COR_POR_REF1_Y(0,3),
+                PANNEL_COR_POR_REF2_X(0,3), PANNEL_COR_POR_REF2_Y(0,3),
+				"images/P04_calculator_btn_04.png", "images/P04_calculator_btn_04_press.png",
+				"images/P04_calculator_btn_04.png", "images/P04_calculator_btn_04_press.png",
+				"por_pannel/in");
+
+
+			// 1, 2, 3, -
+			KEYPAD_KEY_IMG("item_num1",
+				PANNEL_COR_POR_REF1_X(1,0), PANNEL_COR_POR_REF1_Y(1,0),
+                PANNEL_COR_POR_REF2_X(1,0), PANNEL_COR_POR_REF2_Y(1,0),
+                "images/P04_calculator_btn_n01.png", "images/P04_calculator_btn_n01_press.png",
+				"images/P04_calculator_btn_n01.png", "images/P04_calculator_btn_n01_press.png",
+				"por_pannel/in");
+			KEYPAD_KEY_IMG("item_num2",
+				PANNEL_COR_POR_REF1_X(1,1), PANNEL_COR_POR_REF1_Y(1,1),
+                PANNEL_COR_POR_REF2_X(1,1), PANNEL_COR_POR_REF2_Y(1,1),
+                "images/P04_calculator_btn_n02.png", "images/P04_calculator_btn_n02_press.png",
+				"images/P04_calculator_btn_n02.png", "images/P04_calculator_btn_n02_press.png",
+				"por_pannel/in");
+			KEYPAD_KEY_IMG("item_num3",
+				PANNEL_COR_POR_REF1_X(1,2), PANNEL_COR_POR_REF1_Y(1,2),
+                PANNEL_COR_POR_REF2_X(1,2), PANNEL_COR_POR_REF2_Y(1,2),
+                "images/P04_calculator_btn_n03.png", "images/P04_calculator_btn_n03_press.png",
+				"images/P04_calculator_btn_n03.png", "images/P04_calculator_btn_n03_press.png",
+				"por_pannel/in");
+			KEYPAD_KEY_IMG("item_sub",
+				PANNEL_COR_POR_REF1_X(1,3), PANNEL_COR_POR_REF1_Y(1,3),
+                PANNEL_COR_POR_REF2_X(1,3), PANNEL_COR_POR_REF2_Y(1,3),
+				"images/P04_calculator_btn_05.png", "images/P04_calculator_btn_05_press.png",
+				"images/P04_calculator_btn_05.png", "images/P04_calculator_btn_05_press.png",
+				"por_pannel/in");
+
+
+			// 4, 5 ,6, +
+			KEYPAD_KEY_IMG("item_num4",
+				PANNEL_COR_POR_REF1_X(2,0), PANNEL_COR_POR_REF1_Y(2,0),
+                PANNEL_COR_POR_REF2_X(2,0), PANNEL_COR_POR_REF2_Y(2,0),
+				"images/P04_calculator_btn_n04.png", "images/P04_calculator_btn_n04_press.png",
+				"images/P04_calculator_btn_n04.png", "images/P04_calculator_btn_n04_press.png",
+				"por_pannel/in");
+			KEYPAD_KEY_IMG("item_num5",
+				PANNEL_COR_POR_REF1_X(2,1), PANNEL_COR_POR_REF1_Y(2,1),
+                PANNEL_COR_POR_REF2_X(2,1), PANNEL_COR_POR_REF2_Y(2,1),
+				"images/P04_calculator_btn_n05.png", "images/P04_calculator_btn_n05_press.png",
+				"images/P04_calculator_btn_n05.png", "images/P04_calculator_btn_n05_press.png",
+				"por_pannel/in");
+			KEYPAD_KEY_IMG("item_num6",
+				PANNEL_COR_POR_REF1_X(2,2), PANNEL_COR_POR_REF1_Y(2,3),
+                PANNEL_COR_POR_REF2_X(2,2), PANNEL_COR_POR_REF2_Y(2,3),
+				"images/P04_calculator_btn_n06.png", "images/P04_calculator_btn_n06_press.png",
+				"images/P04_calculator_btn_n06.png", "images/P04_calculator_btn_n06_press.png",
+				"por_pannel/in");
+			KEYPAD_KEY_IMG("item_plus",
+				PANNEL_COR_POR_REF1_X(2,3), PANNEL_COR_POR_REF1_Y(2,3),
+                PANNEL_COR_POR_REF2_X(2,3), PANNEL_COR_POR_REF2_Y(2,3),
+				"images/P04_calculator_btn_06.png", "images/P04_calculator_btn_06_press.png",
+				"images/P04_calculator_btn_06.png", "images/P04_calculator_btn_06_press.png",
+				"por_pannel/in");
+
+
+
+			// 7, 8, 9, ()
+			KEYPAD_KEY_IMG("item_num7",
+				PANNEL_COR_POR_REF1_X(3,0), PANNEL_COR_POR_REF1_Y(3,0),
+                PANNEL_COR_POR_REF2_X(3,0), PANNEL_COR_POR_REF2_Y(3,0),
+				"images/P04_calculator_btn_n07.png", "images/P04_calculator_btn_n07_press.png",
+				"images/P04_calculator_btn_n07.png", "images/P04_calculator_btn_n07_press.png",
+				"por_pannel/in");
+			KEYPAD_KEY_IMG("item_num8",
+				PANNEL_COR_POR_REF1_X(3,1), PANNEL_COR_POR_REF1_Y(3,1),
+                PANNEL_COR_POR_REF2_X(3,1), PANNEL_COR_POR_REF2_Y(3,1),
+				"images/P04_calculator_btn_n08.png", "images/P04_calculator_btn_n08_press.png",
+				"images/P04_calculator_btn_n08.png", "images/P04_calculator_btn_n08_press.png",
+				"por_pannel/in");
+			KEYPAD_KEY_IMG("item_num9",
+				PANNEL_COR_POR_REF1_X(3,2), PANNEL_COR_POR_REF1_Y(3,2),
+                PANNEL_COR_POR_REF2_X(3,2), PANNEL_COR_POR_REF2_Y(3,2),
+				"images/P04_calculator_btn_n09.png", "images/P04_calculator_btn_n09_press.png",
+				"images/P04_calculator_btn_n09.png", "images/P04_calculator_btn_n09_press.png",
+				"por_pannel/in");
+			KEYPAD_KEY_IMG("item_brack",
+				PANNEL_COR_POR_REF1_X(3,3), PANNEL_COR_POR_REF1_Y(3,3),
+                PANNEL_COR_POR_REF2_X(3,3), PANNEL_COR_POR_REF2_Y(3,3),
+				"images/P04_calculator_btn_07.png", "images/P04_calculator_btn_07_press.png",
+				"images/P04_calculator_btn_07.png", "images/P04_calculator_btn_07_press.png",
+				"por_pannel/in");
+
+
+			//0, ., +/-,  =
+			KEYPAD_KEY_IMG("item_num0",
+				PANNEL_COR_POR_REF1_X(4,0), PANNEL_COR_POR_REF1_Y(4,0),
+                PANNEL_COR_POR_REF2_X(4,0), PANNEL_COR_POR_REF2_Y(4,0),
+				"images/P04_calculator_btn_n00.png", "images/P04_calculator_btn_n00_press.png",
+				"images/P04_calculator_btn_n00.png", "images/P04_calculator_btn_n00_press.png",
+				"por_pannel/in");
+			KEYPAD_KEY_IMG("item_dot",
+				PANNEL_COR_POR_REF1_X(4,1), PANNEL_COR_POR_REF1_Y(4,1),
+                PANNEL_COR_POR_REF2_X(4,1), PANNEL_COR_POR_REF2_Y(4,1),
+				"images/P04_calculator_btn_10.png", "images/P04_calculator_btn_10_press.png",
+				"images/P04_calculator_btn_10.png", "images/P04_calculator_btn_10_press.png",
+				"por_pannel/in");
+			KEYPAD_KEY_IMG("item_neg",
+				PANNEL_COR_POR_REF1_X(4,2), PANNEL_COR_POR_REF1_Y(4,2),
+                PANNEL_COR_POR_REF2_X(4,2), PANNEL_COR_POR_REF2_Y(4,2),
+				"images/P04_calculator_btn_09.png", "images/P04_calculator_btn_09_press.png",
+				"images/P04_calculator_btn_09.png", "images/P04_calculator_btn_09_press.png",
+				"por_pannel/in");
+			KEYPAD_KEY_IMG("item_eq",
+				PANNEL_COR_POR_REF1_X(4,3), PANNEL_COR_POR_REF1_Y(4,4),
+                PANNEL_COR_POR_REF2_X(4,3), PANNEL_COR_POR_REF2_Y(4,4),
+				"images/P04_calculator_btn_08.png", "images/P04_calculator_btn_08_press.png",
+				"images/P04_calculator_btn_08.png", "images/P04_calculator_btn_08_press.png",
+				"por_pannel/in");
+		}
+
+		programs {
+			program {
+	            name: "group_load";
+	            signal: "load";
+	            script {
+	                set_int(pannel_state, 1);
+	            }
+            }
+			/* pannel open/close program */
+			//press up/down
+			program {
+				name: "icon_click2";
+				//signal: "mouse,down,1";
+				//source: "pannel/icon";
+				source: "pannel/icon/rect";
+
+				script {
+					if(get_int(pannel_state) == 1)
+					{
+						emit("pannel,down", "por");
+						set_state(PART:"pannel/icon", "open", 0.0);
+						set_state(PART:"pannel/icon/rect", "open", 0.0);
+						set_int(pannel_state, 0);
+					}
+					else
+					{
+						emit("pannel,up", "por");
+						set_state(PART:"pannel/icon", "default", 0.0);
+						set_state(PART:"pannel/icon/rect", "default", 0.0);
+						set_int(pannel_state, 1);
+					}
+				}
+			}
+
+			//flick up/down
+			program {
+				name: "icon_click";
+				//signal: "pannel,flick";
+				source: "";
+				script {
+					if(get_int(pannel_state) == 1)
+					{
+						emit("pannel,down", "por");
+						set_state(PART:"pannel/icon", "open", 0.0);
+						set_state(PART:"pannel/icon/rect", "open", 0.0);
+						set_int(pannel_state, 0);
+					}
+					else
+					{
+						emit("pannel,up", "por");
+						set_state(PART:"pannel/icon", "default", 0.0);
+						set_state(PART:"pannel/icon/rect", "default", 0.0);
+						set_int(pannel_state, 1);
+					}
+				}
+			}
+
+			program {
+				name: "pannel/down";
+				signal: "pannel,down";
+				source: "*";
+				action: STATE_SET "down" 0.0;
+				target: "por_pannel/in";
+				target: "por_pannel/BG";
+				transition: ACCELERATE 0.4;
+				after: "check_icon_open";
+			}
+			program {
+				name: "pannel/up";
+				signal: "pannel,up";
+				source: "*";
+				action: STATE_SET "default" 0.0;
+				target: "por_pannel/in";
+				target: "por_pannel/BG";
+				transition: ACCELERATE 0.3;
+				after: "check_icon_default";
+			}
+
+			program {
+				name: "check_icon_open";
+				script {
+					if(get_int(pannel_state) == 1)
+					{
+						set_state(PART:"pannel/icon", "open", 0.0);
+						set_state(PART:"pannel/icon/rect", "open", 0.0);
+						set_int(pannel_state, 0);
+					}
+				}
+			}
+
+			program {
+				name: "check_icon_default";
+				script {
+					if(get_int(pannel_state) == 0)
+					{
+						set_state(PART:"pannel/icon", "default", 0.0);
+						set_state(PART:"pannel/icon/rect", "default", 0.0);
+						set_int(pannel_state, 1);
+					}
+				}
+			}
+
+			/* programs for pennel items */
+			KEYPAD_KEY_PROG("item_c");
+			KEYPAD_KEY_PROG("item_div");
+			KEYPAD_KEY_PROG("item_mul");
+			KEYPAD_KEY_PROG("item_del");
+
+			KEYPAD_KEY_PROG("item_num7");
+			KEYPAD_KEY_PROG("item_num8");
+			KEYPAD_KEY_PROG("item_num9");
+			KEYPAD_KEY_PROG("item_sub");
+
+			KEYPAD_KEY_PROG("item_num4");
+			KEYPAD_KEY_PROG("item_num5");
+			KEYPAD_KEY_PROG("item_num6");
+			KEYPAD_KEY_PROG("item_plus");
+
+			KEYPAD_KEY_PROG("item_num1");
+			KEYPAD_KEY_PROG("item_num2");
+			KEYPAD_KEY_PROG("item_num3");
+			KEYPAD_KEY_PROG("item_brack");
+
+			KEYPAD_KEY_PROG("item_dot");
+			KEYPAD_KEY_PROG("item_num0");
+			KEYPAD_KEY_PROG("item_neg");
+			KEYPAD_KEY_PROG("item_eq");
+		}
+	}
+///////////////////// prtrait pannel  finish ////////////////////////////////////////
+

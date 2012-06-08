@@ -1,0 +1,20 @@
+Source: calculator
+Section: devel
+Priority: extra
+Maintainer: Zhao Danni <danni.zhao@samsung.com>, Yang Qing <qing_.yang@samsung.com>, Zhou Zhibin <zhibin.zhou@samsung.com>
+Uploaders:
+Build-Depends: debhelper (>= 5), libelm-dev, libslp-utilx-dev, dlog-dev, libsvi-dev, libevas-dev, libedje-dev, capi-appfw-application-dev
+Standards-Version: 0.1.0
+
+Package: org.tizen.calculator
+Section: utils
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Calculator application
+
+Package: org.tizen.calculator-dbg
+Section: debug
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Calculator application
+
