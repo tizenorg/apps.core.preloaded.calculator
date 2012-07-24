@@ -5,7 +5,7 @@ Release: 3
 Summary: Calculator application
 Source: %{name}-%{version}.tar.gz
 Source1001: packaging/org.tizen.calculator.manifest 
-License: Samsung Proprietary License
+License: Flora Software License
 Group: Applications
 BuildRequires: cmake
 BuildRequires: pkgconfig(edje)
