@@ -1,0 +1,51 @@
+msgid "IDS_CCL_OPT_CONVERT_TO"
+msgstr "แปลง​เป็น"
+
+msgid "IDS_CCL_POP_SYNTAX_ERROR"
+msgstr "ซิ​นแท็ก​ซ์​ผิด"
+
+msgid "IDS_CCL_POP_UP_TO_5_DECIMALS_AVAILABLE"
+msgstr "ได้​ถึง 5 ​ตัว​เลข"
+
+msgid "IDS_CCL_POP_UP_TO_20_OPERATORS_AVAILABLE"
+msgstr "ได้​ถึง 20 ​เครื่อง​หมาย​"
+
+msgid "IDS_CCL_POP_UNABLE_TO_DIVIDE_BY_ZERO"
+msgstr "หาร​ด้วย​\nศูนย์​ไม่​ได้"
+
+msgid "IDS_CCL_POP_NO_NUMBER_ERROR"
+msgstr "ใส่​เลข​ก่อน"
+
+msgid "IDS_CCL_POP_ERROR"
+msgstr "อยู่​นอก​ช่วง"
+
+msgid "IDS_CCL_POP_ENTER_NUMBER_AFTER_OPERATOR"
+msgstr "ใส่​ตัว​เลข​หลัง​โอ​เปอร์เร​เตอร์"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_SQUARE_ROOT_FUNCTION"
+msgstr "การ​ใส่​ข้อ​มูล​ฟังก์​ชั่นสแควร์​รู​ท​ไม่​ถูก​ต้อง"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_LOG_FUNCTION"
+msgstr "การ​ใส่​ข้อมูล​ฟังก์ชัน​ล็อก​ไม่​ถูก​ต้อง"
+
+msgid "IDS_CCL_BODY_NATURAL_NUMBER_ONLY_FOR_X_E_FUNCTION"
+msgstr "หมาย​เลข​ธรรมชาติ​สำ​หรับ​ฟัง​ก์ชั่น x! ​เท่า​นั้น"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_1_X_FUNCTION"
+msgstr "ใส่​หมาย​เลข​ก่อน​ใส่​ข้อมูล​ฟังก์ชัน 1/x"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X2_FUNCTION"
+msgstr "ใส่​หมาย​เลข​ก่อน​ใส่​ข้อมูล​ฟังก์ชัน x^2"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_XY_FUNCTION"
+msgstr "ใส่​หมาย​เลข​ก่อน​ใส่​ข้อมูล​ฟังก์ชัน x^y"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X_E_FUNCTION"
+msgstr "ใส่​หมาย​เลข​ก่อน​ใส่​ข้อมูล​ฟังก์ชัน x!"
+
+msgid "IDS_CCL_POP_NO_OPERATOR_ERROR"
+msgstr "ใส่​เครื่อง​หมาย​ก่อน"
+
+msgid "IDS_CCL_POP_UP_TO_15_DIGITS_AVAILABLE"
+msgstr "​ได้​ถึง 15 ​ดิ​จิต"
+

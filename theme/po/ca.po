@@ -1,0 +1,51 @@
+msgid "IDS_CCL_OPT_CONVERT_TO"
+msgstr "Convertir a"
+
+msgid "IDS_CCL_POP_SYNTAX_ERROR"
+msgstr "Error de sintaxi"
+
+msgid "IDS_CCL_POP_UP_TO_5_DECIMALS_AVAILABLE"
+msgstr "Fins a 5 decimals disponibles"
+
+msgid "IDS_CCL_POP_UP_TO_20_OPERATORS_AVAILABLE"
+msgstr "Fins a 20 operadors disponibles"
+
+msgid "IDS_CCL_POP_UNABLE_TO_DIVIDE_BY_ZERO"
+msgstr "No es pot dividir per zero"
+
+msgid "IDS_CCL_POP_NO_NUMBER_ERROR"
+msgstr "Introdueixi primer el número"
+
+msgid "IDS_CCL_POP_ERROR"
+msgstr "Fora de rang"
+
+msgid "IDS_CCL_POP_ENTER_NUMBER_AFTER_OPERATOR"
+msgstr "Introdueixi un número després de l'operador"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_SQUARE_ROOT_FUNCTION"
+msgstr "Entrada no vàlida per a la funció d'arrel quadrada"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_LOG_FUNCTION"
+msgstr "Entrada no vàlida per a la funció log"
+
+msgid "IDS_CCL_BODY_NATURAL_NUMBER_ONLY_FOR_X_E_FUNCTION"
+msgstr "Només un número natural per a la funció x!"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_1_X_FUNCTION"
+msgstr "Introdueixi un número abans d'introduir la funció 1/x"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X2_FUNCTION"
+msgstr "Introdueixi un número abans d'introduir la funció x^2"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_XY_FUNCTION"
+msgstr "Introdueixi un número abans d'introduir la funció x^y"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X_E_FUNCTION"
+msgstr "Introdueixi un número abans d'introduir la funció x!"
+
+msgid "IDS_CCL_POP_NO_OPERATOR_ERROR"
+msgstr "Introdueixi primer l'operador"
+
+msgid "IDS_CCL_POP_UP_TO_15_DIGITS_AVAILABLE"
+msgstr "Fins a 15 dígits disponibles"
+

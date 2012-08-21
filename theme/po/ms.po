@@ -1,0 +1,51 @@
+msgid "IDS_CCL_OPT_CONVERT_TO"
+msgstr "Tukar kepada"
+
+msgid "IDS_CCL_POP_SYNTAX_ERROR"
+msgstr "Ralat sintaks"
+
+msgid "IDS_CCL_POP_UP_TO_5_DECIMALS_AVAILABLE"
+msgstr "Sehingga 5 perpuluhan tersedia"
+
+msgid "IDS_CCL_POP_UP_TO_20_OPERATORS_AVAILABLE"
+msgstr "Sehingga 20 pengendali didpti"
+
+msgid "IDS_CCL_POP_UNABLE_TO_DIVIDE_BY_ZERO"
+msgstr "Tdk dpt dibahagi dengan kosong"
+
+msgid "IDS_CCL_POP_NO_NUMBER_ERROR"
+msgstr "Masukkan Nombor Dahulu"
+
+msgid "IDS_CCL_POP_ERROR"
+msgstr "Di luar julat"
+
+msgid "IDS_CCL_POP_ENTER_NUMBER_AFTER_OPERATOR"
+msgstr "Masukkan nombor selepas pengendali"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_SQUARE_ROOT_FUNCTION"
+msgstr "Kemasukan tdk sah utk fungsi punca kuasa dua"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_LOG_FUNCTION"
+msgstr "Kemasukan tdk sah utk fungsi log"
+
+msgid "IDS_CCL_BODY_NATURAL_NUMBER_ONLY_FOR_X_E_FUNCTION"
+msgstr "Nombor lazim hanya utk fungsi x!"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_1_X_FUNCTION"
+msgstr "Masukkan nombor sebelum masukkan fungsi 1/x"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X2_FUNCTION"
+msgstr "Masukkan nombor sebelum memasukkan fungsi x^2"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_XY_FUNCTION"
+msgstr "Masukkan nombor sebelum memasukkan fungsi x^y"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X_E_FUNCTION"
+msgstr "Masukkan nombor sebelum memasukkan fungsi x!"
+
+msgid "IDS_CCL_POP_NO_OPERATOR_ERROR"
+msgstr "Masukkan Pengendali Dulu"
+
+msgid "IDS_CCL_POP_UP_TO_15_DIGITS_AVAILABLE"
+msgstr "Sehingga 15 digit tersedia"
+

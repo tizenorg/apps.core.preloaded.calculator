@@ -1,0 +1,51 @@
+msgid "IDS_CCL_OPT_CONVERT_TO"
+msgstr "Hedef birim"
+
+msgid "IDS_CCL_POP_SYNTAX_ERROR"
+msgstr "Sözdizimi hatası"
+
+msgid "IDS_CCL_POP_UP_TO_5_DECIMALS_AVAILABLE"
+msgstr "En fazla 5 hane kullanılabilir"
+
+msgid "IDS_CCL_POP_UP_TO_20_OPERATORS_AVAILABLE"
+msgstr "En fazla 20 operatör kullanılabilir"
+
+msgid "IDS_CCL_POP_UNABLE_TO_DIVIDE_BY_ZERO"
+msgstr "Sıfıra bölünemez"
+
+msgid "IDS_CCL_POP_NO_NUMBER_ERROR"
+msgstr "Önce sayı girin"
+
+msgid "IDS_CCL_POP_ERROR"
+msgstr "Aralık dışında"
+
+msgid "IDS_CCL_POP_ENTER_NUMBER_AFTER_OPERATOR"
+msgstr "Operatörün ardından numara girin"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_SQUARE_ROOT_FUNCTION"
+msgstr "Kare kök fonksiyonu için geçersiz giriş"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_LOG_FUNCTION"
+msgstr "Günlük fonksiyonu için geçersiz giriş"
+
+msgid "IDS_CCL_BODY_NATURAL_NUMBER_ONLY_FOR_X_E_FUNCTION"
+msgstr "Yalnızca x! fonksiyonu için doğal sayı"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_1_X_FUNCTION"
+msgstr "1/x fonksiyonu girmeden önce numara girin"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X2_FUNCTION"
+msgstr "x^2 fonksiyonu girmeden önce numara girin"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_XY_FUNCTION"
+msgstr "x^y fonksiyonu girmeden önce numara girin"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X_E_FUNCTION"
+msgstr "x! fonksiyonu girmeden önce numara girin"
+
+msgid "IDS_CCL_POP_NO_OPERATOR_ERROR"
+msgstr "Önce operatörü girin"
+
+msgid "IDS_CCL_POP_UP_TO_15_DIGITS_AVAILABLE"
+msgstr "En fazla 15 hane kullanılabilir"
+

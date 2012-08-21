@@ -1,0 +1,51 @@
+msgid "IDS_CCL_OPT_CONVERT_TO"
+msgstr "Átalakítás erre:"
+
+msgid "IDS_CCL_POP_SYNTAX_ERROR"
+msgstr "Szintaktikai hiba"
+
+msgid "IDS_CCL_POP_UP_TO_5_DECIMALS_AVAILABLE"
+msgstr "Legfeljebb 5 tizedesjegy lehetséges"
+
+msgid "IDS_CCL_POP_UP_TO_20_OPERATORS_AVAILABLE"
+msgstr "Legfeljebb 20 szolgáltató lehetséges"
+
+msgid "IDS_CCL_POP_UNABLE_TO_DIVIDE_BY_ZERO"
+msgstr "Nullával nem lehet osztani"
+
+msgid "IDS_CCL_POP_NO_NUMBER_ERROR"
+msgstr "Előbb szám kell"
+
+msgid "IDS_CCL_POP_ERROR"
+msgstr "Túl nagy szám"
+
+msgid "IDS_CCL_POP_ENTER_NUMBER_AFTER_OPERATOR"
+msgstr "A műveleti jel után adjon meg egy számot"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_SQUARE_ROOT_FUNCTION"
+msgstr "Érvénytelen bevitel a négyzetgyök függvényhez"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_LOG_FUNCTION"
+msgstr "Érvénytelen bevitel a log függvényhez"
+
+msgid "IDS_CCL_BODY_NATURAL_NUMBER_ONLY_FOR_X_E_FUNCTION"
+msgstr "Az x! függvény csak természetes számmal használható"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_1_X_FUNCTION"
+msgstr "Az 1/x függvény kiválasztása előtt adjon meg egy számot"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X2_FUNCTION"
+msgstr "Az x^2 függvény kiválasztása előtt adjon meg egy számot"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_XY_FUNCTION"
+msgstr "Az x^y függvény kiválasztása előtt adjon meg egy számot"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X_E_FUNCTION"
+msgstr "Az x! függvény kiválasztása előtt adjon meg egy számot"
+
+msgid "IDS_CCL_POP_NO_OPERATOR_ERROR"
+msgstr "Előbb operátor kell"
+
+msgid "IDS_CCL_POP_UP_TO_15_DIGITS_AVAILABLE"
+msgstr "Legfeljebb 15 számjegy lehetséges"
+

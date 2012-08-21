@@ -1,0 +1,51 @@
+msgid "IDS_CCL_OPT_CONVERT_TO"
+msgstr "التحويل إلى"
+
+msgid "IDS_CCL_POP_SYNTAX_ERROR"
+msgstr "خطأ لغوي"
+
+msgid "IDS_CCL_POP_UP_TO_5_DECIMALS_AVAILABLE"
+msgstr "يتوفر عدد 5 أرقام عشرية بحد أقصى"
+
+msgid "IDS_CCL_POP_UP_TO_20_OPERATORS_AVAILABLE"
+msgstr "يتوفر عدد 20 معامل بحد أقصى"
+
+msgid "IDS_CCL_POP_UNABLE_TO_DIVIDE_BY_ZERO"
+msgstr "تتعذر القسمة على صفر"
+
+msgid "IDS_CCL_POP_NO_NUMBER_ERROR"
+msgstr "أدخل الرقم أولا"
+
+msgid "IDS_CCL_POP_ERROR"
+msgstr "خارج المدى"
+
+msgid "IDS_CCL_POP_ENTER_NUMBER_AFTER_OPERATOR"
+msgstr "إدخال رقم بعد التشغيل"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_SQUARE_ROOT_FUNCTION"
+msgstr "إدخال غير صالح لدالة الجذر التربيعي"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_LOG_FUNCTION"
+msgstr "إدخال غير صالح لدالة اللوغاريتم"
+
+msgid "IDS_CCL_BODY_NATURAL_NUMBER_ONLY_FOR_X_E_FUNCTION"
+msgstr "رقم طبيعي فقط لدالة x!"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_1_X_FUNCTION"
+msgstr "أدخل رقما قبل إدخال الدالة 1/x"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X2_FUNCTION"
+msgstr "أدخل رقما قبل إدخال الدالة x^2"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_XY_FUNCTION"
+msgstr "أدخل رقما قبل إدخال الدالة x^y"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X_E_FUNCTION"
+msgstr "أدخل رقما قبل إدخال الدالة x!"
+
+msgid "IDS_CCL_POP_NO_OPERATOR_ERROR"
+msgstr "أدخل المزود أولا"
+
+msgid "IDS_CCL_POP_UP_TO_15_DIGITS_AVAILABLE"
+msgstr "يتوفر 15 رقمًا بحد أقصى"
+

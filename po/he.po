@@ -1,0 +1,51 @@
+msgid "IDS_CCL_OPT_CONVERT_TO"
+msgstr "המר ל"
+
+msgid "IDS_CCL_POP_SYNTAX_ERROR"
+msgstr "שגיאת תחביר"
+
+msgid "IDS_CCL_POP_UP_TO_5_DECIMALS_AVAILABLE"
+msgstr "עד 5 מקומות אחרי הנקודה העשרונית זמינים"
+
+msgid "IDS_CCL_POP_UP_TO_20_OPERATORS_AVAILABLE"
+msgstr "עד 20 אופרטורים זמינים"
+
+msgid "IDS_CCL_POP_UNABLE_TO_DIVIDE_BY_ZERO"
+msgstr "לא ניתן לחלק באפס"
+
+msgid "IDS_CCL_POP_NO_NUMBER_ERROR"
+msgstr "הזן מספר תחילה"
+
+msgid "IDS_CCL_POP_ERROR"
+msgstr "מחוץ לטווח"
+
+msgid "IDS_CCL_POP_ENTER_NUMBER_AFTER_OPERATOR"
+msgstr "הזן מספר לאחר האופרטור"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_SQUARE_ROOT_FUNCTION"
+msgstr "קלט לא חוקי עבור פונקציית שורש ריבועי"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_LOG_FUNCTION"
+msgstr "קלט לא חוקי עבור פונקציית יומן"
+
+msgid "IDS_CCL_BODY_NATURAL_NUMBER_ONLY_FOR_X_E_FUNCTION"
+msgstr "מספר טבעי עבור פונקציית x! בלבד"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_1_X_FUNCTION"
+msgstr "הזן מספר לפני הזנת פונקציית 1‎/x"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X2_FUNCTION"
+msgstr "הזן מספר לפני הזנת פונקציית x^2"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_XY_FUNCTION"
+msgstr "הזן מספר לפני הזנת פונקציית x^y"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X_E_FUNCTION"
+msgstr "הזן מספר לפני הזנת פונקציית x!"
+
+msgid "IDS_CCL_POP_NO_OPERATOR_ERROR"
+msgstr "ראשית הכנס פונקציה"
+
+msgid "IDS_CCL_POP_UP_TO_15_DIGITS_AVAILABLE"
+msgstr "עד 15 ספרות זמינות"
+

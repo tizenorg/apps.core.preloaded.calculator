@@ -1,20 +1,20 @@
 /*
-  * Copyright 2012  Samsung Electronics Co., Ltd
-  * 
-  * Licensed under the Flora License, Version 1.0 (the "License");
-  * you may not use this file except in compliance with the License.
-  * You may obtain a copy of the License at
-  * 
-  *     http://www.tizenopensource.org/license
-  * 
-  * Unless required by applicable law or agreed to in writing, software
-  * distributed under the License is distributed on an "AS IS" BASIS,
-  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  * See the License for the specific language governing permissions and
-  * limitations under the License.
-  */
- 
-
+*
+* Copyright 2012  Samsung Electronics Co., Ltd
+*
+* Licensed under the Flora License, Version 1.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.tizenopensource.org/license
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*
+*/
 
 #define ENTRY_BLOCK_HANDLE_SOURCE2 "elm/entry/selection/block_handle_right"
 #define ENTRY_BLOCK_HANDLE_SOURCE3 "elm/entry/selection/block_handle_left"
@@ -38,7 +38,6 @@ collections {
 	    image: "black/copy&paste_Icon_right.png" COMP;
 	    image: "black/copy&paste_Icon_right_press.png" COMP;
 	}
-
     group {
       name: "elm/entry/base/black";
       alias: "elm/entry/base/char_wrap";
@@ -48,26 +47,26 @@ collections {
       styles
 	{
 	   style { name: "entry_textblock_char_wrap_style_B";
-	      base: "font=SLP:style=Roman font_size=67  align=right color="ENTRY_TEXT_COLOR_INC_B" wrap=char left_margin=2 right_margin=2";
+	      base: "font=SLP:style=Roman text_class=slp_roman font_size=70  align=right color="ENTRY_TEXT_COLOR_INC_B" wrap=char left_margin=2 right_margin=2";
 	      tag:  "br" "\n";
 	      tag:  "ps" "ps";
 	      tag:  "tab" "\t";
 	      tag:  "em" "+ font=SLP:style=Oblique";
-	      tag:  "b" "+ font=SLP:style=Bold";
+	      tag:  "b" "+ font=SLP:style=Bold text_class=slp_bold";
 	      tag:  "link" "+ color=#800 underline=on underline_color=#8008";
-	      tag:  "hilight" "+ font=SLP:style=Bold";
+	      tag:  "hilight" "+ font=SLP:style=Bold text_class=slp_bold";
 	      tag:  "preedit" "+ underline=on underline_color="ENTRY_PREEDIT_BACKGROUND_COLOR_INC"";
 	      tag:  "preedit_sel" "+ backing=on backing_color="ENTRY_PREEDIT_BACKGROUND_COLOR_INC" color="ENTRY_PREEDIT_TEXT_COLOR_INC"";
 	   }
 	   style { name: "entry_textblock_char_wrap_disabled_style_B";
- 	      base: "font=SLP:style=Roman font_size="ENTRY_TEXT_SIZE_INC" color=#00000080 wrap=char";
+	      base: "font=SLP:style=Roman text_class=slp_roman font_size="ENTRY_TEXT_SIZE_INC" color=#00000080 wrap=char";
 	      tag:  "br" "\n";
 	      tag:  "ps" "ps";
 	      tag:  "tab" "\t";
 	      tag:  "em" "+ font=SLP:style=Oblique";
-	      tag:  "b" "+ font=SLP:style=Bold";
+	      tag:  "b" "+ font=SLP:style=Bold text_class=slp_bold";
 	      tag:  "link" "+ color=#00000080 underline=on underline_color=#00000080";
-	      tag:  "hilight" "+ font=SLP:style=Bold";
+	      tag:  "hilight" "+ font=SLP:style=Bold text_class=slp_bold";
 	      tag:  "preedit" "+ underline=on underline_color="ENTRY_PREEDIT_BACKGROUND_COLOR_INC"";
 	      tag:  "preedit_sel" "+ backing=on backing_color="ENTRY_PREEDIT_BACKGROUND_COLOR_INC" color="ENTRY_PREEDIT_TEXT_COLOR_INC"";
 	   }

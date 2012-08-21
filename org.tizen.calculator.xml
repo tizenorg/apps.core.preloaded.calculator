@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<manifest xmlns="http://tizen.org/ns/packages" package="org.tizen.calculator" version="0.1.12" install-location="internal-only">
+	<label>Calculator</label> 
+	<description>Calculator</description> 
+	<ui-application appid="org.tizen.calculator" exec="/opt/apps/org.tizen.calculator/bin/calculator" nodisplay="false" multiple="false" type="capp" taskmanage="true">
+		<icon>org.tizen.calculator.png</icon> 
+		<label>Calculator</label> 
+		<label xml:lang="en-us">Calculator</label> 
+		<label xml:lang="nl-nl">Calculator</label> 
+		<label xml:lang="de-de">Rechner</label> 
+		<label xml:lang="zh-hk">計算機</label> 
+		<label xml:lang="zh-cn">计算器</label> 
+		<label xml:lang="ru-ru">Калькулятор</label> 
+		<label xml:lang="zh-tw">計算器</label> 
+		<label xml:lang="ja-jp">電卓</label> 
+		<label xml:lang="es-es">Calculadora</label> 
+		<label xml:lang="el-gr">Αριθμομηχανή</label> 
+		<label xml:lang="it-it">Calcolatrice</label> 
+		<label xml:lang="tr-tr">Hesap makinesi</label> 
+		<label xml:lang="pt-pt">Calculadora</label> 
+		<label xml:lang="fr-fr">Calculatrice</label> 
+		<label xml:lang="ko-kr">계산기</label> 
+	</ui-application>
+</manifest>

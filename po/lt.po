@@ -1,0 +1,51 @@
+msgid "IDS_CCL_OPT_CONVERT_TO"
+msgstr "Keisti į"
+
+msgid "IDS_CCL_POP_SYNTAX_ERROR"
+msgstr "Sintaksės klaida"
+
+msgid "IDS_CCL_POP_UP_TO_5_DECIMALS_AVAILABLE"
+msgstr "Leidžiama iki 5 dešimtainių"
+
+msgid "IDS_CCL_POP_UP_TO_20_OPERATORS_AVAILABLE"
+msgstr "Leidžiama iki 20 operatorių"
+
+msgid "IDS_CCL_POP_UNABLE_TO_DIVIDE_BY_ZERO"
+msgstr "Dalyba iš nulio negalima"
+
+msgid "IDS_CCL_POP_NO_NUMBER_ERROR"
+msgstr "Pirma įveskite sk."
+
+msgid "IDS_CCL_POP_ERROR"
+msgstr "Už ribų"
+
+msgid "IDS_CCL_POP_ENTER_NUMBER_AFTER_OPERATOR"
+msgstr "Po operatoriaus įveskite numerį"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_SQUARE_ROOT_FUNCTION"
+msgstr "Neteisinga įvestis kvadratinės šaknies funkcijai"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_LOG_FUNCTION"
+msgstr "Neteisinga įvestis log funkcijai"
+
+msgid "IDS_CCL_BODY_NATURAL_NUMBER_ONLY_FOR_X_E_FUNCTION"
+msgstr "x! funkcijai – tik natūralus skaičius"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_1_X_FUNCTION"
+msgstr "Skaičių įveskite prieš įvesdami 1/x funkciją"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X2_FUNCTION"
+msgstr "Skaičių įveskite prieš įvesdami x^2 funkciją"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_XY_FUNCTION"
+msgstr "Skaičių įveskite prieš įvesdami x^y funkciją"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X_E_FUNCTION"
+msgstr "Skaičių įveskite prieš įvesdami x! funkciją"
+
+msgid "IDS_CCL_POP_NO_OPERATOR_ERROR"
+msgstr "Pirma įvesk. operat."
+
+msgid "IDS_CCL_POP_UP_TO_15_DIGITS_AVAILABLE"
+msgstr "Leidžiama iki 15 skaitmenų"
+

@@ -1,0 +1,51 @@
+msgid "IDS_CCL_OPT_CONVERT_TO"
+msgstr "Konvertovať na"
+
+msgid "IDS_CCL_POP_SYNTAX_ERROR"
+msgstr "Chyba syntaxe"
+
+msgid "IDS_CCL_POP_UP_TO_5_DECIMALS_AVAILABLE"
+msgstr "K dispozícii je max. 5 desatinných miest"
+
+msgid "IDS_CCL_POP_UP_TO_20_OPERATORS_AVAILABLE"
+msgstr "K dispozícii je max. 20 operátorov"
+
+msgid "IDS_CCL_POP_UNABLE_TO_DIVIDE_BY_ZERO"
+msgstr "Nulou sa nedá deliť"
+
+msgid "IDS_CCL_POP_NO_NUMBER_ERROR"
+msgstr "Najprv zad. číslo"
+
+msgid "IDS_CCL_POP_ERROR"
+msgstr "Mimo rozsahu"
+
+msgid "IDS_CCL_POP_ENTER_NUMBER_AFTER_OPERATOR"
+msgstr "Zadajte číslo po operátore"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_SQUARE_ROOT_FUNCTION"
+msgstr "Neplatný vstup pre funkciu druhej odmocniny"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_LOG_FUNCTION"
+msgstr "Neplatný vstup pre funkciu log"
+
+msgid "IDS_CCL_BODY_NATURAL_NUMBER_ONLY_FOR_X_E_FUNCTION"
+msgstr "Prirodzené číslo iba pre funkciu x!"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_1_X_FUNCTION"
+msgstr "Pred zadaním funkcie 1/x zadajte číslo"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X2_FUNCTION"
+msgstr "Pred zadaním funkcie x^2 zadajte číslo"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_XY_FUNCTION"
+msgstr "Pred zadaním funkcie x^y zadajte číslo"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X_E_FUNCTION"
+msgstr "Pred zadaním funkcie x! zadajte číslo"
+
+msgid "IDS_CCL_POP_NO_OPERATOR_ERROR"
+msgstr "Najprv zad. operátor"
+
+msgid "IDS_CCL_POP_UP_TO_15_DIGITS_AVAILABLE"
+msgstr "K dispozícii je max. 15 číslic"
+

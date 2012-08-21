@@ -1,0 +1,51 @@
+msgid "IDS_CCL_OPT_CONVERT_TO"
+msgstr "Pretvori v"
+
+msgid "IDS_CCL_POP_SYNTAX_ERROR"
+msgstr "Napaka sintakse"
+
+msgid "IDS_CCL_POP_UP_TO_5_DECIMALS_AVAILABLE"
+msgstr "Na voljo je do 5 decimalnih mest"
+
+msgid "IDS_CCL_POP_UP_TO_20_OPERATORS_AVAILABLE"
+msgstr "Na voljo je do 20 operaterjev"
+
+msgid "IDS_CCL_POP_UNABLE_TO_DIVIDE_BY_ZERO"
+msgstr "Deljenje z 0 ni mogoče"
+
+msgid "IDS_CCL_POP_NO_NUMBER_ERROR"
+msgstr "Najprej vnesi št."
+
+msgid "IDS_CCL_POP_ERROR"
+msgstr "Izven dovoljenega obsega"
+
+msgid "IDS_CCL_POP_ENTER_NUMBER_AFTER_OPERATOR"
+msgstr "Vnesite številko za operacijo"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_SQUARE_ROOT_FUNCTION"
+msgstr "Neveljaven vnos za kvadratno korensko funkcijo"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_LOG_FUNCTION"
+msgstr "Neveljaven vnos za logaritemsko funkcijo"
+
+msgid "IDS_CCL_BODY_NATURAL_NUMBER_ONLY_FOR_X_E_FUNCTION"
+msgstr "Za funkcijo x! uporabite samo naravna števila"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_1_X_FUNCTION"
+msgstr "Vnesite številko, preden vstavite funkcijo 1/x"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X2_FUNCTION"
+msgstr "Vnesite številko, preden vstavite funkcijo x^2"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_XY_FUNCTION"
+msgstr "Vnesite številko, preden vstavite funkcijo x^y"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X_E_FUNCTION"
+msgstr "Vnesite številko, preden vstavite funkcijo x!"
+
+msgid "IDS_CCL_POP_NO_OPERATOR_ERROR"
+msgstr "Najprej vnes.operat."
+
+msgid "IDS_CCL_POP_UP_TO_15_DIGITS_AVAILABLE"
+msgstr "Na voljo je do 15 mest"
+

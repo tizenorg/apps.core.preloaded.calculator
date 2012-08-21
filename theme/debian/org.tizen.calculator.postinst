@@ -1,0 +1,8 @@
+#!/bin/sh
+if [  ${USER} == "root" ]
+then
+	# 5000 is inhouse user id
+	# do not use relative path
+	chown -R 5000:5000 /opt/apps/org.tizen.calculator/data
+fi
+	

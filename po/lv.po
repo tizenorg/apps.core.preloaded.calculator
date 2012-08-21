@@ -1,0 +1,51 @@
+msgid "IDS_CCL_OPT_CONVERT_TO"
+msgstr "Pārvērst par"
+
+msgid "IDS_CCL_POP_SYNTAX_ERROR"
+msgstr "Sintakses kļūda"
+
+msgid "IDS_CCL_POP_UP_TO_5_DECIMALS_AVAILABLE"
+msgstr "Pieejami ne vairāk kā 5 decimālskaitļi"
+
+msgid "IDS_CCL_POP_UP_TO_20_OPERATORS_AVAILABLE"
+msgstr "Pieejami ne vairāk kā 20 operatori"
+
+msgid "IDS_CCL_POP_UNABLE_TO_DIVIDE_BY_ZERO"
+msgstr "Nevar dalīt ar nulli"
+
+msgid "IDS_CCL_POP_NO_NUMBER_ERROR"
+msgstr "Visp.iev. skaitli"
+
+msgid "IDS_CCL_POP_ERROR"
+msgstr "Ārpus robežas"
+
+msgid "IDS_CCL_POP_ENTER_NUMBER_AFTER_OPERATOR"
+msgstr "Ievadiet skaitli pēc operatora"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_SQUARE_ROOT_FUNCTION"
+msgstr "Nederīga ievade kvadrātsaknes funkcijā"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_LOG_FUNCTION"
+msgstr "Nederīga ievade log funkcijai"
+
+msgid "IDS_CCL_BODY_NATURAL_NUMBER_ONLY_FOR_X_E_FUNCTION"
+msgstr "Naturālais skaitlis paredzēts tikai funkcijai x!"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_1_X_FUNCTION"
+msgstr "Ievadiet skaitli pirms funkcijas 1/x ievadīšanas"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X2_FUNCTION"
+msgstr "Ievadiet skaitli pirms funkcijas x^2 ievadīšanas"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_XY_FUNCTION"
+msgstr "Ievadiet skaitli pirms funkcijas x^y ievadīšanas"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X_E_FUNCTION"
+msgstr "Ievadiet skaitli pirms funkcijas x! ievadīšanas"
+
+msgid "IDS_CCL_POP_NO_OPERATOR_ERROR"
+msgstr "Visp. ievad. operat."
+
+msgid "IDS_CCL_POP_UP_TO_15_DIGITS_AVAILABLE"
+msgstr "Pieejami ne vairāk kā 15 cipari"
+

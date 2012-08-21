@@ -1,0 +1,161 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-08-17 15:35+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: calculator_edje.c:3467
+msgid "Invalid expression"
+msgstr ""
+
+#: calculator_edje.c:3505 calculator_edje.c:3510
+msgid "Invalid digit!"
+msgstr ""
+
+#: calculator_edje.c:3545 calculator_edje.c:3563 calculator_edje.c:3573
+#: calculator_edje.c:3591 calculator_edje.c:3974 calculator_edje.c:3979
+#: calculator_edje.c:3997 calculator_edje.c:4007 calculator_edje.c:4012
+#: calculator_edje.c:4051 calculator_edje.c:4064 calculator_edje.c:4083
+#: calculator_edje.c:4094 calculator_edje.c:4100 calculator_edje.c:4124
+#: calculator_edje.c:4139 calculator_edje.c:4158
+msgid "Invalid expression!"
+msgstr ""
+
+#: calculator_edje.c:3602 calculator_edje.c:3607 calculator_edje.c:3612
+#: calculator_edje.c:3630 calculator_edje.c:3640 calculator_edje.c:3645
+#: calculator_edje.c:3650 calculator_edje.c:3663 calculator_edje.c:3673
+#: calculator_edje.c:3678 calculator_edje.c:3691 calculator_edje.c:3701
+#: calculator_edje.c:3706 calculator_edje.c:3712 calculator_edje.c:3725
+#: calculator_edje.c:3735 calculator_edje.c:3748 calculator_edje.c:3758
+#: calculator_edje.c:3763 calculator_edje.c:3781 calculator_edje.c:3791
+#: calculator_edje.c:3796 calculator_edje.c:3809 calculator_edje.c:3819
+#: calculator_edje.c:3832 calculator_edje.c:3842 calculator_edje.c:3847
+#: calculator_edje.c:3852 calculator_edje.c:3865 calculator_edje.c:3875
+#: calculator_edje.c:3880 calculator_edje.c:3885 calculator_edje.c:3898
+#: calculator_edje.c:3908 calculator_edje.c:3913 calculator_edje.c:3918
+#: calculator_edje.c:3931 calculator_edje.c:3941 calculator_edje.c:3946
+#: calculator_edje.c:3951 calculator_edje.c:3964 calculator_edje.c:4134
+msgid "Invalid operator!"
+msgstr ""
+
+#: calculator_edje.c:4106
+msgid "Parenthesis error!"
+msgstr ""
+
+#: calculator_parser.c:633 calculator_parser.c:664
+msgid "Syntax error"
+msgstr ""
+
+#. 5
+#. error msgs
+#: calculator_def.h:77
+msgid "IDS_CCL_POP_UP_TO_15_CHARACTERS_AVAILABLE"
+msgstr ""
+
+#: calculator_def.h:78
+msgid "IDS_CCL_POP_UP_TO_5_DECIMALS_AVAILABLE"
+msgstr ""
+
+#: calculator_def.h:79
+msgid "IDS_CCL_POP_UP_TO_20_OPERATORS_AVAILABLE"
+msgstr ""
+
+#: calculator_def.h:80
+msgid "IDS_CCL_POP_UP_TO_40_CHARACTERS_AVAILABLE"
+msgstr ""
+
+#: calculator_def.h:81
+msgid "IDS_CCL_POP_ENTER_OPERATOR_FIRST_ORANGE"
+msgstr ""
+
+#: calculator_def.h:82
+msgid "IDS_CCL_POP_ENTER_NUMBER_FIRST_ORANGE"
+msgstr ""
+
+#: calculator_def.h:83
+msgid "IDS_CCL_POP_ERROR"
+msgstr ""
+
+#: calculator_def.h:84
+msgid "IDS_CCL_POP_DIVIDE_ZERO"
+msgstr ""
+
+#: calculator_def.h:85
+msgid "IDS_CCL_POP_PARENTHESES_ERRORs"
+msgstr ""
+
+#: calculator_def.h:86
+msgid "IDS_CCL_POP_ENTER_NUMBER_AFTER_OPERATOR"
+msgstr ""
+
+#: calculator_def.h:87
+msgid "IDS_CCL_POP_INVALID_INPUT_FOR_SQUARE_ROOT_FUNCTION"
+msgstr ""
+
+#: calculator_def.h:88
+msgid "IDS_CCL_POP_INVALID_INPUT_FOR LOG_FUNCTION"
+msgstr ""
+
+#: calculator_def.h:89
+msgid "IDS_CCL_POP_INVALID_INPUT_FOR LN_FUNCTION"
+msgstr ""
+
+#: calculator_def.h:90
+msgid "IDS_CCL_POP_NATURAL_NUMBER_ONLY_FOR_FACTORIAL"
+msgstr ""
+
+#: calculator_def.h:91
+msgid "IDS_CCL_POP_INVALID_PARAMETER_FOR_XY"
+msgstr ""
+
+#: calculator_def.h:92
+msgid "IDS_CCL_POP_INVALID_PARAMETER_FOR_TAN"
+msgstr ""
+
+#: calculator_def.h:93
+msgid "IDS_CCL_POP_ENTER_NUMBER_FIRST_BEFORE_TAPPING_FACTORIAL"
+msgstr ""
+
+#: calculator_def.h:94
+msgid "IDS_CCL_POP_ENTER_NUMBER_FIRST_BEFORE_TAPPING_1X"
+msgstr ""
+
+#: calculator_def.h:95
+msgid "IDS_CCL_POP_ENTER_NUMBER_FIRST_BEFORE_TAPPING_X2"
+msgstr ""
+
+#: calculator_def.h:96
+msgid "IDS_CCL_POP_ENTER_NUMBER_FIRST_BEFORE_TAPPING_XY"
+msgstr ""
+
+#: calculator_def.h:97
+msgid "IDS_CCL_POP_NO_INPUT"
+msgstr ""
+
+#: calculator_def.h:98
+msgid "IDS_CCL_POP_OVERFLOW"
+msgstr ""
+
+#: calculator_def.h:99
+msgid "IDS_CCL_POP_THE_RESULT_IS_TOO_LONG_TO_BE_DISPLAYED"
+msgstr ""
+
+#: calculator_def.h:100
+msgid "IDS_CCL_POP_ALREADY_HAD_DECIMAL_IN_DIGIT"
+msgstr ""
+
+#: calculator_def.h:101
+msgid "IDS_CCL_POP_SYNTAX_ERROR"
+msgstr ""
