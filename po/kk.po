@@ -1,0 +1,66 @@
+msgid "IDS_CCL_BODY_CALCULATOR"
+msgstr "Калькулятор"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_1_X_FUNCTION"
+msgstr "1/x функциясының алдына сан енгізіңіз"
+
+msgid "IDS_CCL_POP_INPUT_ERROR"
+msgstr "Формат дұрыс емес"
+
+msgid "IDS_CCL_POP_SYNTAX_ERROR"
+msgstr "Синтак.қате"
+
+msgid "IDS_CCL_POP_UP_TO_5_DECIMALS_AVAILABLE"
+msgstr "5 ондыққа дейін бар"
+
+msgid "IDS_CCL_POP_UP_TO_20_OPERATORS_AVAILABLE"
+msgstr "20 дейін бар"
+
+msgid "IDS_CCL_POP_UNABLE_TO_DIVIDE_BY_ZERO"
+msgstr "Нөлге бөлуге мүмкіндік жоқ"
+
+msgid "IDS_CCL_POP_NO_NUMBER_ERROR"
+msgstr "Әуелі сан енгіз"
+
+msgid "IDS_CCL_POP_ENTER_NUMBER_AFTER_OPERATOR"
+msgstr "Арифметикалық амалдан кейін сан енгізіңіз"
+
+msgid "IDS_CCL_POP_ERROR"
+msgstr "Диапазоннан тыс"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_SQUARE_ROOT_FUNCTION"
+msgstr "Квадрат түбір функциясына дұрыс енгізілмеген"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_LOG_FUNCTION"
+msgstr "Журнал функциясына дұрыс енгізілмеген"
+
+msgid "IDS_CCL_BODY_NATURAL_NUMBER_ONLY_FOR_X_E_FUNCTION"
+msgstr "x! функциясына арналған тек натурал сан"
+
+msgid "IDS_CCL_POP_UP_TO_15_DIGITS_AVAILABLE"
+msgstr "15 санға дейін бар"
+
+msgid "IDS_CCL_POP_NO_OPERATOR_ERROR"
+msgstr "Әуелі амалдағ. енгіз"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X2_FUNCTION"
+msgstr "x^2 функциясының алдына сан енгізіңіз"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_XY_FUNCTION"
+msgstr "x^y функциясының алдына сан енгізіңіз"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X_E_FUNCTION"
+msgstr "x! функциясының алдына сан енгізіңіз"
+
+msgid "IDS_CCL_OPT_CONVERT_TO"
+msgstr "Түрлендіру"
+
+msgid "IDS_CCL_SK_COPY"
+msgstr "Көшіру"
+
+msgid "IDS_CCL_OPT_CLEAR_HISTORY"
+msgstr "Журналды тазарту"
+
+msgid "IDS_CCL_OPT_MINIMISE"
+msgstr "Кішірейту"
+

@@ -1,0 +1,66 @@
+msgid "IDS_CCL_BODY_CALCULATOR"
+msgstr "Reiknivél"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_1_X_FUNCTION"
+msgstr "Sláðu inn tölu áður en þú setur inn fallið 1/x"
+
+msgid "IDS_CCL_POP_INPUT_ERROR"
+msgstr "Sniðið er rangt"
+
+msgid "IDS_CCL_POP_SYNTAX_ERROR"
+msgstr "Málskipanavilla"
+
+msgid "IDS_CCL_POP_UP_TO_5_DECIMALS_AVAILABLE"
+msgstr "Allt að 5 aukastafir í boði"
+
+msgid "IDS_CCL_POP_UP_TO_20_OPERATORS_AVAILABLE"
+msgstr "Allt að 20 þjónustuaðilar í boði"
+
+msgid "IDS_CCL_POP_UNABLE_TO_DIVIDE_BY_ZERO"
+msgstr "Ekki er hægt að deila með núlli"
+
+msgid "IDS_CCL_POP_NO_NUMBER_ERROR"
+msgstr "Sláðu númerið inn fyrst"
+
+msgid "IDS_CCL_POP_ENTER_NUMBER_AFTER_OPERATOR"
+msgstr "Setja tölu á eftir reiknitákninu"
+
+msgid "IDS_CCL_POP_ERROR"
+msgstr "Síminn er utan svæðis"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_SQUARE_ROOT_FUNCTION"
+msgstr "Ógildur innsláttur fyrir kvaðratrót"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_LOG_FUNCTION"
+msgstr "Ógildur innsláttur fyrir notkunarskrá"
+
+msgid "IDS_CCL_BODY_NATURAL_NUMBER_ONLY_FOR_X_E_FUNCTION"
+msgstr "Náttúruleg tala fyrir fallið x!"
+
+msgid "IDS_CCL_POP_UP_TO_15_DIGITS_AVAILABLE"
+msgstr "Allt að 15 stafir í boði"
+
+msgid "IDS_CCL_POP_NO_OPERATOR_ERROR"
+msgstr "Sláðu símafyrirtækið inn fyrst"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X2_FUNCTION"
+msgstr "Sláðu inn tölu áður en þú setur inn fallið x^2"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_XY_FUNCTION"
+msgstr "Sláðu inn tölu áður en þú setur inn fallið x^y"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X_E_FUNCTION"
+msgstr "Sláðu inn tölu áður en þú setur inn fallið x!"
+
+msgid "IDS_CCL_OPT_CONVERT_TO"
+msgstr "Umreikna í"
+
+msgid "IDS_CCL_SK_COPY"
+msgstr "Afrita"
+
+msgid "IDS_CCL_OPT_CLEAR_HISTORY"
+msgstr "Hreinsa feril"
+
+msgid "IDS_CCL_OPT_MINIMISE"
+msgstr "Smækka"
+

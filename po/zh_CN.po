@@ -1,0 +1,66 @@
+msgid "IDS_CCL_BODY_CALCULATOR"
+msgstr "计算器"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_1_X_FUNCTION"
+msgstr "在输入1/x函数之前输入数字"
+
+msgid "IDS_CCL_POP_INPUT_ERROR"
+msgstr "错误格式"
+
+msgid "IDS_CCL_POP_SYNTAX_ERROR"
+msgstr "语法错误"
+
+msgid "IDS_CCL_POP_UP_TO_5_DECIMALS_AVAILABLE"
+msgstr "小数点后最多可达 5 位"
+
+msgid "IDS_CCL_POP_UP_TO_20_OPERATORS_AVAILABLE"
+msgstr "最多可达20个运算符"
+
+msgid "IDS_CCL_POP_UNABLE_TO_DIVIDE_BY_ZERO"
+msgstr "不能除以零"
+
+msgid "IDS_CCL_POP_NO_NUMBER_ERROR"
+msgstr "请先输入数字"
+
+msgid "IDS_CCL_POP_ENTER_NUMBER_AFTER_OPERATOR"
+msgstr "在运算符后输入数字"
+
+msgid "IDS_CCL_POP_ERROR"
+msgstr "超出范围"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_SQUARE_ROOT_FUNCTION"
+msgstr "输入无效平方根函数"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_LOG_FUNCTION"
+msgstr "输入无效对数函数"
+
+msgid "IDS_CCL_BODY_NATURAL_NUMBER_ONLY_FOR_X_E_FUNCTION"
+msgstr "x!函数只可输入自然数"
+
+msgid "IDS_CCL_POP_UP_TO_15_DIGITS_AVAILABLE"
+msgstr "最多可达15 位"
+
+msgid "IDS_CCL_POP_NO_OPERATOR_ERROR"
+msgstr "请先输入运算符"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X2_FUNCTION"
+msgstr "在输入x^2函数之前输入数字"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_XY_FUNCTION"
+msgstr "在输入x^y函数之前输入数字"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X_E_FUNCTION"
+msgstr "在输入x!函数之前输入数字"
+
+msgid "IDS_CCL_OPT_CONVERT_TO"
+msgstr "换算成"
+
+msgid "IDS_CCL_SK_COPY"
+msgstr "复制"
+
+msgid "IDS_CCL_OPT_CLEAR_HISTORY"
+msgstr "清除历史记录"
+
+msgid "IDS_CCL_OPT_MINIMISE"
+msgstr "最小化"
+

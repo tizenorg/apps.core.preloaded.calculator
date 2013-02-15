@@ -1,0 +1,209 @@
+/*
+*
+* Copyright 2012  Samsung Electronics Co., Ltd
+*
+* Licensed under the Flora License, Version 1.0 (the License);
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.tizenopensource.org/license
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an AS IS BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*
+*/
+
+#define PADDING_TOP_POR         24
+#define PADDING_BOTTOM_POR       12
+#define PADDING_LEFT_POR        24
+#define PADDING_RIGHT_POR       24
+
+#define PADDING_TOP_LAN         13
+#define PADDING_BOTTOM_LAN       3
+#define PADDING_LEFT_LAN        42
+#define PADDING_RIGHT_LAN       42
+
+group {
+    name: "main";
+
+    script {
+        public pannel_state;
+        public result_show;
+    }
+
+    parts {
+        /* background */
+	    part {
+	        name: "bg";
+	        type: RECT;
+	        mouse_events: 0;
+	        description {
+	            state: "default" 0.0;
+	            rel1 { relative: 0.0 0.0;}
+	            rel2 { relative: 1.0 (1.0+1.0/1280);}
+	            color:246 244 237 255;
+	        }
+	        description {
+	            state: "landscape" 0.0;
+	            inherit: "default" 0.0;
+	            rel1 { relative: 0.0 0.0;}
+	            rel2 { relative: 1.0 (1.0+1.0/720);}
+	           color:246 244 237 255;
+	        }
+	    }
+
+        /* Input Entry */
+        part {
+            name: "entry/rect";
+            type: RECT;
+            mouse_events: 1;
+            scale: 1;
+
+            description {
+                state: "default" 0.0;
+                rel1 {relative: 0.0 0.0; to:"bg";}
+                rel2 {relative: 1.0 (270)/(1280-60-88); to:"bg";}
+                color:246 244 237 255;
+            }
+            description {
+                state: "landscape" 0.0;
+                inherit: "default" 0.0;
+                rel1 {relative: 0.0 0.0; to:"bg";}
+                rel2 {relative: 1.0 (0+130)/(720-60-88);  to:"bg";}
+	    }
+	}
+
+        EDC_PART_PADDING_TL("entry_swl_pad_tl_por", EDC_SIZE(32, 20), "entry/rect")
+        EDC_PART_PADDING_BR("entry_swl_pad_br_por", EDC_SIZE(32, 22), "entry/rect")
+        EDC_PART_PADDING_TL("entry_swl_pad_tl_lan", EDC_SIZE(30, 0), "entry/rect")
+        EDC_PART_PADDING_BR("entry_swl_pad_br_lan", EDC_SIZE(30, 0), "entry/rect")
+
+        part {
+            name: "input/entry";
+            type: SWALLOW;
+            mouse_events: 1;
+            description {
+                state: "default" 0.0;
+                visible: 1;
+                rel1 {relative: 1.0 1.0; to: "entry_swl_pad_tl_por";}
+                rel2 {relative: 0.0 0.0; to: "entry_swl_pad_br_por";}
+            }
+
+            description {
+                state: "landscape" 0.0;
+                rel1 {relative: 1.0 1.0; to: "entry_swl_pad_tl_lan";}
+                rel2 {relative: 0.0 0.0; to: "entry_swl_pad_br_lan";}
+            }
+        }
+
+
+        part {
+            name: "history/rect";
+            type: RECT;
+            mouse_events: 0;
+            description {
+                state: "default" 0.0;
+                visible: 0;
+                rel1 {relative:1.0 1.0; to: "bg";}
+                rel2 {relative:1.0 1.0; to: "bg";}
+            }
+            description {
+                state: "show" 0.0;
+                visible: 1;
+                rel1 {relative:0.0 0.0; to: "bg";}
+                rel2 {relative:1.0 1.0; to: "bg";}
+                color:246 244 237 255;
+            }
+        }
+
+
+        EDC_PART_PADDING_TL("entry_his_pad_tl_por", EDC_SIZE(32, 0), "history/rect")
+        EDC_PART_PADDING_BR("entry_his_pad_br_por", EDC_SIZE(32, 60), "history/rect")
+        EDC_PART_PADDING_TL("entry_his_pad_tl_lan", EDC_SIZE(30, 0), "history/rect")
+        EDC_PART_PADDING_BR("entry_his_pad_br_lan", EDC_SIZE(30, 40), "history/rect")
+
+       // EDC_PART_SWALLOW_HIDE_SHOW("history/scroll", "history/rect2")
+	 part {
+            name: "history/scroll";
+            type: SWALLOW;
+            mouse_events: 1;
+            description {
+                state: "default" 0.0;
+                visible: 1;
+                rel1 {relative: 1.0 1.0; to: "entry_his_pad_tl_por";}
+                rel2 {relative: 0.0 0.0; to: "entry_his_pad_br_por";}
+            }
+
+            description {
+                state: "landscape" 0.0;
+                visible: 1;
+                rel1 {relative: 1.0 1.0; to: "entry_his_pad_tl_lan";}
+                rel2 {relative: 0.0 0.0; to: "entry_his_pad_br_lan";}
+            }
+        }
+
+        /* Keypad */
+        EDC_PART_SWALLOW_SHOW_HIDE("por_pannel/rect", "bg")
+        EDC_PART_SWALLOW_SHOW_HIDE("lan_pannel/rect", "bg")
+    }
+
+    programs {
+        program {
+            name: "group_load";
+            signal: "load";
+            script {
+                set_int(pannel_state, 0);
+                set_int(result_show, 0);
+            }
+        }
+
+        program {
+            name: "show_history";
+            signal: "show,hist";
+            source: "";
+            script {
+                set_state(PART:"history/rect", "show", 0.0);
+            }
+        }
+        program {
+            name: "hide_history";
+            signal: "hide,hist";
+            source: "";
+            script {
+                set_state(PART:"history/rect", "default", 0.0);
+            }
+        }
+
+        program {
+            name: "to_landscape";
+            signal: "landscape";
+            source: "";
+            script {
+                set_int(pannel_state, 1);
+                set_state(PART:"entry/rect", "landscape", 0.0);
+                set_state(PART:"input/entry", "landscape", 0.0);
+                set_state(PART:"history/scroll", "landscape", 0.0);
+                set_state(PART:"lan_pannel/rect", "default", 0.0);
+                set_state(PART:"por_pannel/rect", "hide", 0.0);
+                set_state(PART:"bg", "landscape", 0.0);
+            }
+        }
+        program {
+            name: "to_portrait";
+            signal: "portrait";
+            source: "";
+            script {
+                set_int(pannel_state, 0);
+                set_state(PART:"entry/rect", "default", 0.0);
+                set_state(PART:"input/entry", "default", 0.0);
+                set_state(PART:"history/scroll", "default", 0.0);
+                set_state(PART:"lan_pannel/rect", "hide", 0.0);
+                set_state(PART:"por_pannel/rect", "default", 0.0);
+                set_state(PART:"bg", "default", 0.0);
+            }
+        }
+    }
+}

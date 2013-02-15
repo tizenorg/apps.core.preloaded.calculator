@@ -1,0 +1,66 @@
+msgid "IDS_CCL_BODY_CALCULATOR"
+msgstr "Rechner"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_1_X_FUNCTION"
+msgstr "Zahl vor Eingabe der 1/x-Funktion eingeben"
+
+msgid "IDS_CCL_POP_INPUT_ERROR"
+msgstr "Falsches Format"
+
+msgid "IDS_CCL_POP_SYNTAX_ERROR"
+msgstr "Syntaxfehler"
+
+msgid "IDS_CCL_POP_UP_TO_5_DECIMALS_AVAILABLE"
+msgstr "Bis zu 5 Dezimalstellen verfügbar"
+
+msgid "IDS_CCL_POP_UP_TO_20_OPERATORS_AVAILABLE"
+msgstr "Bis zu 20 Operatoren verfügbar"
+
+msgid "IDS_CCL_POP_UNABLE_TO_DIVIDE_BY_ZERO"
+msgstr "Division durch Null nicht möglich"
+
+msgid "IDS_CCL_POP_NO_NUMBER_ERROR"
+msgstr "Zuerst Nr. Eingeben"
+
+msgid "IDS_CCL_POP_ENTER_NUMBER_AFTER_OPERATOR"
+msgstr "Zahl hinter Operator eingeben"
+
+msgid "IDS_CCL_POP_ERROR"
+msgstr "Überlauf"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_SQUARE_ROOT_FUNCTION"
+msgstr "Ungültige Eingabe für Quadratwurzelfunktion"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_LOG_FUNCTION"
+msgstr "Ungültige Eingabe für Protokollfunktion"
+
+msgid "IDS_CCL_BODY_NATURAL_NUMBER_ONLY_FOR_X_E_FUNCTION"
+msgstr "Natürliche Zahl nur für x!-Funktion"
+
+msgid "IDS_CCL_POP_UP_TO_15_DIGITS_AVAILABLE"
+msgstr "Bis zu 15 Stellen verfügbar"
+
+msgid "IDS_CCL_POP_NO_OPERATOR_ERROR"
+msgstr "Zuerst Op. eing."
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X2_FUNCTION"
+msgstr "Zahl vor Eingabe der x^2-Funktion eingeben"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_XY_FUNCTION"
+msgstr "Zahl vor Eingabe der x^y-Funktion eingeben"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X_E_FUNCTION"
+msgstr "Zahl vor x!-Funktion eingeben"
+
+msgid "IDS_CCL_OPT_CONVERT_TO"
+msgstr "Umrechnen in"
+
+msgid "IDS_CCL_SK_COPY"
+msgstr "Kopieren"
+
+msgid "IDS_CCL_OPT_CLEAR_HISTORY"
+msgstr "Verlauf löschen"
+
+msgid "IDS_CCL_OPT_MINIMISE"
+msgstr "Minimieren"
+

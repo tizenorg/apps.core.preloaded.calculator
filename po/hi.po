@@ -1,0 +1,66 @@
+msgid "IDS_CCL_BODY_CALCULATOR"
+msgstr "कैल्कुलेटर"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_1_X_FUNCTION"
+msgstr "1/x फंक्शन इनपुट करने के पहले नंबर दर्ज करें"
+
+msgid "IDS_CCL_POP_INPUT_ERROR"
+msgstr "ग़लत फ़ॉर्मेट"
+
+msgid "IDS_CCL_POP_SYNTAX_ERROR"
+msgstr "सिंटैक्स में त्रुटी"
+
+msgid "IDS_CCL_POP_UP_TO_5_DECIMALS_AVAILABLE"
+msgstr "5 दशमलव तक उपलब्‍ध"
+
+msgid "IDS_CCL_POP_UP_TO_20_OPERATORS_AVAILABLE"
+msgstr "20 ऑपरेटर तक उपलब्‍ध"
+
+msgid "IDS_CCL_POP_UNABLE_TO_DIVIDE_BY_ZERO"
+msgstr "शून्‍य से विभाजित करने में अक्षम"
+
+msgid "IDS_CCL_POP_NO_NUMBER_ERROR"
+msgstr "पहले नंबर प्रविष्ट करें"
+
+msgid "IDS_CCL_POP_ENTER_NUMBER_AFTER_OPERATOR"
+msgstr "ऑपरेटर के बाद नंबर दर्ज करें"
+
+msgid "IDS_CCL_POP_ERROR"
+msgstr "सीमा से बाहर"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_SQUARE_ROOT_FUNCTION"
+msgstr "स्क्वेयर रूट फंक्शन के लिए अमान्‍य इनपुट"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_LOG_FUNCTION"
+msgstr "लॉग फंक्शन के लिए अमान्‍य इनपुट"
+
+msgid "IDS_CCL_BODY_NATURAL_NUMBER_ONLY_FOR_X_E_FUNCTION"
+msgstr "नैचुरल नंबर केवल x! फंक्शन के लिए"
+
+msgid "IDS_CCL_POP_UP_TO_15_DIGITS_AVAILABLE"
+msgstr "15 अंकों तक उपलब्‍ध"
+
+msgid "IDS_CCL_POP_NO_OPERATOR_ERROR"
+msgstr "पहले ऑपरेटर प्रविष्ट करें"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X2_FUNCTION"
+msgstr "x^2 फंक्शन इनपुट करने के पहले नंबर एडिट करें"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_XY_FUNCTION"
+msgstr "x^y फंक्शन इनपुट करने के पहले नंबर दर्ज करें"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X_E_FUNCTION"
+msgstr "x! फंक्शन इनपुट करने के पहले नंबर दर्ज करें"
+
+msgid "IDS_CCL_OPT_CONVERT_TO"
+msgstr "इसमें परिवर्तित करें"
+
+msgid "IDS_CCL_SK_COPY"
+msgstr "कॉपी"
+
+msgid "IDS_CCL_OPT_CLEAR_HISTORY"
+msgstr "इतिहास साफ़ करें"
+
+msgid "IDS_CCL_OPT_MINIMISE"
+msgstr "Minimize"
+

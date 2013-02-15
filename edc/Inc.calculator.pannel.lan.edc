@@ -1,0 +1,502 @@
+/*
+*
+* Copyright 2012  Samsung Electronics Co., Ltd
+*
+* Licensed under the Flora License, Version 1.0 (the License);
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.tizenopensource.org/license
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an AS IS BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*
+*/
+
+#define BG_H_LAN		(720-60-88)
+#define PANNEL_FULL_W_LAN		1280
+#define PANNEL_FULL_H_LAN 		402
+
+#define PANNEL_X_LOFF_LAN		27
+#define PANNEL_Y_LOFF_LAN		9
+#define MIDDLE_MARGIN	22
+
+#define PANNEL_KEY_H_PAD_LAN    3
+#define PANNEL_KEY_W_LAN		172
+#define PANNEL_KEY_H_LAN		81
+#define PANNEL_KEY_FULL_W_LAN   (PANNEL_KEY_W_LAN)
+#define PANNEL_KEY_FULL_H_LAN   (PANNEL_KEY_H_LAN-PANNEL_KEY_H_PAD_LAN)
+
+#define PANNEL_COR_LAN_REF1_X(X,Y)   ((PANNEL_X_LOFF_LAN+PANNEL_KEY_FULL_W_LAN*(Y))/PANNEL_FULL_W_LAN)
+#define PANNEL_COR_LAN_REF1_Y(X,Y)   ((PANNEL_Y_LOFF_LAN+PANNEL_KEY_FULL_H_LAN*(X))/PANNEL_FULL_H_LAN)
+#define PANNEL_COR_LAN_REF2_X(X,Y)   ((PANNEL_X_LOFF_LAN+PANNEL_KEY_FULL_W_LAN*(Y)+PANNEL_KEY_W_LAN)/PANNEL_FULL_W_LAN)
+#define PANNEL_COR_LAN_REF2_Y(X,Y)   ((PANNEL_Y_LOFF_LAN+PANNEL_KEY_FULL_H_LAN*(X)+PANNEL_KEY_H_LAN)/PANNEL_FULL_H_LAN)
+
+#define PANNEL_COR_LAN_REF1_RIGHT_X(X,Y)   ((PANNEL_X_LOFF_LAN+MIDDLE_MARGIN+PANNEL_KEY_FULL_W_LAN*(Y))/PANNEL_FULL_W_LAN)
+#define PANNEL_COR_LAN_REF2_RIGHT_X(X,Y)   ((PANNEL_X_LOFF_LAN+MIDDLE_MARGIN+PANNEL_KEY_FULL_W_LAN*(Y)+PANNEL_KEY_W_LAN)/PANNEL_FULL_W_LAN)
+
+
+
+#define KEYPAD_KEY_IMG_LAN(key_name, relx1, rely1, relx2, rely2, bg_img, bg_img_press, to_part) \
+    EDC_PART_RECT_RELATIVE(key_name, to_part, relx1, rely1, relx2, rely2)\
+    EDC_PART_BUTTON_IMG(key_name"_bg", key_name, EDC_IMAGE(bg_img), EDC_IMAGE(bg_img_press))
+
+
+
+#define CALCULATOR_PROGRAMS(part_name) \
+			program { \
+				name: "mouse_down_"part_name; \
+				signal: "mouse,down,1"; \
+				source:  part_name; \
+				action:   STATE_SET "pressed" 0.0; \
+				target: part_name"_bg"; \
+			} \
+			program { \
+				name: "mouse_up_"part_name; \
+				signal: "mouse,up,1"; \
+				source:  part_name; \
+				action: STATE_SET "default" 0.0; \
+				target: part_name"_bg"; \
+			}
+
+///////////////////// landscape pannel  ////////////////////////////////////////
+	group {
+		name: "lan_pannel";
+		script {
+			public pannel_state;
+		}
+		parts {
+			/* rect for pannel keys */
+			part {
+				name: "lan_pannel/in";//1280*464
+				type: RECT;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0;
+					visible: 0;
+					rel1 { relative: 0.0 (130+40)/BG_H_LAN;}
+					rel2 { relative: 1.0 (BG_H_LAN)/BG_H_LAN;}
+				}
+				description {
+					state: "down" 0.0;
+					inherit: "default" 0.0;
+					rel1 { relative: 0.0 1.0; offset: 0 0;}
+					rel2 { relative: 1.0 1.0; offset: 0 402;}
+				}
+			}
+
+			part {
+				name: "lan_pannel/BG";
+				type: RECT;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0;
+					visible: 1;
+					rel1 { relative: 0.0 (130+40)/BG_H_LAN; offset: 0  -2;}
+					rel2 { relative: 1.0 1.0; }
+					color: 201 198 190 255;
+				}
+				description {
+					state: "down" 0.0;
+					inherit: "default" 0.0;
+					rel1 { relative: 0.0 1.0; offset: 0 0;}
+					rel2 { relative: 1.0 1.0; offset: 0 402;}
+				}
+			}
+
+			/* close&open icon */
+			part {
+				name: "pannel/icon";
+				type: IMAGE;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 130/BG_H_LAN;}
+					rel2 { relative: 1.0 (130+40)/BG_H_LAN;}
+					image { normal: "images/landscape/land_down_handle_nor.png"; }
+				}
+				description {
+					state: "open" 0.0;
+					inherit: "default" 0.0;
+					rel1 { relative: 0.0 (BG_H_LAN-40)/BG_H_LAN;}
+					rel2 { relative: 1.0 (BG_H_LAN)/BG_H_LAN;}
+					image { normal: "images/landscape/land_up_handle_nor.png"; }
+				}
+				description {
+					state: "default_press" 0.0;
+					rel1 { relative: 0.0 130/BG_H_LAN;}
+					rel2 { relative: 1.0 (130+40)/BG_H_LAN;}
+					image { normal: "images/landscape/land_down_handle_press.png"; }
+				}
+				description {
+					state: "open_press" 0.0;
+					inherit: "default" 0.0;
+					rel1 { relative: 0.0 (BG_H_LAN-40)/BG_H_LAN;}
+					rel2 { relative: 1.0 (BG_H_LAN)/BG_H_LAN;}
+					image { normal: "images/landscape/land_up_handle_press.png"; }
+				}
+			}
+
+
+
+			/* create pannel keys */
+			// %, sqrt, x!, c, /, *, <-
+			KEYPAD_KEY_IMG_LAN("item_fac",
+				PANNEL_COR_LAN_REF1_X(0,0), PANNEL_COR_LAN_REF1_Y(0,0),
+				PANNEL_COR_LAN_REF2_X(0,0), PANNEL_COR_LAN_REF2_Y(0,0),
+				"images/landscape/btn_type_c_01_nor.png", "images/landscape/btn_type_c_01_press.png",
+				"lan_pannel/in");
+			KEYPAD_KEY_IMG_LAN("item_sqr",
+				PANNEL_COR_LAN_REF1_X(0,1), PANNEL_COR_LAN_REF1_Y(0,1),
+				PANNEL_COR_LAN_REF2_X(0,1), PANNEL_COR_LAN_REF2_Y(0,1),
+				"images/landscape/btn_type_c_02_nor.png", "images/landscape/btn_type_c_02_press.png",
+				"lan_pannel/in");
+			KEYPAD_KEY_IMG_LAN("item_per",
+				PANNEL_COR_LAN_REF1_X(0,2), PANNEL_COR_LAN_REF1_Y(0,2),
+				PANNEL_COR_LAN_REF2_X(0,2), PANNEL_COR_LAN_REF2_Y(0,2),
+				"images/landscape/btn_type_c_03_nor.png", "images/landscape/btn_type_c_03_press.png",
+				"lan_pannel/in");
+			KEYPAD_KEY_IMG_LAN("item_c",
+				PANNEL_COR_LAN_REF1_RIGHT_X(0,3), PANNEL_COR_LAN_REF1_Y(0,3),
+				PANNEL_COR_LAN_REF2_RIGHT_X(0,3), PANNEL_COR_LAN_REF2_Y(0,3),
+				"images/landscape/btn_type_c_16_nor.png", "images/landscape/btn_type_c_16_press.png",
+				"lan_pannel/in");
+			KEYPAD_KEY_IMG_LAN("item_div",
+				PANNEL_COR_LAN_REF1_RIGHT_X(0,4), PANNEL_COR_LAN_REF1_Y(0,4),
+				PANNEL_COR_LAN_REF2_RIGHT_X(0,4), PANNEL_COR_LAN_REF2_Y(0,4),
+				"images/landscape/btn_type_c_17_nor.png", "images/landscape/btn_type_c_17_press.png",
+				"lan_pannel/in");
+			KEYPAD_KEY_IMG_LAN("item_mul",
+				PANNEL_COR_LAN_REF1_RIGHT_X(0,5), PANNEL_COR_LAN_REF1_Y(0,5),
+				PANNEL_COR_LAN_REF2_RIGHT_X(0,5), PANNEL_COR_LAN_REF2_Y(0,5),
+				"images/landscape/btn_type_c_18_nor.png", "images/landscape/btn_type_c_18_press.png",
+				"lan_pannel/in");
+			KEYPAD_KEY_IMG_LAN("item_del",
+				PANNEL_COR_LAN_REF1_RIGHT_X(0,6), PANNEL_COR_LAN_REF1_Y(0,6),
+				PANNEL_COR_LAN_REF2_RIGHT_X(0,6), PANNEL_COR_LAN_REF2_Y(0,6),
+				"images/landscape/btn_type_c_19_nor.png", "images/landscape/btn_type_c_19_press.png",
+				"lan_pannel/in");
+
+
+			// sin, cos, tan, 7, 8, 9, -
+			KEYPAD_KEY_IMG_LAN("item_sin",
+				PANNEL_COR_LAN_REF1_X(1,0), PANNEL_COR_LAN_REF1_Y(1,0),
+				PANNEL_COR_LAN_REF2_X(1,0), PANNEL_COR_LAN_REF2_Y(1,0),
+				"images/landscape/btn_type_c_04_nor.png", "images/landscape/btn_type_c_04_press.png",
+				"lan_pannel/in");
+			KEYPAD_KEY_IMG_LAN("item_cos",
+				PANNEL_COR_LAN_REF1_X(1,1), PANNEL_COR_LAN_REF1_Y(1,1),
+				PANNEL_COR_LAN_REF2_X(1,1), PANNEL_COR_LAN_REF2_Y(1,1),
+				"images/landscape/btn_type_c_05_nor.png", "images/landscape/btn_type_c_05_press.png",
+				"lan_pannel/in");
+			KEYPAD_KEY_IMG_LAN("item_tan",
+				PANNEL_COR_LAN_REF1_X(1,2), PANNEL_COR_LAN_REF1_Y(1,2),
+				PANNEL_COR_LAN_REF2_X(1,2), PANNEL_COR_LAN_REF2_Y(1,2),
+				"images/landscape/btn_type_c_06_nor.png", "images/landscape/btn_type_c_06_press.png",
+				"lan_pannel/in");
+			KEYPAD_KEY_IMG_LAN("item_num7",
+				PANNEL_COR_LAN_REF1_RIGHT_X(1,3), PANNEL_COR_LAN_REF1_Y(1,3),
+				PANNEL_COR_LAN_REF2_RIGHT_X(1,3), PANNEL_COR_LAN_REF2_Y(1,3),
+				"images/landscape/btn_type_c_num7_nor.png", "images/landscape/btn_type_c_num7_press.png",
+				"lan_pannel/in");
+			KEYPAD_KEY_IMG_LAN("item_num8",
+				PANNEL_COR_LAN_REF1_RIGHT_X(1,4), PANNEL_COR_LAN_REF1_Y(1,4),
+				PANNEL_COR_LAN_REF2_RIGHT_X(1,4), PANNEL_COR_LAN_REF2_Y(1,4),
+				"images/landscape/btn_type_c_num8_nor.png", "images/landscape/btn_type_c_num8_press.png",
+				"lan_pannel/in");
+			KEYPAD_KEY_IMG_LAN("item_num9",
+				PANNEL_COR_LAN_REF1_RIGHT_X(1,5), PANNEL_COR_LAN_REF1_Y(1,5),
+				PANNEL_COR_LAN_REF2_RIGHT_X(1,5), PANNEL_COR_LAN_REF2_Y(1,5),
+				"images/landscape/btn_type_c_num9_nor.png", "images/landscape/btn_type_c_num9_press.png",
+				"lan_pannel/in");
+			KEYPAD_KEY_IMG_LAN("item_sub",
+				PANNEL_COR_LAN_REF1_RIGHT_X(1,6), PANNEL_COR_LAN_REF1_Y(1,6),
+				PANNEL_COR_LAN_REF2_RIGHT_X(1,6), PANNEL_COR_LAN_REF2_Y(1,6),
+				"images/landscape/btn_type_c_20_nor.png", "images/landscape/btn_type_c_20_press.png",
+			"lan_pannel/in");
+
+			// ln, log, 1/x, 4, 5, 6, +
+			KEYPAD_KEY_IMG_LAN("item_ln",
+				PANNEL_COR_LAN_REF1_X(2,0), PANNEL_COR_LAN_REF1_Y(2,0),
+				PANNEL_COR_LAN_REF2_X(2,0), PANNEL_COR_LAN_REF2_Y(2,0),
+				"images/landscape/btn_type_c_07_nor.png", "images/landscape/btn_type_c_07_press.png",
+				"lan_pannel/in");
+			KEYPAD_KEY_IMG_LAN("item_log",
+				PANNEL_COR_LAN_REF1_X(2,1), PANNEL_COR_LAN_REF1_Y(2,1),
+				PANNEL_COR_LAN_REF2_X(2,1), PANNEL_COR_LAN_REF2_Y(2,1),
+				"images/landscape/btn_type_c_08_nor.png", "images/landscape/btn_type_c_08_press.png",
+			"lan_pannel/in");
+			KEYPAD_KEY_IMG_LAN("item_1x",
+				PANNEL_COR_LAN_REF1_X(2,2), PANNEL_COR_LAN_REF1_Y(2,2),
+				PANNEL_COR_LAN_REF2_X(2,2), PANNEL_COR_LAN_REF2_Y(2,2),
+				"images/landscape/btn_type_c_09_nor.png", "images/landscape/btn_type_c_09_press.png",
+			"lan_pannel/in");
+			KEYPAD_KEY_IMG_LAN("item_num4",
+				PANNEL_COR_LAN_REF1_RIGHT_X(2,3), PANNEL_COR_LAN_REF1_Y(2,3),
+				PANNEL_COR_LAN_REF2_RIGHT_X(2,3), PANNEL_COR_LAN_REF2_Y(2,3),
+				"images/landscape/btn_type_c_num4_nor.png", "images/landscape/btn_type_c_num4_press.png",
+				"lan_pannel/in");
+			KEYPAD_KEY_IMG_LAN("item_num5",
+				PANNEL_COR_LAN_REF1_RIGHT_X(2,4), PANNEL_COR_LAN_REF1_Y(2,4),
+				PANNEL_COR_LAN_REF2_RIGHT_X(2,4), PANNEL_COR_LAN_REF2_Y(2,4),
+				"images/landscape/btn_type_c_num5_nor.png", "images/landscape/btn_type_c_num5_press.png",
+				"lan_pannel/in");
+			KEYPAD_KEY_IMG_LAN("item_num6",
+				PANNEL_COR_LAN_REF1_RIGHT_X(2,5), PANNEL_COR_LAN_REF1_Y(2,5),
+				PANNEL_COR_LAN_REF2_RIGHT_X(2,5), PANNEL_COR_LAN_REF2_Y(2,5),
+				"images/landscape/btn_type_c_num6_nor.png", "images/landscape/btn_type_c_num6_press.png",
+				"lan_pannel/in");
+			KEYPAD_KEY_IMG_LAN("item_plus",
+				PANNEL_COR_LAN_REF1_RIGHT_X(2,6), PANNEL_COR_LAN_REF1_Y(2,6),
+				PANNEL_COR_LAN_REF2_RIGHT_X(2,6), PANNEL_COR_LAN_REF2_Y(2,6),
+				"images/landscape/btn_type_c_21_nor.png", "images/landscape/btn_type_c_21_press.png",
+			"lan_pannel/in");
+
+
+			// x^2, 10^2, x^y, 1, 2, 3, ()
+			KEYPAD_KEY_IMG_LAN("item_x2",
+				PANNEL_COR_LAN_REF1_X(3,0), PANNEL_COR_LAN_REF1_Y(3,0),
+				PANNEL_COR_LAN_REF2_X(3,0), PANNEL_COR_LAN_REF2_Y(3,0),
+				"images/landscape/btn_type_c_10_nor.png", "images/landscape/btn_type_c_10_press.png",
+				"lan_pannel/in");
+			KEYPAD_KEY_IMG_LAN("item_10x",
+				PANNEL_COR_LAN_REF1_X(3,1), PANNEL_COR_LAN_REF1_Y(3,1),
+				PANNEL_COR_LAN_REF2_X(3,1), PANNEL_COR_LAN_REF2_Y(3,1),
+				"images/landscape/btn_type_c_11_nor.png", "images/landscape/btn_type_c_11_press.png",
+				"lan_pannel/in");
+			KEYPAD_KEY_IMG_LAN("item_xy",
+				PANNEL_COR_LAN_REF1_X(3,2), PANNEL_COR_LAN_REF1_Y(3,2),
+				PANNEL_COR_LAN_REF2_X(3,2), PANNEL_COR_LAN_REF2_Y(3,2),
+				"images/landscape/btn_type_c_12_nor.png", "images/landscape/btn_type_c_12_press.png",
+				"lan_pannel/in");
+			KEYPAD_KEY_IMG_LAN("item_num1",
+				PANNEL_COR_LAN_REF1_RIGHT_X(3,3), PANNEL_COR_LAN_REF1_Y(3,3),
+				PANNEL_COR_LAN_REF2_RIGHT_X(3,3), PANNEL_COR_LAN_REF2_Y(3,3),
+				"images/landscape/btn_type_c_num1_nor.png", "images/landscape/btn_type_c_num1_press.png",
+			"lan_pannel/in");
+			KEYPAD_KEY_IMG_LAN("item_num2",
+				PANNEL_COR_LAN_REF1_RIGHT_X(3,4), PANNEL_COR_LAN_REF1_Y(3,4),
+				PANNEL_COR_LAN_REF2_RIGHT_X(3,4), PANNEL_COR_LAN_REF2_Y(3,4),
+				"images/landscape/btn_type_c_num2_nor.png", "images/landscape/btn_type_c_num2_press.png",
+			"lan_pannel/in");
+			KEYPAD_KEY_IMG_LAN("item_num3",
+				PANNEL_COR_LAN_REF1_RIGHT_X(3,5), PANNEL_COR_LAN_REF1_Y(3,5),
+				PANNEL_COR_LAN_REF2_RIGHT_X(3,5), PANNEL_COR_LAN_REF2_Y(3,5),
+				"images/landscape/btn_type_c_num3_nor.png", "images/landscape/btn_type_c_num3_press.png",
+				"lan_pannel/in");
+			KEYPAD_KEY_IMG_LAN("item_brack",
+				PANNEL_COR_LAN_REF1_RIGHT_X(3,6), PANNEL_COR_LAN_REF1_Y(3,6),
+				PANNEL_COR_LAN_REF2_RIGHT_X(3,6), PANNEL_COR_LAN_REF2_Y(3,6),
+				"images/landscape/btn_type_c_22_nor.png", "images/landscape/btn_type_c_22_press.png",
+				"lan_pannel/in");
+
+
+			// abs, pi, e, +/-, 0, ., =
+			KEYPAD_KEY_IMG_LAN("item_abs",
+				PANNEL_COR_LAN_REF1_X(4,0), PANNEL_COR_LAN_REF1_Y(4,0),
+				PANNEL_COR_LAN_REF2_X(4,0), PANNEL_COR_LAN_REF2_Y(4,0),
+				"images/landscape/btn_type_c_13_nor.png", "images/landscape/btn_type_c_13_press.png",
+				"lan_pannel/in");
+			KEYPAD_KEY_IMG_LAN("item_pi",
+				PANNEL_COR_LAN_REF1_X(4,1), PANNEL_COR_LAN_REF1_Y(4,1),
+				PANNEL_COR_LAN_REF2_X(4,1), PANNEL_COR_LAN_REF2_Y(4,1),
+				"images/landscape/btn_type_c_14_nor.png", "images/landscape/btn_type_c_14_press.png",
+			"lan_pannel/in");
+			KEYPAD_KEY_IMG_LAN("item_e",
+				PANNEL_COR_LAN_REF1_X(4,2), PANNEL_COR_LAN_REF1_Y(4,2),
+				PANNEL_COR_LAN_REF2_X(4,2), PANNEL_COR_LAN_REF2_Y(4,2),
+				"images/landscape/btn_type_c_15_nor.png", "images/landscape/btn_type_c_15_press.png",
+				"lan_pannel/in");
+			KEYPAD_KEY_IMG_LAN("item_num0",
+				PANNEL_COR_LAN_REF1_RIGHT_X(4,3), PANNEL_COR_LAN_REF1_Y(4,3),
+				PANNEL_COR_LAN_REF2_RIGHT_X(4,3), PANNEL_COR_LAN_REF2_Y(4,3),
+				"images/landscape/btn_type_c_num0_nor.png", "images/landscape/btn_type_c_num0_press.png",
+			"lan_pannel/in");
+			KEYPAD_KEY_IMG_LAN("item_dot",
+				PANNEL_COR_LAN_REF1_RIGHT_X(4,4), PANNEL_COR_LAN_REF1_Y(4,4),
+				PANNEL_COR_LAN_REF2_RIGHT_X(4,4), PANNEL_COR_LAN_REF2_Y(4,4),
+				"images/landscape/btn_type_c_25_nor.png", "images/landscape/btn_type_c_25_press.png",
+			"lan_pannel/in");
+			KEYPAD_KEY_IMG_LAN("item_neg",
+				PANNEL_COR_LAN_REF1_RIGHT_X(4,5), PANNEL_COR_LAN_REF1_Y(4,5),
+				PANNEL_COR_LAN_REF2_RIGHT_X(4,5), PANNEL_COR_LAN_REF2_Y(4,5),
+				"images/landscape/btn_type_c_24_nor.png", "images/landscape/btn_type_c_24_press.png",
+			"lan_pannel/in");
+			KEYPAD_KEY_IMG_LAN("item_eq",
+				PANNEL_COR_LAN_REF1_RIGHT_X(4,6), PANNEL_COR_LAN_REF1_Y(4,6),
+				PANNEL_COR_LAN_REF2_RIGHT_X(4,6), PANNEL_COR_LAN_REF2_Y(4,6),
+				"images/landscape/btn_type_c_23_nor.png", "images/landscape/btn_type_c_23_press.png",
+				"lan_pannel/in");
+		}
+
+
+		programs {
+			program {
+				name: "group_load";
+				signal: "load";
+				script {
+					set_int(pannel_state, 1);
+				}
+			}
+
+			program {
+				name:"icon_tween_down";
+				action: STATE_SET  "open"  0.0;
+				transition: ACCELERATE 0.4;
+				target: "pannel/icon";
+			}
+
+			program {
+				name:"icon_tween_up";
+				action: STATE_SET  "default"  0.0;
+				transition: ACCELERATE 0.3;
+				target: "pannel/icon";
+			}
+
+			/* pannel open/close program */
+			//press up/down
+			program {
+				name: "icon_click_down";
+				signal: "mouse,down,1";
+				source: "pannel/icon";
+				script {
+					if (get_int(pannel_state) == 1) {
+						set_state(PART:"pannel/icon", "default_press", 0.0);
+					} else {
+						set_state(PART:"pannel/icon", "open_press", 0.0);
+					}
+				}
+			}
+
+			program {
+				name: "icon_click_up";
+				signal: "mouse,up,1";
+				source: "pannel/icon";
+				script {
+					if (get_int(pannel_state) == 1) {
+						run_program(PROGRAM:"icon_tween_down");
+						emit("pannel,down", "lan");
+						set_int(pannel_state, 0);
+					} else {
+						run_program(PROGRAM:"icon_tween_up");
+						emit("pannel,up", "lan");
+						set_int(pannel_state, 1);
+					}
+				}
+			}
+
+			//flick up/down
+			program {
+				name: "icon_click";
+				signal: "pannel,flick";
+				source: "";
+				script {
+					if (get_int(pannel_state) == 1) {
+						emit("pannel,down", "lan");
+						set_state(PART:"pannel/icon", "open", 0.0);
+						set_int(pannel_state, 0);
+					} else {
+						emit("pannel,up", "lan");
+						set_state(PART:"pannel/icon", "default", 0.0);
+						set_int(pannel_state, 1);
+					}
+				}
+			}
+
+			program {
+				name: "pannel/down";
+				signal: "pannel,down";
+				source: "*";
+				action: STATE_SET "down" 0.0;
+				target: "lan_pannel/in";
+				target: "lan_pannel/BG";
+				transition: ACCELERATE 0.4;
+				after: "check_icon_open";
+			}
+			program {
+				name: "pannel/down_i";
+				signal: "pannel,down_i";
+				source: "*";
+				action: STATE_SET "down" 0.0;
+				target: "lan_pannel/in";
+				target: "lan_pannel/BG";
+				after: "check_icon_open";
+			}
+			program {
+				name: "pannel/up";
+				signal: "pannel,up";
+				source: "*";
+				action: STATE_SET "default" 0.0;
+				target: "lan_pannel/in";
+				target: "lan_pannel/BG";
+				transition: ACCELERATE 0.3;
+				after: "check_icon_default";
+			}
+
+			program {
+				name: "check_icon_open";
+				script {
+					if (get_int(pannel_state) == 1) {
+						set_state(PART:"pannel/icon", "open", 0.0);
+						set_int(pannel_state, 0);
+					}
+				}
+			}
+
+			program {
+				name: "check_icon_default";
+				script {
+					if (get_int(pannel_state) == 0) {
+						set_state(PART:"pannel/icon", "default", 0.0);
+						set_int(pannel_state, 1);
+					}
+				}
+			}
+
+			/* programs for pennel items */
+			CALCULATOR_PROGRAMS("item_per");
+			CALCULATOR_PROGRAMS("item_sqr");
+			CALCULATOR_PROGRAMS("item_fac");
+			CALCULATOR_PROGRAMS("item_c");
+			CALCULATOR_PROGRAMS("item_div");
+			CALCULATOR_PROGRAMS("item_mul");
+			CALCULATOR_PROGRAMS("item_del");
+
+			CALCULATOR_PROGRAMS("item_sin");
+			CALCULATOR_PROGRAMS("item_cos");
+			CALCULATOR_PROGRAMS("item_tan");
+			CALCULATOR_PROGRAMS("item_num7");
+			CALCULATOR_PROGRAMS("item_num8");
+			CALCULATOR_PROGRAMS("item_num9");
+			CALCULATOR_PROGRAMS("item_sub");
+
+			CALCULATOR_PROGRAMS("item_ln");
+			CALCULATOR_PROGRAMS("item_log");
+			CALCULATOR_PROGRAMS("item_1x");
+			CALCULATOR_PROGRAMS("item_num4");
+			CALCULATOR_PROGRAMS("item_num5");
+			CALCULATOR_PROGRAMS("item_num6");
+			CALCULATOR_PROGRAMS("item_plus");
+
+			CALCULATOR_PROGRAMS("item_10x");
+			CALCULATOR_PROGRAMS("item_x2");
+			CALCULATOR_PROGRAMS("item_xy");
+			CALCULATOR_PROGRAMS("item_num1");
+			CALCULATOR_PROGRAMS("item_num2");
+			CALCULATOR_PROGRAMS("item_num3");
+			CALCULATOR_PROGRAMS("item_brack");
+
+			CALCULATOR_PROGRAMS("item_abs");
+			CALCULATOR_PROGRAMS("item_pi");
+			CALCULATOR_PROGRAMS("item_e");
+			CALCULATOR_PROGRAMS("item_dot");
+			CALCULATOR_PROGRAMS("item_num0");
+			CALCULATOR_PROGRAMS("item_neg");
+			CALCULATOR_PROGRAMS("item_eq");
+		}
+	}
+///////////////////// ladscape pannel  finish ////////////////////////////////////////
+

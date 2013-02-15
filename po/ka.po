@@ -1,0 +1,66 @@
+msgid "IDS_CCL_BODY_CALCULATOR"
+msgstr "კალკულატორი"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_1_X_FUNCTION"
+msgstr "ჩაწერეთ რიცხვი, სანამ გამოიყენებთ 1/x ფუნქციას"
+
+msgid "IDS_CCL_POP_INPUT_ERROR"
+msgstr "მცდარი ფორმატი"
+
+msgid "IDS_CCL_POP_SYNTAX_ERROR"
+msgstr "სინტაქსის შეცდომა"
+
+msgid "IDS_CCL_POP_UP_TO_5_DECIMALS_AVAILABLE"
+msgstr "შესაძლებელია 5 ათწილად ნიშნამდე"
+
+msgid "IDS_CCL_POP_UP_TO_20_OPERATORS_AVAILABLE"
+msgstr "შესაძლებელია 20 ოპერატორამდე"
+
+msgid "IDS_CCL_POP_UNABLE_TO_DIVIDE_BY_ZERO"
+msgstr "ნულზე გაყოფა დაუშებელია"
+
+msgid "IDS_CCL_POP_NO_NUMBER_ERROR"
+msgstr "ჯერ ნომერი ჩაწერეთ"
+
+msgid "IDS_CCL_POP_ENTER_NUMBER_AFTER_OPERATOR"
+msgstr "ჩაწერეთ რიცხვი ოპერატორის შემდეგ"
+
+msgid "IDS_CCL_POP_ERROR"
+msgstr "საზღვრებს გადააჭარბა"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_SQUARE_ROOT_FUNCTION"
+msgstr "ჩანაწერი არასწორია კვადრატული ფესვის ფუნქციისთვის"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_LOG_FUNCTION"
+msgstr "ჩანაწერი არასწორია ლოგარითმის ფუნქციისთვის"
+
+msgid "IDS_CCL_BODY_NATURAL_NUMBER_ONLY_FOR_X_E_FUNCTION"
+msgstr "ნატურალური რიცხვი მხოლოდ x! ფუნქციისთვის"
+
+msgid "IDS_CCL_POP_UP_TO_15_DIGITS_AVAILABLE"
+msgstr "შესაძლებელია 15 ციფრამდე"
+
+msgid "IDS_CCL_POP_NO_OPERATOR_ERROR"
+msgstr "ჯერ ოპერატორი ჩაწერე"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X2_FUNCTION"
+msgstr "ჩაწერეთ რიცხვი, სანამ გამოიყენებთ x^2 ფუნქციას"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_XY_FUNCTION"
+msgstr "ჩაწერეთ რიცხვი, სანამ გამოიყენებთ x^y ფუნქციას"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X_E_FUNCTION"
+msgstr "ჩაწერეთ რიცხვი, სანამ გამოიყენებთ x! ფუნქციას"
+
+msgid "IDS_CCL_OPT_CONVERT_TO"
+msgstr "გადაყვანა"
+
+msgid "IDS_CCL_SK_COPY"
+msgstr "ასლი"
+
+msgid "IDS_CCL_OPT_CLEAR_HISTORY"
+msgstr "ისტორიის გასუფთავება"
+
+msgid "IDS_CCL_OPT_MINIMISE"
+msgstr "ჩამოკეცვა"
+

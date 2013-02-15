@@ -1,0 +1,66 @@
+msgid "IDS_CCL_BODY_CALCULATOR"
+msgstr "계산기"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_1_X_FUNCTION"
+msgstr "1/x 함수를 입력하기 전 숫자를 입력하세요"
+
+msgid "IDS_CCL_POP_INPUT_ERROR"
+msgstr "수식이 잘못되었습니다"
+
+msgid "IDS_CCL_POP_SYNTAX_ERROR"
+msgstr "시스템 오류가 발생하였습니다"
+
+msgid "IDS_CCL_POP_UP_TO_5_DECIMALS_AVAILABLE"
+msgstr "소수점 5자리까지 입력할 수 있습니다"
+
+msgid "IDS_CCL_POP_UP_TO_20_OPERATORS_AVAILABLE"
+msgstr "연산자는 20개까지 입력할 수 있습니다"
+
+msgid "IDS_CCL_POP_UNABLE_TO_DIVIDE_BY_ZERO"
+msgstr "0으로 나눌 수 없습니다"
+
+msgid "IDS_CCL_POP_NO_NUMBER_ERROR"
+msgstr "먼저 숫자를 입력하세요"
+
+msgid "IDS_CCL_POP_ENTER_NUMBER_AFTER_OPERATOR"
+msgstr "연산기호 입력 후 숫자를 입력하세요"
+
+msgid "IDS_CCL_POP_ERROR"
+msgstr "계산 범위를 벗어났습니다"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_SQUARE_ROOT_FUNCTION"
+msgstr "제곱근 함수의 입력 내용이 바르지 않습니다"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_LOG_FUNCTION"
+msgstr "로그 함수의 입력 내용이 바르지 않습니다"
+
+msgid "IDS_CCL_BODY_NATURAL_NUMBER_ONLY_FOR_X_E_FUNCTION"
+msgstr "x! 함수에는 자연수만 입력할 수 있습니다"
+
+msgid "IDS_CCL_POP_UP_TO_15_DIGITS_AVAILABLE"
+msgstr "숫자는 15자리까지 입력할 수 있습니다"
+
+msgid "IDS_CCL_POP_NO_OPERATOR_ERROR"
+msgstr "먼저 연산기호를 입력하세요"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X2_FUNCTION"
+msgstr "제곱근 함수를 입력하기 전  숫자를 입력하세요"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_XY_FUNCTION"
+msgstr "x^y 함수를 입력하기 전 숫자를 입력하세요"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X_E_FUNCTION"
+msgstr "x! 함수를 입력하기 전 숫자를 입력하세요"
+
+msgid "IDS_CCL_OPT_CONVERT_TO"
+msgstr "단위환산으로 이동"
+
+msgid "IDS_CCL_SK_COPY"
+msgstr "복사"
+
+msgid "IDS_CCL_OPT_CLEAR_HISTORY"
+msgstr "기록 삭제"
+
+msgid "IDS_CCL_OPT_MINIMISE"
+msgstr "축소"
+

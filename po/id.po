@@ -1,0 +1,51 @@
+msgid "IDS_CCL_OPT_CONVERT_TO"
+msgstr "Konversi ke"
+
+msgid "IDS_CCL_POP_SYNTAX_ERROR"
+msgstr "Kesalahan Syntax"
+
+msgid "IDS_CCL_POP_UP_TO_5_DECIMALS_AVAILABLE"
+msgstr "Hingga 5 desimal tersedia"
+
+msgid "IDS_CCL_POP_UP_TO_20_OPERATORS_AVAILABLE"
+msgstr "Hingga 20 operator tersedia"
+
+msgid "IDS_CCL_POP_UNABLE_TO_DIVIDE_BY_ZERO"
+msgstr "Tdk bisa dibagi dengan nol"
+
+msgid "IDS_CCL_POP_NO_NUMBER_ERROR"
+msgstr "Masukkan nomor lebih dulu"
+
+msgid "IDS_CCL_POP_ERROR"
+msgstr "Diluar jangkauan"
+
+msgid "IDS_CCL_POP_ENTER_NUMBER_AFTER_OPERATOR"
+msgstr "Masukkan angka setelah operator"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_SQUARE_ROOT_FUNCTION"
+msgstr "Masukan tdk berlaku untuk fungsi akar persegi"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_LOG_FUNCTION"
+msgstr "Masukan tdk berlaku utk fungsi log"
+
+msgid "IDS_CCL_BODY_NATURAL_NUMBER_ONLY_FOR_X_E_FUNCTION"
+msgstr "Angka alami hanya untuk x! fungsi"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_1_X_FUNCTION"
+msgstr "Masukkan angka sebelum memasukkan fungsi 1/x"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X2_FUNCTION"
+msgstr "Masukkan angka sebelum memasukkan fungsi x^2"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_XY_FUNCTION"
+msgstr "Masukkan angka sebelum memasukkan fungsi x^y"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X_E_FUNCTION"
+msgstr "Masukkan angka sebelum memasukkan fungsi x!"
+
+msgid "IDS_CCL_POP_NO_OPERATOR_ERROR"
+msgstr "Masukkan Operator lebih dulu"
+
+msgid "IDS_CCL_POP_UP_TO_15_DIGITS_AVAILABLE"
+msgstr "Hingga 15 digit tersedia"
+

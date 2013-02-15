@@ -1,0 +1,159 @@
+/*
+*
+* Copyright 2012  Samsung Electronics Co., Ltd
+*
+* Licensed under the Flora License, Version 1.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://floralicense.org/license/
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*
+*/
+
+#include "edc/edc-macro.edc"
+
+#define WIDTH					720
+#define HEIGHT					1280
+#define WIDTH_LAN				1280
+#define HEIGHT_LAN				720
+#define WIDTH_POR				720
+#define HEIGHT_POR				1280
+images {
+        /*portrait*/
+        image: "images/btn_type_a_01_nor.png" COMP;
+        image: "images/btn_type_a_01_press.png" COMP;
+        image: "images/btn_type_a_02_nor.png" COMP;
+        image: "images/btn_type_a_02_press.png" COMP;
+        image: "images/btn_type_a_03_nor.png" COMP;
+        image: "images/btn_type_a_03_press.png" COMP;
+        image: "images/btn_type_a_04_nor.png" COMP;
+        image: "images/btn_type_a_04_press.png" COMP;
+        image: "images/btn_type_a_05_nor.png" COMP;
+        image: "images/btn_type_a_05_press.png" COMP;
+        image: "images/btn_type_a_06_nor.png" COMP;
+        image: "images/btn_type_a_06_press.png" COMP;
+        image: "images/btn_type_a_07_nor.png" COMP;
+        image: "images/btn_type_a_07_press.png" COMP;
+        image: "images/btn_type_a_08_nor.png" COMP;
+        image: "images/btn_type_a_08_press.png" COMP;
+        image: "images/btn_type_a_09_nor.png" COMP;
+        image: "images/btn_type_a_09_press.png" COMP;
+        image: "images/btn_type_a_10_nor.png" COMP;
+        image: "images/btn_type_a_10_press.png" COMP;
+
+        image: "images/btn_type_a_num0_nor.png" COMP;
+        image: "images/btn_type_a_num0_press.png" COMP;
+        image: "images/btn_type_a_num1_nor.png" COMP;
+        image: "images/btn_type_a_num1_press.png" COMP;
+        image: "images/btn_type_a_num2_nor.png" COMP;
+        image: "images/btn_type_a_num2_press.png" COMP;
+        image: "images/btn_type_a_num3_nor.png" COMP;
+        image: "images/btn_type_a_num3_press.png" COMP;
+        image: "images/btn_type_a_num4_nor.png" COMP;
+        image: "images/btn_type_a_num4_press.png" COMP;
+        image: "images/btn_type_a_num5_nor.png" COMP;
+        image: "images/btn_type_a_num5_press.png" COMP;
+        image: "images/btn_type_a_num6_nor.png" COMP;
+        image: "images/btn_type_a_num6_press.png" COMP;
+        image: "images/btn_type_a_num7_nor.png" COMP;
+        image: "images/btn_type_a_num7_press.png" COMP;
+        image: "images/btn_type_a_num8_nor.png" COMP;
+        image: "images/btn_type_a_num8_press.png" COMP;
+        image: "images/btn_type_a_num9_nor.png" COMP;
+        image: "images/btn_type_a_num9_press.png" COMP;
+
+        image: "images/port_down_handle_nor.png" COMP;
+        image: "images/port_down_handle_press.png" COMP;
+        image: "images/port_up_handle_nor.png" COMP;
+        image: "images/port_up_handle_press.png" COMP;
+
+        /*landscape*/
+        image: "images/landscape/btn_type_c_01_nor.png" COMP;
+        image: "images/landscape/btn_type_c_01_press.png" COMP;
+        image: "images/landscape/btn_type_c_02_nor.png" COMP;
+        image: "images/landscape/btn_type_c_02_press.png" COMP;
+        image: "images/landscape/btn_type_c_03_nor.png" COMP;
+        image: "images/landscape/btn_type_c_03_press.png" COMP;
+        image: "images/landscape/btn_type_c_04_nor.png" COMP;
+        image: "images/landscape/btn_type_c_04_press.png" COMP;
+        image: "images/landscape/btn_type_c_05_nor.png" COMP;
+        image: "images/landscape/btn_type_c_05_press.png" COMP;
+        image: "images/landscape/btn_type_c_06_nor.png" COMP;
+        image: "images/landscape/btn_type_c_06_press.png" COMP;
+        image: "images/landscape/btn_type_c_07_nor.png" COMP;
+        image: "images/landscape/btn_type_c_07_press.png" COMP;
+        image: "images/landscape/btn_type_c_08_nor.png" COMP;
+        image: "images/landscape/btn_type_c_08_press.png" COMP;
+        image: "images/landscape/btn_type_c_09_nor.png" COMP;
+        image: "images/landscape/btn_type_c_09_press.png" COMP;
+        image: "images/landscape/btn_type_c_10_nor.png" COMP;
+        image: "images/landscape/btn_type_c_10_press.png" COMP;
+        image: "images/landscape/btn_type_c_11_nor.png" COMP;
+        image: "images/landscape/btn_type_c_11_press.png" COMP;
+        image: "images/landscape/btn_type_c_12_nor.png" COMP;
+        image: "images/landscape/btn_type_c_12_press.png" COMP;
+        image: "images/landscape/btn_type_c_13_nor.png" COMP;
+        image: "images/landscape/btn_type_c_13_press.png" COMP;
+        image: "images/landscape/btn_type_c_14_nor.png" COMP;
+        image: "images/landscape/btn_type_c_14_press.png" COMP;
+        image: "images/landscape/btn_type_c_15_nor.png" COMP;
+        image: "images/landscape/btn_type_c_15_press.png" COMP;
+        image: "images/landscape/btn_type_c_16_nor.png" COMP;
+        image: "images/landscape/btn_type_c_16_press.png" COMP;
+        image: "images/landscape/btn_type_c_17_nor.png" COMP;
+        image: "images/landscape/btn_type_c_17_press.png" COMP;
+        image: "images/landscape/btn_type_c_18_nor.png" COMP;
+        image: "images/landscape/btn_type_c_18_press.png" COMP;
+        image: "images/landscape/btn_type_c_19_nor.png" COMP;
+        image: "images/landscape/btn_type_c_19_press.png" COMP;
+        image: "images/landscape/btn_type_c_20_nor.png" COMP;
+        image: "images/landscape/btn_type_c_20_press.png" COMP;
+        image: "images/landscape/btn_type_c_21_nor.png" COMP;
+        image: "images/landscape/btn_type_c_21_press.png" COMP;
+        image: "images/landscape/btn_type_c_22_nor.png" COMP;
+        image: "images/landscape/btn_type_c_22_press.png" COMP;
+        image: "images/landscape/btn_type_c_23_nor.png" COMP;
+        image: "images/landscape/btn_type_c_23_press.png" COMP;
+        image: "images/landscape/btn_type_c_24_nor.png" COMP;
+        image: "images/landscape/btn_type_c_24_press.png" COMP;
+        image: "images/landscape/btn_type_c_25_nor.png" COMP;
+        image: "images/landscape/btn_type_c_25_press.png" COMP;
+
+        image: "images/landscape/btn_type_c_num0_nor.png" COMP;
+        image: "images/landscape/btn_type_c_num0_press.png" COMP;
+        image: "images/landscape/btn_type_c_num1_nor.png" COMP;
+        image: "images/landscape/btn_type_c_num1_press.png" COMP;
+        image: "images/landscape/btn_type_c_num2_nor.png" COMP;
+        image: "images/landscape/btn_type_c_num2_press.png" COMP;
+        image: "images/landscape/btn_type_c_num3_nor.png" COMP;
+        image: "images/landscape/btn_type_c_num3_press.png" COMP;
+        image: "images/landscape/btn_type_c_num4_nor.png" COMP;
+        image: "images/landscape/btn_type_c_num4_press.png" COMP;
+        image: "images/landscape/btn_type_c_num5_nor.png" COMP;
+        image: "images/landscape/btn_type_c_num5_press.png" COMP;
+        image: "images/landscape/btn_type_c_num6_nor.png" COMP;
+        image: "images/landscape/btn_type_c_num6_press.png" COMP;
+        image: "images/landscape/btn_type_c_num7_nor.png" COMP;
+        image: "images/landscape/btn_type_c_num7_press.png" COMP;
+        image: "images/landscape/btn_type_c_num8_nor.png" COMP;
+        image: "images/landscape/btn_type_c_num8_press.png" COMP;
+        image: "images/landscape/btn_type_c_num9_nor.png" COMP;
+        image: "images/landscape/btn_type_c_num9_press.png" COMP;
+
+        image: "images/landscape/land_down_handle_nor.png" COMP;
+        image: "images/landscape/land_down_handle_press.png" COMP;
+        image: "images/landscape/land_up_handle_nor.png" COMP;
+        image: "images/landscape/land_up_handle_press.png" COMP;
+
+    }
+collections {
+	#include "edc/Inc.calculator.main.edc"
+	#include "edc/Inc.calculator.pannel.por.edc"
+	#include "edc/Inc.calculator.pannel.lan.edc"
+}

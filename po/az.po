@@ -1,0 +1,66 @@
+msgid "IDS_CCL_BODY_CALCULATOR"
+msgstr "Kalkulyator"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_1_X_FUNCTION"
+msgstr "1/x funksiyasını daxil etməzdən əvvəl rəqəm daxil et"
+
+msgid "IDS_CCL_POP_INPUT_ERROR"
+msgstr "Format səhvdir"
+
+msgid "IDS_CCL_POP_SYNTAX_ERROR"
+msgstr "Sintaks xətası"
+
+msgid "IDS_CCL_POP_UP_TO_5_DECIMALS_AVAILABLE"
+msgstr "Vergüldən sonra 5 rəqəm mümkündür"
+
+msgid "IDS_CCL_POP_UP_TO_20_OPERATORS_AVAILABLE"
+msgstr "20-a qədər operator mümkündür"
+
+msgid "IDS_CCL_POP_UNABLE_TO_DIVIDE_BY_ZERO"
+msgstr "Sıfıra bölmək mümkün deyil"
+
+msgid "IDS_CCL_POP_NO_NUMBER_ERROR"
+msgstr "Əvlcə Rqmi dxl et"
+
+msgid "IDS_CCL_POP_ENTER_NUMBER_AFTER_OPERATOR"
+msgstr "Nömrəni operatordan sonra daxil et"
+
+msgid "IDS_CCL_POP_ERROR"
+msgstr "diapazondan kənar"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_SQUARE_ROOT_FUNCTION"
+msgstr "Kvadrat kök funksiyası səhv daxil edilib"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_LOG_FUNCTION"
+msgstr "Loqarifm funksiyası səhv daxil edilib"
+
+msgid "IDS_CCL_BODY_NATURAL_NUMBER_ONLY_FOR_X_E_FUNCTION"
+msgstr "x! funksiyası üçün yalnız həqiqə rəqəm"
+
+msgid "IDS_CCL_POP_UP_TO_15_DIGITS_AVAILABLE"
+msgstr "15-a qədər rəqəm mümkündür"
+
+msgid "IDS_CCL_POP_NO_OPERATOR_ERROR"
+msgstr "Əvlcə Oprtru dxl et"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X2_FUNCTION"
+msgstr "x^2 funksiyasını daxil etməzdən əvvəl rəqəm daxil et"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_XY_FUNCTION"
+msgstr "x^y funksiyasını daxil etməzdən əvvəl rəqəm daxil et"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X_E_FUNCTION"
+msgstr "x! funksiyasını daxil etməzdən əvvəl rəqəm daxil et"
+
+msgid "IDS_CCL_OPT_CONVERT_TO"
+msgstr "Çevirin"
+
+msgid "IDS_CCL_SK_COPY"
+msgstr "Köçür"
+
+msgid "IDS_CCL_OPT_CLEAR_HISTORY"
+msgstr "Tarixçəni sil"
+
+msgid "IDS_CCL_OPT_MINIMISE"
+msgstr "Kiçilt"
+

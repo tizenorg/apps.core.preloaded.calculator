@@ -1,0 +1,66 @@
+msgid "IDS_CCL_BODY_CALCULATOR"
+msgstr "Kalkulator"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_1_X_FUNCTION"
+msgstr "Angi nummer før du skriver inn 1/x-funksjonen"
+
+msgid "IDS_CCL_POP_INPUT_ERROR"
+msgstr "Feil format"
+
+msgid "IDS_CCL_POP_SYNTAX_ERROR"
+msgstr "Syntaksfeil"
+
+msgid "IDS_CCL_POP_UP_TO_5_DECIMALS_AVAILABLE"
+msgstr "Opptil 5 desimaler tilgjengelig"
+
+msgid "IDS_CCL_POP_UP_TO_20_OPERATORS_AVAILABLE"
+msgstr "Opptil 20 operatører tilgjengelig"
+
+msgid "IDS_CCL_POP_UNABLE_TO_DIVIDE_BY_ZERO"
+msgstr "Kan ikke dele på null"
+
+msgid "IDS_CCL_POP_NO_NUMBER_ERROR"
+msgstr "Skriv først nummer"
+
+msgid "IDS_CCL_POP_ENTER_NUMBER_AFTER_OPERATOR"
+msgstr "Angi nummer etter operatør"
+
+msgid "IDS_CCL_POP_ERROR"
+msgstr "Utenfor verdiområdet"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_SQUARE_ROOT_FUNCTION"
+msgstr "Ugyldig inndata for kvadratrotfunksjon"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_LOG_FUNCTION"
+msgstr "Ugyldig inndata for loggfunksjon"
+
+msgid "IDS_CCL_BODY_NATURAL_NUMBER_ONLY_FOR_X_E_FUNCTION"
+msgstr "Naturlig nummer bare for funksjonen x!"
+
+msgid "IDS_CCL_POP_UP_TO_15_DIGITS_AVAILABLE"
+msgstr "Opptil 15 sifre tilgjengelig"
+
+msgid "IDS_CCL_POP_NO_OPERATOR_ERROR"
+msgstr "Skriv først operatør"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X2_FUNCTION"
+msgstr "Angi nummer før du skriver inn x^2-funksjonen"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_XY_FUNCTION"
+msgstr "Angi nummer før du skriver inn x^y-funksjonen"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X_E_FUNCTION"
+msgstr "Angi nummer før du skriver inn x!-funksjonen"
+
+msgid "IDS_CCL_OPT_CONVERT_TO"
+msgstr "Konverter til"
+
+msgid "IDS_CCL_SK_COPY"
+msgstr "Kopier"
+
+msgid "IDS_CCL_OPT_CLEAR_HISTORY"
+msgstr "Tøm logg"
+
+msgid "IDS_CCL_OPT_MINIMISE"
+msgstr "Minimer"
+

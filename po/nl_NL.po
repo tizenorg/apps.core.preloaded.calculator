@@ -1,0 +1,66 @@
+msgid "IDS_CCL_BODY_CALCULATOR"
+msgstr "Calculator"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_1_X_FUNCTION"
+msgstr "Geef eerst getal in en dan de functie 1/x"
+
+msgid "IDS_CCL_POP_INPUT_ERROR"
+msgstr "Onjuiste notatie"
+
+msgid "IDS_CCL_POP_SYNTAX_ERROR"
+msgstr "Syntaxfout"
+
+msgid "IDS_CCL_POP_UP_TO_5_DECIMALS_AVAILABLE"
+msgstr "Maximaal 5 decimalen beschikbaar"
+
+msgid "IDS_CCL_POP_UP_TO_20_OPERATORS_AVAILABLE"
+msgstr "Max. 20 reken-tekens beschikbaar"
+
+msgid "IDS_CCL_POP_UNABLE_TO_DIVIDE_BY_ZERO"
+msgstr "Kan niet delen door nul"
+
+msgid "IDS_CCL_POP_NO_NUMBER_ERROR"
+msgstr "Geef eerst het getal in"
+
+msgid "IDS_CCL_POP_ENTER_NUMBER_AFTER_OPERATOR"
+msgstr "Geef getal in na operator"
+
+msgid "IDS_CCL_POP_ERROR"
+msgstr "Buiten bereik"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_SQUARE_ROOT_FUNCTION"
+msgstr "Ongeldige invoer voor vierkantswortelfunctie"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_LOG_FUNCTION"
+msgstr "Ongeldige invoer voor logfunctie"
+
+msgid "IDS_CCL_BODY_NATURAL_NUMBER_ONLY_FOR_X_E_FUNCTION"
+msgstr "Alleen natuurlijk getal voor x!-functie"
+
+msgid "IDS_CCL_POP_UP_TO_15_DIGITS_AVAILABLE"
+msgstr "Maximaal 15 cijfers beschikbaar"
+
+msgid "IDS_CCL_POP_NO_OPERATOR_ERROR"
+msgstr "Geef eerst het reken-teken in"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X2_FUNCTION"
+msgstr "Geef eerst getal in en dan de functie x^2"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_XY_FUNCTION"
+msgstr "Geef eerst getal in en dan de functie x^y"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X_E_FUNCTION"
+msgstr "Geef eerst getal in en dan de functie x!"
+
+msgid "IDS_CCL_OPT_CONVERT_TO"
+msgstr "Converteren naar"
+
+msgid "IDS_CCL_SK_COPY"
+msgstr "Kopiëren"
+
+msgid "IDS_CCL_OPT_CLEAR_HISTORY"
+msgstr "Geschiedenis wissen"
+
+msgid "IDS_CCL_OPT_MINIMISE"
+msgstr "Minimaliseren"
+
