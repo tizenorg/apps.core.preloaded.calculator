@@ -1,0 +1,66 @@
+msgid "IDS_CCL_BODY_CALCULATOR"
+msgstr "計算機"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_1_X_FUNCTION"
+msgstr "輸入 1/x 函數前，請先輸入數字"
+
+msgid "IDS_CCL_POP_INPUT_ERROR"
+msgstr "格式錯誤"
+
+msgid "IDS_CCL_POP_SYNTAX_ERROR"
+msgstr "語法錯誤"
+
+msgid "IDS_CCL_POP_UP_TO_5_DECIMALS_AVAILABLE"
+msgstr "最多5 位小數點可用"
+
+msgid "IDS_CCL_POP_UP_TO_20_OPERATORS_AVAILABLE"
+msgstr "20 個營運商可用"
+
+msgid "IDS_CCL_POP_UNABLE_TO_DIVIDE_BY_ZERO"
+msgstr "無法除以零"
+
+msgid "IDS_CCL_POP_NO_NUMBER_ERROR"
+msgstr "先輸入數字"
+
+msgid "IDS_CCL_POP_ENTER_NUMBER_AFTER_OPERATOR"
+msgstr "在運算後輸入數字"
+
+msgid "IDS_CCL_POP_ERROR"
+msgstr "超出範圍"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_SQUARE_ROOT_FUNCTION"
+msgstr "無效的平方根函數輸入"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_LOG_FUNCTION"
+msgstr "無效的記錄函數輸入"
+
+msgid "IDS_CCL_BODY_NATURAL_NUMBER_ONLY_FOR_X_E_FUNCTION"
+msgstr "自然數只適用於 x! 函數"
+
+msgid "IDS_CCL_POP_UP_TO_15_DIGITS_AVAILABLE"
+msgstr "最多 15 位數字可用"
+
+msgid "IDS_CCL_POP_NO_OPERATOR_ERROR"
+msgstr "先輸入運算符"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X2_FUNCTION"
+msgstr "輸入 x^2 函數前，請先輸入數字"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_XY_FUNCTION"
+msgstr "輸入 x^y 函數前，請先輸入數字"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X_E_FUNCTION"
+msgstr "輸入 x! 函數前，請先輸入數字"
+
+msgid "IDS_CCL_OPT_CONVERT_TO"
+msgstr "換算為"
+
+msgid "IDS_CCL_SK_COPY"
+msgstr "複製"
+
+msgid "IDS_CCL_OPT_CLEAR_HISTORY"
+msgstr "清除歷程記錄"
+
+msgid "IDS_CCL_OPT_MINIMISE"
+msgstr "最小化"
+

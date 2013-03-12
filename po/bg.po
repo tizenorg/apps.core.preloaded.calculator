@@ -1,0 +1,66 @@
+msgid "IDS_CCL_BODY_CALCULATOR"
+msgstr "Калкyлатор"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_1_X_FUNCTION"
+msgstr "Въведете число, преди да изберете функцията 1/x"
+
+msgid "IDS_CCL_POP_INPUT_ERROR"
+msgstr "Неправилен формат"
+
+msgid "IDS_CCL_POP_SYNTAX_ERROR"
+msgstr "Синтактична грешка"
+
+msgid "IDS_CCL_POP_UP_TO_5_DECIMALS_AVAILABLE"
+msgstr "Възможни до 5 десетични знака"
+
+msgid "IDS_CCL_POP_UP_TO_20_OPERATORS_AVAILABLE"
+msgstr "Възможни до 20 оператора"
+
+msgid "IDS_CCL_POP_UNABLE_TO_DIVIDE_BY_ZERO"
+msgstr "Не може да се дели на нула"
+
+msgid "IDS_CCL_POP_NO_NUMBER_ERROR"
+msgstr "Първо въвед. число"
+
+msgid "IDS_CCL_POP_ENTER_NUMBER_AFTER_OPERATOR"
+msgstr "Въведете число след оператора"
+
+msgid "IDS_CCL_POP_ERROR"
+msgstr "Извън обхват"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_SQUARE_ROOT_FUNCTION"
+msgstr "Невалидно въвеждане за функция квадратен корен"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_LOG_FUNCTION"
+msgstr "Невалидно въвеждане за функцията log"
+
+msgid "IDS_CCL_BODY_NATURAL_NUMBER_ONLY_FOR_X_E_FUNCTION"
+msgstr "Само естествено число за функцията x!"
+
+msgid "IDS_CCL_POP_UP_TO_15_DIGITS_AVAILABLE"
+msgstr "Възможни до 15 цифри"
+
+msgid "IDS_CCL_POP_NO_OPERATOR_ERROR"
+msgstr "Първо във. оператор"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X2_FUNCTION"
+msgstr "Въведете число, преди да изберете функцията x^2"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_XY_FUNCTION"
+msgstr "Въведете число, преди да изберете функцията x^y"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X_E_FUNCTION"
+msgstr "Въведете число, преди да изберете функцията x!"
+
+msgid "IDS_CCL_OPT_CONVERT_TO"
+msgstr "Във валута:"
+
+msgid "IDS_CCL_SK_COPY"
+msgstr "Копирай"
+
+msgid "IDS_CCL_OPT_CLEAR_HISTORY"
+msgstr "Изтриване на хронология"
+
+msgid "IDS_CCL_OPT_MINIMISE"
+msgstr "Минимизиране"
+

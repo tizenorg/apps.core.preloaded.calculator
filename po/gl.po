@@ -1,0 +1,66 @@
+msgid "IDS_CCL_BODY_CALCULATOR"
+msgstr "Calculadora"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_1_X_FUNCTION"
+msgstr "Introducir número antes de introducir a función 1/x"
+
+msgid "IDS_CCL_POP_INPUT_ERROR"
+msgstr "Formato incorrecto"
+
+msgid "IDS_CCL_POP_SYNTAX_ERROR"
+msgstr "Erro de sintaxe"
+
+msgid "IDS_CCL_POP_UP_TO_5_DECIMALS_AVAILABLE"
+msgstr "Até 5 decimais dispoñíbeis"
+
+msgid "IDS_CCL_POP_UP_TO_20_OPERATORS_AVAILABLE"
+msgstr "Até 20 operadores dispoñíbeis"
+
+msgid "IDS_CCL_POP_UNABLE_TO_DIVIDE_BY_ZERO"
+msgstr "Non se pode dividir entre cero"
+
+msgid "IDS_CCL_POP_NO_NUMBER_ERROR"
+msgstr "Introduza Pr. Núm."
+
+msgid "IDS_CCL_POP_ENTER_NUMBER_AFTER_OPERATOR"
+msgstr "Introducir número despois do operador"
+
+msgid "IDS_CCL_POP_ERROR"
+msgstr "Fóra de intervalo"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_SQUARE_ROOT_FUNCTION"
+msgstr "Entrada incorrecta para a función da raíz cadrada"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_LOG_FUNCTION"
+msgstr "Entrada incorrecta para a función de logaritmo"
+
+msgid "IDS_CCL_BODY_NATURAL_NUMBER_ONLY_FOR_X_E_FUNCTION"
+msgstr "Só números naturais para a función x!"
+
+msgid "IDS_CCL_POP_UP_TO_15_DIGITS_AVAILABLE"
+msgstr "Até 15 díxitos dispoñíbeis"
+
+msgid "IDS_CCL_POP_NO_OPERATOR_ERROR"
+msgstr "Introd. Prim. Oper."
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X2_FUNCTION"
+msgstr "Introducir número antes de introducir a función x^2"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_XY_FUNCTION"
+msgstr "Introducir número antes de introducir a función x^y"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X_E_FUNCTION"
+msgstr "Introducir número antes de introducir a función x!"
+
+msgid "IDS_CCL_OPT_CONVERT_TO"
+msgstr "Converter a"
+
+msgid "IDS_CCL_SK_COPY"
+msgstr "Copiar"
+
+msgid "IDS_CCL_OPT_CLEAR_HISTORY"
+msgstr "Borrar historial"
+
+msgid "IDS_CCL_OPT_MINIMISE"
+msgstr "Minimizar"
+

@@ -1,0 +1,66 @@
+msgid "IDS_CCL_BODY_CALCULATOR"
+msgstr "電卓"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_1_X_FUNCTION"
+msgstr "入力 1/x 機能の前に数を入力してください"
+
+msgid "IDS_CCL_POP_INPUT_ERROR"
+msgstr "不正な式です。"
+
+msgid "IDS_CCL_POP_SYNTAX_ERROR"
+msgstr "シンタックス​エラー"
+
+msgid "IDS_CCL_POP_UP_TO_5_DECIMALS_AVAILABLE"
+msgstr "最大​小数点​以下​5桁​まで​使用​できます"
+
+msgid "IDS_CCL_POP_UP_TO_20_OPERATORS_AVAILABLE"
+msgstr "最大​20の演算子が​使用​できます"
+
+msgid "IDS_CCL_POP_UNABLE_TO_DIVIDE_BY_ZERO"
+msgstr "0​で​割ること​は​できません"
+
+msgid "IDS_CCL_POP_NO_NUMBER_ERROR"
+msgstr "まず​数字​を​入力して​ください"
+
+msgid "IDS_CCL_POP_ENTER_NUMBER_AFTER_OPERATOR"
+msgstr "演算子の後に​数字​を入力します"
+
+msgid "IDS_CCL_POP_ERROR"
+msgstr "圏外"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_SQUARE_ROOT_FUNCTION"
+msgstr "平方根関数の入力が正しくありません"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_LOG_FUNCTION"
+msgstr "ログ関数の入力を正しくありません"
+
+msgid "IDS_CCL_BODY_NATURAL_NUMBER_ONLY_FOR_X_E_FUNCTION"
+msgstr "x! 関数の場合だけ自然数"
+
+msgid "IDS_CCL_POP_UP_TO_15_DIGITS_AVAILABLE"
+msgstr "最大​​15桁​まで​使用​できます"
+
+msgid "IDS_CCL_POP_NO_OPERATOR_ERROR"
+msgstr "まず​計算式​を​入力して​ください"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X2_FUNCTION"
+msgstr "x^2​関数​を入力する前に​数字を​入力してください"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_XY_FUNCTION"
+msgstr "入力x^y機能の前に数を入力してください"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X_E_FUNCTION"
+msgstr "入力x!機能の前に数を入力してください"
+
+msgid "IDS_CCL_OPT_CONVERT_TO"
+msgstr "に​換算"
+
+msgid "IDS_CCL_SK_COPY"
+msgstr "コピー"
+
+msgid "IDS_CCL_OPT_CLEAR_HISTORY"
+msgstr "履歴を消去"
+
+msgid "IDS_CCL_OPT_MINIMISE"
+msgstr "最小化"
+

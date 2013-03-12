@@ -1,0 +1,66 @@
+msgid "IDS_CCL_BODY_CALCULATOR"
+msgstr "Calculator"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_1_X_FUNCTION"
+msgstr "Enter number before inputting 1/x function"
+
+msgid "IDS_CCL_POP_INPUT_ERROR"
+msgstr "Wrong format"
+
+msgid "IDS_CCL_POP_SYNTAX_ERROR"
+msgstr "Syntax error"
+
+msgid "IDS_CCL_POP_UP_TO_5_DECIMALS_AVAILABLE"
+msgstr "Up to 5 decimals available"
+
+msgid "IDS_CCL_POP_UP_TO_20_OPERATORS_AVAILABLE"
+msgstr "Up to 20 operators available"
+
+msgid "IDS_CCL_POP_UNABLE_TO_DIVIDE_BY_ZERO"
+msgstr "Unable to divide by zero"
+
+msgid "IDS_CCL_POP_NO_NUMBER_ERROR"
+msgstr "Enter number first"
+
+msgid "IDS_CCL_POP_ENTER_NUMBER_AFTER_OPERATOR"
+msgstr "Enter number after operator"
+
+msgid "IDS_CCL_POP_ERROR"
+msgstr "Out of range"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_SQUARE_ROOT_FUNCTION"
+msgstr "Invalid input for square root function"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_LOG_FUNCTION"
+msgstr "Invalid input for log function"
+
+msgid "IDS_CCL_BODY_NATURAL_NUMBER_ONLY_FOR_X_E_FUNCTION"
+msgstr "Natural number only for x! function"
+
+msgid "IDS_CCL_POP_UP_TO_15_DIGITS_AVAILABLE"
+msgstr "Up to 15 digits available"
+
+msgid "IDS_CCL_POP_NO_OPERATOR_ERROR"
+msgstr "Enter operator first"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X2_FUNCTION"
+msgstr "Enter number before inputting x^2 function"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_XY_FUNCTION"
+msgstr "Enter number before inputting x^y function"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X_E_FUNCTION"
+msgstr "Enter number before inputting x! function"
+
+msgid "IDS_CCL_OPT_CONVERT_TO"
+msgstr "Convert to"
+
+msgid "IDS_CCL_SK_COPY"
+msgstr "Copy"
+
+msgid "IDS_CCL_OPT_CLEAR_HISTORY"
+msgstr "Clear history"
+
+msgid "IDS_CCL_OPT_MINIMISE"
+msgstr "Minimise"
+

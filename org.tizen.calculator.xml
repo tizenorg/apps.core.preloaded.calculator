@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<manifest xmlns="http://tizen.org/ns/packages" package="org.tizen.calculator" version="0.1.12" install-location="internal-only">
+	<label>Calculator</label> 
+	<description>Calculator</description> 
+	<ui-application appid="org.tizen.calculator" exec="/usr/apps/org.tizen.calculator/bin/calculator" nodisplay="false" multiple="false" type="capp" taskmanage="true">
+		<icon>org.tizen.calculator.png</icon> 
+		<label>Calculator</label> 
+		<label xml:lang="hy-am">Հաշվիչ</label>
+		<label xml:lang="az-az">Kalkulyator</label>
+		<label xml:lang="eu-es">Kalkulagailua</label>
+		<label xml:lang="bg-bg">Калкyлатор</label>
+		<label xml:lang="ca-es">Calculadora</label>
+		<label xml:lang="zh-cn">计算器</label>
+		<label xml:lang="zh-hk">計算機</label>
+		<label xml:lang="zh-tw">計算器</label>
+		<label xml:lang="hr-hr">Kalkulator</label>
+		<label xml:lang="cs-cz">Kalkulačka</label>
+		<label xml:lang="da-dk">Lommeregner</label>
+		<label xml:lang="nl-nl">Calculator</label>
+		<label xml:lang="en-gb">Calculator</label>
+		<label xml:lang="en-us">Calculator</label>
+		<label xml:lang="et-ee">Kalkulaator</label>
+		<label xml:lang="fi-fi">Laskin</label>
+		<label xml:lang="fr-fr">Calculatrice</label> 
+		<label xml:lang="gl-es">Calculadora</label>
+		<label xml:lang="ka-ge">კალკულატორი</label>
+		<label xml:lang="de-de">Rechner</label>
+		<label xml:lang="el-gr">Αριθμομηχανή</label>
+		<label xml:lang="hu-hu">Számológép</label>
+		<label xml:lang="is-is">Reiknivél</label>
+		<label xml:lang="ga-ie">Áireamhán</label>
+		<label xml:lang="it-it">Calcolatrice</label>
+		<label xml:lang="ja-jp">電卓</label>
+		<label xml:lang="kk-kz">Калькулятор</label>
+		<label xml:lang="ko-kr">계산기</label>
+		<label xml:lang="lv-lv">Kalkulators</label>
+		<label xml:lang="lt-lt">Skaičiuot.</label>
+		<label xml:lang="mk-mk">Калкулатор</label>
+		<label xml:lang="nb-no">Kalkulator</label>
+		<label xml:lang="pl-pl">Kalkulator</label>
+		<label xml:lang="pt-pt">Calculadora</label>
+		<label xml:lang="pt-br">Calculadora</label>
+		<label xml:lang="ro-ro">Calculator</label>
+		<label xml:lang="ru-ru">Калькулятор</label>
+		<label xml:lang="sr-rs">Kalkulator</label>
+		<label xml:lang="sk-sk">Kalkulačka</label>
+		<label xml:lang="sl-si">Računalo</label>
+		<label xml:lang="es-es">Calculadora</label>
+		<label xml:lang="es-us">Calculadora</label>
+		<label xml:lang="sv-se">Kalkylator</label>
+		<label xml:lang="tr-tr">Hesap makinesi</label>
+		<label xml:lang="uk-ua">Калькулятор</label>
+		<label xml:lang="uz-uz">Kalkulator</label>
+		<label xml:lang="ar-ae">الحاسبة</label>
+		<label xml:lang="zh-sg">计算机</label>
+		<label xml:lang="hi-in">कैल्कुलेटर</label>
+		<label xml:lang="en-ph">Calculator</label>
+		<label xml:lang="fr-ca">Calculatrice</label>
+	</ui-application>
+</manifest>

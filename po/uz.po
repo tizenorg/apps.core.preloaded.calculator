@@ -1,0 +1,66 @@
+msgid "IDS_CCL_BODY_CALCULATOR"
+msgstr "Kalkulator"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_1_X_FUNCTION"
+msgstr "1/x funksiyasini kiritishdan avval raqam kiriting"
+
+msgid "IDS_CCL_POP_INPUT_ERROR"
+msgstr "Noto‘g‘ri format"
+
+msgid "IDS_CCL_POP_SYNTAX_ERROR"
+msgstr "Gap tuzilishi xato"
+
+msgid "IDS_CCL_POP_UP_TO_5_DECIMALS_AVAILABLE"
+msgstr "5 o‘nlik belgilarigacha foydalanish mumkin"
+
+msgid "IDS_CCL_POP_UP_TO_20_OPERATORS_AVAILABLE"
+msgstr "20 operatorgacha foydalanish mumkin"
+
+msgid "IDS_CCL_POP_UNABLE_TO_DIVIDE_BY_ZERO"
+msgstr "Nolga bo‘lish mumkin emas"
+
+msgid "IDS_CCL_POP_NO_NUMBER_ERROR"
+msgstr "Avval raqam kiriting"
+
+msgid "IDS_CCL_POP_ENTER_NUMBER_AFTER_OPERATOR"
+msgstr "Operatordan keyin raqam kiriting"
+
+msgid "IDS_CCL_POP_ERROR"
+msgstr "Diapazondan tashqari"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_SQUARE_ROOT_FUNCTION"
+msgstr "Noto‘g‘ri kvadrat ildiz funksiyasi kiritilishi"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_LOG_FUNCTION"
+msgstr "Noto‘g‘ri jurnal funksiyasi kiritilishi"
+
+msgid "IDS_CCL_BODY_NATURAL_NUMBER_ONLY_FOR_X_E_FUNCTION"
+msgstr "Faqatgina x! funksiyasi uchun natural son"
+
+msgid "IDS_CCL_POP_UP_TO_15_DIGITS_AVAILABLE"
+msgstr "15 belgigacha foydalanish mumkin"
+
+msgid "IDS_CCL_POP_NO_OPERATOR_ERROR"
+msgstr "Avval operatorni kiriting"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X2_FUNCTION"
+msgstr "x^2 funksiyasini kiritishdan avval raqam kiriting"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_XY_FUNCTION"
+msgstr "x^y funksiyasini kiritishdan avval raqam kiriting"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X_E_FUNCTION"
+msgstr "x! funksiyasini kiritishdan avval raqam kiriting"
+
+msgid "IDS_CCL_OPT_CONVERT_TO"
+msgstr "Quyidagiga aylantirmoq"
+
+msgid "IDS_CCL_SK_COPY"
+msgstr "Nusxalash"
+
+msgid "IDS_CCL_OPT_CLEAR_HISTORY"
+msgstr "Jurnalni tozalash"
+
+msgid "IDS_CCL_OPT_MINIMISE"
+msgstr "Kichraytirish"
+

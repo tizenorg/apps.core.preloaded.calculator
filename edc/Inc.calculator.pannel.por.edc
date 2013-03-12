@@ -1,0 +1,406 @@
+/*
+*
+* Copyright 2012  Samsung Electronics Co., Ltd
+*
+* Licensed under the Flora License, Version 1.0 (the License);
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.tizenopensource.org/license
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an AS IS BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*
+*/
+
+#define BG_H_POR	(1280-60-88)
+#define PANNEL_W_POR			720
+#define PANNEL_H_POR 		   (782+18)
+#define PANNEL_FULL_W_POR		720
+#define PANNEL_FULL_H_POR 		(782+14)
+
+#define PANNEL_X_LOFF_POR		34
+#define PANNEL_Y_LOFF_POR		14//???
+
+#define PANNEL_KEY_W_PAD_POR    23
+#define PANNEL_KEY_H_PAD_POR    8
+#define PANNEL_KEY_W_POR		150
+#define PANNEL_KEY_H_POR		150
+#define PANNEL_KEY_FULL_W_POR   (PANNEL_KEY_W_POR+PANNEL_KEY_W_PAD_POR)
+#define PANNEL_KEY_FULL_H_POR   (PANNEL_KEY_H_POR+PANNEL_KEY_H_PAD_POR)
+
+#define PANNEL_COR_POR_REF1_X(X,Y)   ((PANNEL_X_LOFF_POR+PANNEL_KEY_FULL_W_POR*(Y))/PANNEL_W_POR)
+#define PANNEL_COR_POR_REF1_Y(X,Y)   ((PANNEL_Y_LOFF_POR+PANNEL_KEY_FULL_H_POR*(X))/PANNEL_FULL_H_POR)
+#define PANNEL_COR_POR_REF2_X(X,Y)   ((PANNEL_X_LOFF_POR+PANNEL_KEY_FULL_W_POR*(Y)+PANNEL_KEY_W_POR)/PANNEL_W_POR)
+#define PANNEL_COR_POR_REF2_Y(X,Y)   ((PANNEL_Y_LOFF_POR+PANNEL_KEY_FULL_H_POR*(X)+PANNEL_KEY_H_POR)/PANNEL_FULL_H_POR)
+
+#define KEYPAD_KEY_IMG_POR(key_name, relx1, rely1, relx2, rely2, bg_img, bg_img_press, to_part) \
+    EDC_PART_RECT_RELATIVE(key_name, to_part, relx1, rely1, relx2, rely2)\
+    EDC_PART_BUTTON_IMG(key_name"_bg", key_name, EDC_IMAGE(bg_img), EDC_IMAGE(bg_img_press))
+
+
+#define KEYPAD_KEY_PROG_POR(key_name) \
+    program { \
+        name: "mouse_down_"key_name; \
+        signal: "mouse,down,1"; \
+        source: key_name; \
+        action: STATE_SET "pressed" 0.0; \
+        target: key_name"_bg"; \
+    } \
+    program { \
+        name: "mouse_up_"key_name; \
+        signal: "mouse,up,1"; \
+        source: key_name; \
+        action: STATE_SET "default" 0.0; \
+        target: key_name"_bg"; \
+    }
+
+///////////////////// prtrait pannel ////////////////////////////////////////
+	group {
+		name: "por_pannel";
+		script {
+			public pannel_state;
+		}
+
+		parts {
+			part {
+				name: "por_pannel/in";
+				type: RECT;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0;
+					visible: 0;
+					rel1 { relative: 0.0 (270+48)/BG_H_POR; }
+					rel2 { relative: 1.0 (BG_H_POR-18)/BG_H_POR; }
+				}
+				description {
+					state: "down" 0.0;
+					inherit: "default" 0.0;
+					rel1 { relative: 0.0 1.0; offset: 0 -12;}
+					rel2 { relative: 1.0 1.0; offset: 0 PANNEL_H_POR;}
+				}
+			}
+			part {
+				name: "por_pannel/BG";
+				type: RECT;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0;
+					visible: 1;
+					rel1 { relative: 0.0 (270+48)/BG_H_POR;offset: 0  -2;}
+					rel2 { relative: 1.0 1.1; }
+					color: 201 198 190 255;
+				}
+				description {
+					state: "down" 0.0;
+					inherit: "default" 0.0;
+					rel1 { relative: 0.0 1.0; offset: 0 -12;}
+					rel2 { relative: 1.0 1.0; offset: 0 PANNEL_H_POR;}
+				}
+			}
+
+			/* close&open icon */
+			part {
+				name: "pannel/icon";
+				type: IMAGE;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 (270)/BG_H_POR;}
+					rel2 { relative: 1.0 (270+48)/BG_H_POR;}
+					image { normal: "images/port_down_handle_nor.png"; }
+				}
+				description {
+					state: "open" 0.0;
+					inherit: "default" 0.0;
+					rel1 { relative: 0.0 (BG_H_POR-48)/BG_H_POR;}
+					rel2 { relative: 1.0 (BG_H_POR)/BG_H_POR;}
+					image { normal: "images/port_up_handle_nor.png"; }
+				}
+				description {
+					state: "default_press" 0.0;
+					rel1 { relative: 0.0  (270)/BG_H_POR;}
+					rel2 { relative: 1.0  (270+48)/BG_H_POR;}
+					image { normal: "images/port_down_handle_press.png"; }
+				}
+				description {
+					state: "open_press" 0.0;
+					inherit: "default" 0.0;
+					rel1 { relative: 0.0 (BG_H_POR-48)/BG_H_POR;}
+					rel2 { relative: 1.0 (BG_H_POR)/BG_H_POR;}
+					image { normal: "images/port_up_handle_press.png"; }
+				}
+			}
+
+			/* create pannel keys */
+			// c, /, *, <-
+			KEYPAD_KEY_IMG_POR("item_c",
+				PANNEL_COR_POR_REF1_X(0,0), PANNEL_COR_POR_REF1_Y(0,0),
+				PANNEL_COR_POR_REF2_X(0,0), PANNEL_COR_POR_REF2_Y(0,0),
+				"images/btn_type_a_01_nor.png", "images/btn_type_a_01_press.png",
+				"por_pannel/in");
+			KEYPAD_KEY_IMG_POR("item_div",
+				PANNEL_COR_POR_REF1_X(0,1), PANNEL_COR_POR_REF1_Y(0,1),
+                PANNEL_COR_POR_REF2_X(0,1), PANNEL_COR_POR_REF2_Y(0,1),
+				"images/btn_type_a_02_nor.png", "images/btn_type_a_02_press.png",
+				"por_pannel/in");
+			KEYPAD_KEY_IMG_POR("item_mul",
+				PANNEL_COR_POR_REF1_X(0,2), PANNEL_COR_POR_REF1_Y(0,2),
+                PANNEL_COR_POR_REF2_X(0,2), PANNEL_COR_POR_REF2_Y(0,2),
+				"images/btn_type_a_03_nor.png", "images/btn_type_a_03_press.png",
+				"por_pannel/in");
+			KEYPAD_KEY_IMG_POR("item_del",
+				PANNEL_COR_POR_REF1_X(0,3), PANNEL_COR_POR_REF1_Y(0,3),
+                PANNEL_COR_POR_REF2_X(0,3), PANNEL_COR_POR_REF2_Y(0,3),
+				"images/btn_type_a_04_nor.png", "images/btn_type_a_04_press.png",
+				"por_pannel/in");
+
+
+			// 7, 8, 9, -
+			KEYPAD_KEY_IMG_POR("item_num7",
+				PANNEL_COR_POR_REF1_X(1,0), PANNEL_COR_POR_REF1_Y(1,0),
+                PANNEL_COR_POR_REF2_X(1,0), PANNEL_COR_POR_REF2_Y(1,0),
+				"images/btn_type_a_num7_nor.png", "images/btn_type_a_num7_press.png",
+				"por_pannel/in");
+			KEYPAD_KEY_IMG_POR("item_num8",
+				PANNEL_COR_POR_REF1_X(1,1), PANNEL_COR_POR_REF1_Y(1,1),
+                PANNEL_COR_POR_REF2_X(1,1), PANNEL_COR_POR_REF2_Y(1,1),
+				"images/btn_type_a_num8_nor.png", "images/btn_type_a_num8_press.png",
+				"por_pannel/in");
+			KEYPAD_KEY_IMG_POR("item_num9",
+				PANNEL_COR_POR_REF1_X(1,2), PANNEL_COR_POR_REF1_Y(1,2),
+                PANNEL_COR_POR_REF2_X(1,2), PANNEL_COR_POR_REF2_Y(1,2),
+				"images/btn_type_a_num9_nor.png", "images/btn_type_a_num9_press.png",
+				"por_pannel/in");
+			KEYPAD_KEY_IMG_POR("item_sub",
+				PANNEL_COR_POR_REF1_X(1,3), PANNEL_COR_POR_REF1_Y(1,3),
+                PANNEL_COR_POR_REF2_X(1,3), PANNEL_COR_POR_REF2_Y(1,3),
+				"images/btn_type_a_05_nor.png", "images/btn_type_a_05_press.png",
+				"por_pannel/in");
+
+
+			// 4, 5 ,6, +
+			KEYPAD_KEY_IMG_POR("item_num4",
+				PANNEL_COR_POR_REF1_X(2,0), PANNEL_COR_POR_REF1_Y(2,0),
+                PANNEL_COR_POR_REF2_X(2,0), PANNEL_COR_POR_REF2_Y(2,0),
+				"images/btn_type_a_num4_nor.png", "images/btn_type_a_num4_press.png",
+				"por_pannel/in");
+			KEYPAD_KEY_IMG_POR("item_num5",
+				PANNEL_COR_POR_REF1_X(2,1), PANNEL_COR_POR_REF1_Y(2,1),
+                PANNEL_COR_POR_REF2_X(2,1), PANNEL_COR_POR_REF2_Y(2,1),
+				"images/btn_type_a_num5_nor.png", "images/btn_type_a_num5_press.png",
+				"por_pannel/in");
+			KEYPAD_KEY_IMG_POR("item_num6",
+				PANNEL_COR_POR_REF1_X(2,2), PANNEL_COR_POR_REF1_Y(2,3),
+                PANNEL_COR_POR_REF2_X(2,2), PANNEL_COR_POR_REF2_Y(2,3),
+				"images/btn_type_a_num6_nor.png", "images/btn_type_a_num6_press.png",
+				"por_pannel/in");
+			KEYPAD_KEY_IMG_POR("item_plus",
+				PANNEL_COR_POR_REF1_X(2,3), PANNEL_COR_POR_REF1_Y(2,3),
+                PANNEL_COR_POR_REF2_X(2,3), PANNEL_COR_POR_REF2_Y(2,3),
+				"images/btn_type_a_06_nor.png", "images/btn_type_a_06_press.png",
+				"por_pannel/in");
+
+
+
+			// 1, 2, 3, ()
+			KEYPAD_KEY_IMG_POR("item_num1",
+				PANNEL_COR_POR_REF1_X(3,0), PANNEL_COR_POR_REF1_Y(3,0),
+                PANNEL_COR_POR_REF2_X(3,0), PANNEL_COR_POR_REF2_Y(3,0),
+                "images/btn_type_a_num1_nor.png", "images/btn_type_a_num1_press.png",
+				"por_pannel/in");
+			KEYPAD_KEY_IMG_POR("item_num2",
+				PANNEL_COR_POR_REF1_X(3,1), PANNEL_COR_POR_REF1_Y(3,1),
+                PANNEL_COR_POR_REF2_X(3,1), PANNEL_COR_POR_REF2_Y(3,1),
+                "images/btn_type_a_num2_nor.png", "images/btn_type_a_num2_press.png",
+				"por_pannel/in");
+			KEYPAD_KEY_IMG_POR("item_num3",
+				PANNEL_COR_POR_REF1_X(3,2), PANNEL_COR_POR_REF1_Y(3,2),
+                PANNEL_COR_POR_REF2_X(3,2), PANNEL_COR_POR_REF2_Y(3,2),
+                "images/btn_type_a_num3_nor.png", "images/btn_type_a_num3_press.png",
+				"por_pannel/in");
+			KEYPAD_KEY_IMG_POR("item_brack",
+				PANNEL_COR_POR_REF1_X(3,3), PANNEL_COR_POR_REF1_Y(3,3),
+                PANNEL_COR_POR_REF2_X(3,3), PANNEL_COR_POR_REF2_Y(3,3),
+				"images/btn_type_a_07_nor.png", "images/btn_type_a_07_press.png",
+				"por_pannel/in");
+
+
+			//0, ., +/-,  =
+			KEYPAD_KEY_IMG_POR("item_num0",
+				PANNEL_COR_POR_REF1_X(4,0), PANNEL_COR_POR_REF1_Y(4,0),
+                PANNEL_COR_POR_REF2_X(4,0), PANNEL_COR_POR_REF2_Y(4,0),
+                "images/btn_type_a_num0_nor.png", "images/btn_type_a_num0_press.png",
+				"por_pannel/in");
+			KEYPAD_KEY_IMG_POR("item_dot",
+				PANNEL_COR_POR_REF1_X(4,1), PANNEL_COR_POR_REF1_Y(4,1),
+                PANNEL_COR_POR_REF2_X(4,1), PANNEL_COR_POR_REF2_Y(4,1),
+				"images/btn_type_a_10_nor.png", "images/btn_type_a_10_press.png",
+				"por_pannel/in");
+			KEYPAD_KEY_IMG_POR("item_neg",
+				PANNEL_COR_POR_REF1_X(4,2), PANNEL_COR_POR_REF1_Y(4,2),
+                PANNEL_COR_POR_REF2_X(4,2), PANNEL_COR_POR_REF2_Y(4,2),
+				"images/btn_type_a_09_nor.png", "images/btn_type_a_09_press.png",
+				"por_pannel/in");
+			KEYPAD_KEY_IMG_POR("item_eq",
+				PANNEL_COR_POR_REF1_X(4,3), PANNEL_COR_POR_REF1_Y(4,4),
+                PANNEL_COR_POR_REF2_X(4,3), PANNEL_COR_POR_REF2_Y(4,4),
+				"images/btn_type_a_08_nor.png", "images/btn_type_a_08_press.png",
+				"por_pannel/in");
+		}
+
+		programs {
+			program {
+				name: "group_load";
+				signal: "load";
+				script {
+					set_int(pannel_state, 1);
+				}
+			}
+
+			program {
+				name:"icon_tween_down";
+				action: STATE_SET  "open"  0.0;
+				transition: ACCELERATE 0.4;
+				target: "pannel/icon";
+			}
+
+			program {
+				name:"icon_tween_up";
+				action: STATE_SET  "default"  0.0;
+				transition: ACCELERATE 0.3;
+				target: "pannel/icon";
+			}
+
+			/* pannel open/close program */
+			//press up/down
+			program {
+				name: "icon_click2_down";
+				signal: "mouse,down,1";
+				source: "pannel/icon";
+				script {
+					if (get_int(pannel_state) == 1) {
+						set_state(PART:"pannel/icon", "default_press", 0.0);
+					} else {
+						set_state(PART:"pannel/icon", "open_press", 0.0);
+					}
+				}
+			}
+
+			program {
+				name: "icon_click2_up";
+				signal: "mouse,up,1";
+				source: "pannel/icon";
+				script {
+					if (get_int(pannel_state) == 1) {
+						run_program(PROGRAM:"icon_tween_down");
+						emit("pannel,down", "por");
+						set_int(pannel_state, 0);
+					} else {
+						run_program(PROGRAM:"icon_tween_up");
+						emit("pannel,up", "por");
+						set_int(pannel_state, 1);
+					}
+				}
+			}
+
+			//flick up/down
+			program {
+				name: "icon_click";
+				signal: "pannel,flick";
+				source: "";
+				script {
+					if (get_int(pannel_state) == 1) {
+						emit("pannel,down", "por");
+						set_state(PART:"pannel/icon", "open", 0.0);
+						set_int(pannel_state, 0);
+					} else {
+						emit("pannel,up", "por");
+						set_state(PART:"pannel/icon", "default", 0.0);
+						set_int(pannel_state, 1);
+					}
+				}
+			}
+
+			program {
+				name: "pannel/down";
+				signal: "pannel,down";
+				source: "*";
+				action: STATE_SET "down" 0.0;
+				target: "por_pannel/in";
+				target: "por_pannel/BG";
+				transition: ACCELERATE 0.4;
+				after: "check_icon_open";
+			}
+			program {
+				name: "pannel/down_i";
+				signal: "pannel,down_i";
+				source: "*";
+				action: STATE_SET "down" 0.0;
+				target: "por_pannel/in";
+				target: "por_pannel/BG";
+				after: "check_icon_open";
+			}
+			program {
+				name: "pannel/up";
+				signal: "pannel,up";
+				source: "*";
+				action: STATE_SET "default" 0.0;
+				target: "por_pannel/in";
+				target: "por_pannel/BG";
+				transition: ACCELERATE 0.3;
+				after: "check_icon_default";
+			}
+
+			program {
+				name: "check_icon_open";
+				script {
+					if (get_int(pannel_state) == 1) {
+						set_state(PART:"pannel/icon", "open", 0.0);
+						set_int(pannel_state, 0);
+					}
+				}
+			}
+
+			program {
+				name: "check_icon_default";
+				script {
+					if (get_int(pannel_state) == 0) {
+						set_state(PART:"pannel/icon", "default", 0.0);
+						set_int(pannel_state, 1);
+					}
+				}
+			}
+
+			/* programs for pennel items */
+			KEYPAD_KEY_PROG_POR("item_c");
+			KEYPAD_KEY_PROG_POR("item_div");
+			KEYPAD_KEY_PROG_POR("item_mul");
+			KEYPAD_KEY_PROG_POR("item_del");
+
+			KEYPAD_KEY_PROG_POR("item_num7");
+			KEYPAD_KEY_PROG_POR("item_num8");
+			KEYPAD_KEY_PROG_POR("item_num9");
+			KEYPAD_KEY_PROG_POR("item_sub");
+
+			KEYPAD_KEY_PROG_POR("item_num4");
+			KEYPAD_KEY_PROG_POR("item_num5");
+			KEYPAD_KEY_PROG_POR("item_num6");
+			KEYPAD_KEY_PROG_POR("item_plus");
+
+			KEYPAD_KEY_PROG_POR("item_num1");
+			KEYPAD_KEY_PROG_POR("item_num2");
+			KEYPAD_KEY_PROG_POR("item_num3");
+			KEYPAD_KEY_PROG_POR("item_brack");
+
+			KEYPAD_KEY_PROG_POR("item_dot");
+			KEYPAD_KEY_PROG_POR("item_num0");
+			KEYPAD_KEY_PROG_POR("item_neg");
+			KEYPAD_KEY_PROG_POR("item_eq");
+		}
+	}
+///////////////////// prtrait pannel  finish ////////////////////////////////////////
+

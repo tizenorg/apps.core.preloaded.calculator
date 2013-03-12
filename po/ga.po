@@ -1,0 +1,66 @@
+msgid "IDS_CCL_BODY_CALCULATOR"
+msgstr "Áireamhán"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_1_X_FUNCTION"
+msgstr "Iontráil uimhir sula gcuireann tú isteach an fheidhm 1/x"
+
+msgid "IDS_CCL_POP_INPUT_ERROR"
+msgstr "Formáid chontráilte"
+
+msgid "IDS_CCL_POP_SYNTAX_ERROR"
+msgstr "Earráid chomhréire"
+
+msgid "IDS_CCL_POP_UP_TO_5_DECIMALS_AVAILABLE"
+msgstr "Suas le 5 dheachúil ar fáil"
+
+msgid "IDS_CCL_POP_UP_TO_20_OPERATORS_AVAILABLE"
+msgstr "Suas le 20 oibreoir ar fáil"
+
+msgid "IDS_CCL_POP_UNABLE_TO_DIVIDE_BY_ZERO"
+msgstr "Ní féidir roinnt faoi nialas"
+
+msgid "IDS_CCL_POP_NO_NUMBER_ERROR"
+msgstr "Iontráil uimhir ar dtús"
+
+msgid "IDS_CCL_POP_ENTER_NUMBER_AFTER_OPERATOR"
+msgstr "Iontráil uimhir tar éis an oibreora"
+
+msgid "IDS_CCL_POP_ERROR"
+msgstr "As raon"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_SQUARE_ROOT_FUNCTION"
+msgstr "Ionchur neamhbhailí don fheidhm fréimhe cearnaí"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_LOG_FUNCTION"
+msgstr "Ionchur neamhbhailí don fheidhm loga"
+
+msgid "IDS_CCL_BODY_NATURAL_NUMBER_ONLY_FOR_X_E_FUNCTION"
+msgstr "Uimhir aiceanta amháin don fheidhm x!"
+
+msgid "IDS_CCL_POP_UP_TO_15_DIGITS_AVAILABLE"
+msgstr "suas le 15 dhigit ar fáil"
+
+msgid "IDS_CCL_POP_NO_OPERATOR_ERROR"
+msgstr "Iontráil oibreoir ar dtús"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X2_FUNCTION"
+msgstr "Iontráil uimhir sula gcuireann tú isteach an fheidhm x^2"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_XY_FUNCTION"
+msgstr "Iontráil uimhir sula gcuireann tú isteach an fheidhm x^y"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X_E_FUNCTION"
+msgstr "Iontráil uimhir sula gcuireann tú isteach an fheidhm x!"
+
+msgid "IDS_CCL_OPT_CONVERT_TO"
+msgstr "Tiontaigh chuig"
+
+msgid "IDS_CCL_SK_COPY"
+msgstr "Cóipeáil"
+
+msgid "IDS_CCL_OPT_CLEAR_HISTORY"
+msgstr "Glan stair"
+
+msgid "IDS_CCL_OPT_MINIMISE"
+msgstr "Íoslaghdaigh"
+

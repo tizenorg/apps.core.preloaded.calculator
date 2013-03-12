@@ -1,0 +1,66 @@
+msgid "IDS_CCL_BODY_CALCULATOR"
+msgstr "Kalkulator"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_1_X_FUNCTION"
+msgstr "Prije odabira funkcije 1/x unesite broj"
+
+msgid "IDS_CCL_POP_INPUT_ERROR"
+msgstr "Neispravan format"
+
+msgid "IDS_CCL_POP_SYNTAX_ERROR"
+msgstr "Greška unosa"
+
+msgid "IDS_CCL_POP_UP_TO_5_DECIMALS_AVAILABLE"
+msgstr "Dostupno do 5 decimala"
+
+msgid "IDS_CCL_POP_UP_TO_20_OPERATORS_AVAILABLE"
+msgstr "Dostupno do 20 operatora"
+
+msgid "IDS_CCL_POP_UNABLE_TO_DIVIDE_BY_ZERO"
+msgstr "Nemoguće dijeljenje s nulom"
+
+msgid "IDS_CCL_POP_NO_NUMBER_ERROR"
+msgstr "Prvo unesite broj"
+
+msgid "IDS_CCL_POP_ENTER_NUMBER_AFTER_OPERATOR"
+msgstr "Unesite broj nakon operatora"
+
+msgid "IDS_CCL_POP_ERROR"
+msgstr "Izvan dosega"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_SQUARE_ROOT_FUNCTION"
+msgstr "Neispravan unos za funkciju korjenovanja"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_LOG_FUNCTION"
+msgstr "Netočan unos za funkciju log"
+
+msgid "IDS_CCL_BODY_NATURAL_NUMBER_ONLY_FOR_X_E_FUNCTION"
+msgstr "Za funkciju x! unesite samo prirodni broj"
+
+msgid "IDS_CCL_POP_UP_TO_15_DIGITS_AVAILABLE"
+msgstr "Dostupno do 15 znamenaka"
+
+msgid "IDS_CCL_POP_NO_OPERATOR_ERROR"
+msgstr "Prvo unesite operaciju"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X2_FUNCTION"
+msgstr "Prije odabira funkcije x^2 unesite broj"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_XY_FUNCTION"
+msgstr "Prije odabira funkcije x^y unesite broj"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X_E_FUNCTION"
+msgstr "Prije odabira funkcije x! unesite broj"
+
+msgid "IDS_CCL_OPT_CONVERT_TO"
+msgstr "Preračunaj u"
+
+msgid "IDS_CCL_SK_COPY"
+msgstr "Kopiraj"
+
+msgid "IDS_CCL_OPT_CLEAR_HISTORY"
+msgstr "Brisanje povijesti"
+
+msgid "IDS_CCL_OPT_MINIMISE"
+msgstr "Smanji"
+

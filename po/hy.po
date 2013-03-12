@@ -1,0 +1,66 @@
+msgid "IDS_CCL_BODY_CALCULATOR"
+msgstr "Հաշվիչ"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_1_X_FUNCTION"
+msgstr "1/x ֆունկցիան ներածելուց առաջ մուտքագրել թիվ"
+
+msgid "IDS_CCL_POP_INPUT_ERROR"
+msgstr "Սխալ ձևաչափ"
+
+msgid "IDS_CCL_POP_SYNTAX_ERROR"
+msgstr "Շարահյուսական սխալ"
+
+msgid "IDS_CCL_POP_UP_TO_5_DECIMALS_AVAILABLE"
+msgstr "Առկա են մինչև 5 տասնորդական նիշեր"
+
+msgid "IDS_CCL_POP_UP_TO_20_OPERATORS_AVAILABLE"
+msgstr "Առկա են մինչև 20 օպերատորներ"
+
+msgid "IDS_CCL_POP_UNABLE_TO_DIVIDE_BY_ZERO"
+msgstr "Անհնար է բաժանել զրոյի"
+
+msgid "IDS_CCL_POP_NO_NUMBER_ERROR"
+msgstr "Սկզբում նշեք թիվը"
+
+msgid "IDS_CCL_POP_ENTER_NUMBER_AFTER_OPERATOR"
+msgstr "Մուտքագրել համարը օպերատորից հետո"
+
+msgid "IDS_CCL_POP_ERROR"
+msgstr "Ընդգրկույթից դուրս"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_SQUARE_ROOT_FUNCTION"
+msgstr "Անվավեր ներածում քառակուսի արմատի ֆունկցիայի համար"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_LOG_FUNCTION"
+msgstr "Անվավեր ներածում լոգարիթմական ֆունկցիայի համար"
+
+msgid "IDS_CCL_BODY_NATURAL_NUMBER_ONLY_FOR_X_E_FUNCTION"
+msgstr "Միայն բնական թիվ x! ֆունկցիայի համար"
+
+msgid "IDS_CCL_POP_UP_TO_15_DIGITS_AVAILABLE"
+msgstr "Առկա են մինչև 15 թվանշաններ"
+
+msgid "IDS_CCL_POP_NO_OPERATOR_ERROR"
+msgstr "Սկզբում՝ օպերատորը"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X2_FUNCTION"
+msgstr "x^2 ֆունկցիան ներածելուց առաջ մուտքագրել թիվ"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_XY_FUNCTION"
+msgstr "x^y ֆունկցիան ներածելուց առաջ մուտքագրել թիվ"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X_E_FUNCTION"
+msgstr "x! ֆունկցիան ներածելուց առաջ մուտքագրել թիվ"
+
+msgid "IDS_CCL_OPT_CONVERT_TO"
+msgstr "Վերածել"
+
+msgid "IDS_CCL_SK_COPY"
+msgstr "Պատճենել"
+
+msgid "IDS_CCL_OPT_CLEAR_HISTORY"
+msgstr "Մաքրել պատմությունը"
+
+msgid "IDS_CCL_OPT_MINIMISE"
+msgstr "Փոքրացնել"
+

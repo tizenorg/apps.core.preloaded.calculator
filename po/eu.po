@@ -1,0 +1,66 @@
+msgid "IDS_CCL_BODY_CALCULATOR"
+msgstr "Kalkulagailua"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_1_X_FUNCTION"
+msgstr "Idatzi zenbakia 1/x funtzioa sartu aurretik"
+
+msgid "IDS_CCL_POP_INPUT_ERROR"
+msgstr "Formatua ez da zuzena"
+
+msgid "IDS_CCL_POP_SYNTAX_ERROR"
+msgstr "Sintaxi errorea"
+
+msgid "IDS_CCL_POP_UP_TO_5_DECIMALS_AVAILABLE"
+msgstr "Gehienez 5 hamartar erabilgarri"
+
+msgid "IDS_CCL_POP_UP_TO_20_OPERATORS_AVAILABLE"
+msgstr "Gehienez 20 operadore erabilgarri"
+
+msgid "IDS_CCL_POP_UNABLE_TO_DIVIDE_BY_ZERO"
+msgstr "Ezin da huts bidez zatitu"
+
+msgid "IDS_CCL_POP_NO_NUMBER_ERROR"
+msgstr "Aurrena zenbakia idatzi"
+
+msgid "IDS_CCL_POP_ENTER_NUMBER_AFTER_OPERATOR"
+msgstr "Idatzi zenbakia operadorearen ondoren"
+
+msgid "IDS_CCL_POP_ERROR"
+msgstr "Tartetik kanpo"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_SQUARE_ROOT_FUNCTION"
+msgstr "Erro karratuaren funtzioaren sarrera okerra"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_LOG_FUNCTION"
+msgstr "Sarrera baliogabea erregistro funtziorako"
+
+msgid "IDS_CCL_BODY_NATURAL_NUMBER_ONLY_FOR_X_E_FUNCTION"
+msgstr "Zenbaki naturalak soilik x! funtzioan"
+
+msgid "IDS_CCL_POP_UP_TO_15_DIGITS_AVAILABLE"
+msgstr "Gehienez 15 digitu erabilgarri"
+
+msgid "IDS_CCL_POP_NO_OPERATOR_ERROR"
+msgstr "Aurrena operadorea idatzi"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X2_FUNCTION"
+msgstr "Idatzi zenbakia x^2 funtzioa sartu aurretik"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_XY_FUNCTION"
+msgstr "Idatzi zenbakia x^y funtzioa sartu aurretik"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X_E_FUNCTION"
+msgstr "Idatzi zenbakia x! funtzioa sartu aurretik"
+
+msgid "IDS_CCL_OPT_CONVERT_TO"
+msgstr "Hona bihurtu"
+
+msgid "IDS_CCL_SK_COPY"
+msgstr "Kopiatu"
+
+msgid "IDS_CCL_OPT_CLEAR_HISTORY"
+msgstr "Historia ezabatu"
+
+msgid "IDS_CCL_OPT_MINIMISE"
+msgstr "Minimizatu"
+

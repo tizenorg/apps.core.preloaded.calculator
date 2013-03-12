@@ -1,0 +1,51 @@
+msgid "IDS_CCL_OPT_CONVERT_TO"
+msgstr "Chuyển đổi thành"
+
+msgid "IDS_CCL_POP_SYNTAX_ERROR"
+msgstr "Lỗi cú pháp"
+
+msgid "IDS_CCL_POP_UP_TO_5_DECIMALS_AVAILABLE"
+msgstr "Cho phép lên đến 5 số thập phân"
+
+msgid "IDS_CCL_POP_UP_TO_20_OPERATORS_AVAILABLE"
+msgstr "Cho phép lên đến 20 phép tính"
+
+msgid "IDS_CCL_POP_UNABLE_TO_DIVIDE_BY_ZERO"
+msgstr "Không chia được cho 0"
+
+msgid "IDS_CCL_POP_NO_NUMBER_ERROR"
+msgstr "Nhập số trước"
+
+msgid "IDS_CCL_POP_ERROR"
+msgstr "Số quá lớn"
+
+msgid "IDS_CCL_POP_ENTER_NUMBER_AFTER_OPERATOR"
+msgstr "Nhập số sau toán tử"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_SQUARE_ROOT_FUNCTION"
+msgstr "Đầu vào không hợp lệ cho hàm bậc hai"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_LOG_FUNCTION"
+msgstr "Đầu vào không hợp lệ cho hàm lôgarít"
+
+msgid "IDS_CCL_BODY_NATURAL_NUMBER_ONLY_FOR_X_E_FUNCTION"
+msgstr "Số tự nhiên chỉ cho hàm x!"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_1_X_FUNCTION"
+msgstr "Nhập số trước khi nhập hàm 1/x"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X2_FUNCTION"
+msgstr "Nhập số trước khi nhập hàm x^2"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_XY_FUNCTION"
+msgstr "Nhập số trước khi nhập hàm x^y"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X_E_FUNCTION"
+msgstr "Nhập số trước khi nhập hàm x!"
+
+msgid "IDS_CCL_POP_NO_OPERATOR_ERROR"
+msgstr "Nhập phép tính trước"
+
+msgid "IDS_CCL_POP_UP_TO_15_DIGITS_AVAILABLE"
+msgstr "Cho phép tối đa 15 số"
+

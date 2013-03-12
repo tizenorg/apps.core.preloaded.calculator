@@ -1,0 +1,66 @@
+msgid "IDS_CCL_BODY_CALCULATOR"
+msgstr "Kalkulaator"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_1_X_FUNCTION"
+msgstr "Sisestage number enne 1/x funktsiooni sisestamist"
+
+msgid "IDS_CCL_POP_INPUT_ERROR"
+msgstr "Vale vorming"
+
+msgid "IDS_CCL_POP_SYNTAX_ERROR"
+msgstr "Süntaksi tõrge"
+
+msgid "IDS_CCL_POP_UP_TO_5_DECIMALS_AVAILABLE"
+msgstr "Saadaval kuni 5 kümnendarvu"
+
+msgid "IDS_CCL_POP_UP_TO_20_OPERATORS_AVAILABLE"
+msgstr "Saadaval kuni 20 operaatorit"
+
+msgid "IDS_CCL_POP_UNABLE_TO_DIVIDE_BY_ZERO"
+msgstr "Nulliga ei saa jagada"
+
+msgid "IDS_CCL_POP_NO_NUMBER_ERROR"
+msgstr "Sis. esmalt number"
+
+msgid "IDS_CCL_POP_ENTER_NUMBER_AFTER_OPERATOR"
+msgstr "Sisestage number pärast operaatorit"
+
+msgid "IDS_CCL_POP_ERROR"
+msgstr "Levist väljas"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_SQUARE_ROOT_FUNCTION"
+msgstr "Vale sisestus ruutjuure funktsiooni kohta"
+
+msgid "IDS_CCL_BODY_INVALID_INPUT_FOR_LOG_FUNCTION"
+msgstr "Vale sisestus logi funktsiooni jaoks"
+
+msgid "IDS_CCL_BODY_NATURAL_NUMBER_ONLY_FOR_X_E_FUNCTION"
+msgstr "x! funktsiooni jaoks ainult loomulik number"
+
+msgid "IDS_CCL_POP_UP_TO_15_DIGITS_AVAILABLE"
+msgstr "Saadaval kuni 15 numbrit"
+
+msgid "IDS_CCL_POP_NO_OPERATOR_ERROR"
+msgstr "Sisesta tehtemärk"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X2_FUNCTION"
+msgstr "Sisestage number enne x^2 funktsiooni sisestamist"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_XY_FUNCTION"
+msgstr "Sisestage number enne x^y funktsiooni sisestamist"
+
+msgid "IDS_CCL_BODY_ENTER_NUMBER_BEFORE_INPUTTING_X_E_FUNCTION"
+msgstr "Sisestage number enne x! funktsiooni sisestamist"
+
+msgid "IDS_CCL_OPT_CONVERT_TO"
+msgstr "Teisenda:"
+
+msgid "IDS_CCL_SK_COPY"
+msgstr "Kopeeri"
+
+msgid "IDS_CCL_OPT_CLEAR_HISTORY"
+msgstr "Kustuta ajalugu"
+
+msgid "IDS_CCL_OPT_MINIMISE"
+msgstr "Minimeeri"
+
