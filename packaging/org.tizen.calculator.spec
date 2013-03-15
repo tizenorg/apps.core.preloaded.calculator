@@ -1,7 +1,7 @@
 #sbs-git:slp/apps/c/calculator calculator 0.1.3 3ce35911eff2a8f151a092f346ab7239d7d0658e
 %define PREFIX /usr/apps/org.tizen.calculator
 Name: org.tizen.calculator
-Version:    0.1.30
+Version:    0.1.31
 Release:    1
 Summary: SLP Calculator application
 URL: http://slp-source.sec.samsung.net

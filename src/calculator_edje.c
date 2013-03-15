@@ -2656,6 +2656,9 @@ __calc_view_clear_clicked_cb(void *data, Evas_Object *obj, void *event_info)
 	elm_entry_entry_set(ad->hist_area, "");
 	elm_entry_entry_set(ad->input_entry, "");
 	_calc_view_clear_histroy(ad->hist_area);
+	/* Set input entry as initial state */
+	_calc_entry_clear(ad->input_entry);
+	calculator_state = CALCULATOR_WAITING_INPUT;
 	CALC_FUN_END();
 }
 
