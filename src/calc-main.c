@@ -438,6 +438,7 @@ int main(int argc, char *argv[])
 	event_callback.language_changed = NULL;
 	event_callback.region_format_changed = NULL;
 
+	printf("test");
 	memset(&ad, 0x0, sizeof(struct appdata));
 	return app_efl_main(&argc, &argv, &event_callback, &ad);
 }
