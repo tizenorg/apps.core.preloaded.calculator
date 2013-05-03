@@ -106,3 +106,6 @@ ADD_SUBDIRECTORY(po)
 set(PREFIX ${CMAKE_INSTALL_PREFIX})
 install(FILES ${CMAKE_SOURCE_DIR}/org.tizen.calculator.xml DESTINATION /usr/share/packages)
 install(FILES ${CMAKE_SOURCE_DIR}/org.tizen.calculator.png DESTINATION  /usr/share/icons/default/small)
+
+# rule file
+install(FILES ${CMAKE_SOURCE_DIR}/org.tizen.calculator.rule DESTINATION  /etc/smack/accesses2.d/)

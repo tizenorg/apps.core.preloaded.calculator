@@ -44,6 +44,7 @@ rm -rf %{buildroot}
 
 %files
 %manifest org.tizen.calculator.manifest
+/etc/smack/accesses2.d/org.tizen.calculator.rule
 %defattr(-,root,root,-)
 %attr(-,inhouse,inhouse)
 /usr/apps/org.tizen.calculator/bin/calculator
