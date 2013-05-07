@@ -108,4 +108,4 @@ install(FILES ${CMAKE_SOURCE_DIR}/org.tizen.calculator.xml DESTINATION /usr/shar
 install(FILES ${CMAKE_SOURCE_DIR}/org.tizen.calculator.png DESTINATION  /usr/share/icons/default/small)
 
 # rule file
-install(FILES ${CMAKE_SOURCE_DIR}/org.tizen.calculator.rule DESTINATION  /etc/smack/accesses2.d/)
+install(FILES ${CMAKE_SOURCE_DIR}/org.tizen.calculator.rule DESTINATION  /opt/etc/smack/accesses.d/)
