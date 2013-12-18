@@ -22,7 +22,9 @@
 #include "calc-string.h"
 #include "calc-expression.h"
 #include "calc-view.h"
+#ifndef WAYLAND_PLATFORM
 #include <Ecore_X.h>
+#endif
 
 extern char decimal_ch;
 extern char separator_ch;

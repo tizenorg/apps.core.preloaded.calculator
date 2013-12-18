@@ -1,4 +1,6 @@
 #sbs-git:slp/apps/c/calculator calculator 0.1.3 3ce35911eff2a8f151a092f346ab7239d7d0658e
+%bcond_with x
+%bcond_with wayland
 %define PREFIX /usr/apps/org.tizen.calculator
 Name: org.tizen.calculator
 Version:    0.1.31
@@ -13,7 +15,6 @@ BuildRequires: pkgconfig(edje)
 BuildRequires: pkgconfig(embryo)
 BuildRequires: pkgconfig(ecore)
 BuildRequires: pkgconfig(elementary)
-BuildRequires: pkgconfig(utilX)
 BuildRequires: pkgconfig(appcore-efl)
 BuildRequires: pkgconfig(appcore-common)
 BuildRequires: pkgconfig(dlog)
@@ -24,6 +25,9 @@ BuildRequires: edje-bin, embryo-bin
 BuildRequires: pkgconfig(glib-2.0)
 BuildRequires: pkgconfig(vconf)
 Requires: isf
+%if %{with x}
+BuildRequires: pkgconfig(utilX)
+%endif
 %description
 SLP Calculator application
 
@@ -33,8 +37,11 @@ SLP Calculator application
 %build
 
 LDFLAGS+="-Wl,--rpath=%{PREFIX}/lib -Wl,--as-needed -Wl,--hash-style=both"; export LDFLAGS
-
+%if !%{with x} && %{with wayland}
+cmake . -DCMAKE_INSTALL_PREFIX=%{PREFIX} -DENABLE_WAYLAND=TRUE
+%else
 cmake . -DCMAKE_INSTALL_PREFIX=%{PREFIX}
+%endif
 
 make %{?jobs:-j%jobs}
 

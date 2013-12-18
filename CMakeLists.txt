@@ -31,11 +31,20 @@ set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fPIC")
 INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 INCLUDE(FindPkgConfig)
+IF(ENABLE_WAYLAND)
+ADD_DEFINITIONS("-DWAYLAND_PLATFORM")
+pkg_check_modules(pkgs REQUIRED elementary
+                                dlog glib-2.0 evas edje vconf
+                                ecore ecore-input capi-appfw-application
+                                feedback
+)
+ELSE()
 pkg_check_modules(pkgs REQUIRED elementary  utilX
                                 dlog glib-2.0 evas edje vconf
                                 ecore-x ecore ecore-input capi-appfw-application
                                 feedback
 )
+ENDIF(ENABLE_WAYLAND)
 
 FIND_LIBRARY(LIB_M m)
 
