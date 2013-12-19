@@ -16,8 +16,12 @@
 *
 */
 #include <dlog.h>
+#ifndef WAYLAND_PLATFORM
 #include <Ecore_X.h>		/* ecore_x_window_size_get */
 #include <utilX.h>		/* KEY_END */
+#else
+#include<Ecore_Wayland.h>
+#endif
 #include <feedback.h>
 #include "calc-main.h"
 #include "calc-view.h"
@@ -238,8 +242,15 @@ static Evas_Object *_create_win(const char *name)
 		elm_win_title_set(eo, name);
 		evas_object_smart_callback_add(eo, "delete,request", _win_del,
 					       NULL);
+		#ifndef WAYLAND_PLATFORM
 		ecore_x_window_size_get(ecore_x_window_root_first_get(), &w,
 					&h);
+		#else
+		if(ecore_wl_init(NULL) > 1) {
+			   ecore_wl_shutdown();
+			}
+			ecore_wl_screen_size_get(&w, &h);
+		#endif
 		evas_object_resize(eo, w, h);
 	}
 	CALC_FUN_END();
