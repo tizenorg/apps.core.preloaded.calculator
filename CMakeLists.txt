@@ -31,9 +31,9 @@ set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fPIC")
 INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 INCLUDE(FindPkgConfig)
-pkg_check_modules(pkgs REQUIRED elementary  utilX
+pkg_check_modules(pkgs REQUIRED elementary
                                 dlog glib-2.0 evas edje vconf
-                                ecore-x ecore ecore-input capi-appfw-application
+                                ecore ecore-input capi-appfw-application
                                 feedback
 )
 

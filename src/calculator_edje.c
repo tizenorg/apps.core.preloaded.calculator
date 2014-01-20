@@ -26,7 +26,6 @@
 #include "calc-expression.h"
 #include "calc-view.h"
 #include <feedback.h>
-#include <Ecore_X.h>
 #include <vconf.h>
 
 #define CALCULATOR_CHAR_IS_OPERATOR(C) ((C == '+')||(C == '-')||(C == 'x')||(C == '/'))	/**<judge if a char is a basic operator*/
