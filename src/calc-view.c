@@ -22,7 +22,6 @@
 #include "calc-string.h"
 #include "calc-expression.h"
 #include "calc-view.h"
-#include <Ecore_X.h>
 
 extern char decimal_ch;
 extern char separator_ch;
