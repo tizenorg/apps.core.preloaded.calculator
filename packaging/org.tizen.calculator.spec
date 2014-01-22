@@ -23,7 +23,6 @@ BuildRequires: gettext-tools
 BuildRequires: edje-bin, embryo-bin
 BuildRequires: pkgconfig(glib-2.0)
 BuildRequires: pkgconfig(vconf)
-Requires: isf
 %description
 SLP Calculator application
 
