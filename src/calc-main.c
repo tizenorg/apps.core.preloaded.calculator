@@ -230,11 +230,14 @@ static Evas_Object *_create_win(const char *name)
 {
     CALC_FUN_BEG();
 	Evas_Object *eo;
+	int w,h;
 	eo = elm_win_add(NULL, name, ELM_WIN_BASIC);
 	if (eo) {
 		elm_win_title_set(eo, name);
 		evas_object_smart_callback_add(eo, "delete,request", _win_del,
 					       NULL);
+	elm_win_screen_size_get(eo, NULL, NULL, &w, &h);
+	evas_object_resize(eo, w, h);
 	}
 	CALC_FUN_END();
 	return eo;
