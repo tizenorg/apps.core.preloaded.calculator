@@ -6,6 +6,7 @@ Release:    1
 Summary: SLP Calculator application
 URL: http://slp-source.sec.samsung.net
 Source: %{name}-%{version}.tar.gz
+Source1001: org.tizen.calculator.manifest
 License: TIZEN
 Group: tizen/Application
 BuildRequires: cmake
@@ -27,6 +28,7 @@ SLP Calculator application
 
 %prep
 %setup -q
+cp %{SOURCE1001} .
 
 %build
 
@@ -42,7 +44,6 @@ rm -rf %{buildroot}
 
 %files
 %manifest org.tizen.calculator.manifest
-/opt/etc/smack/accesses.d/org.tizen.calculator.rule
 %defattr(-,root,root,-)
 %attr(-,inhouse,inhouse)
 /usr/apps/org.tizen.calculator/bin/calculator
