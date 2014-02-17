@@ -410,7 +410,7 @@ void _calc_view_show_history_cb
     (void *data, Evas_Object * o, const char *emission, const char *source)
  {
 	CALC_FUN_BEG();
-	calculator_pannel_show = FALSE;
+	calculator_pannel_show = EINA_FALSE;
 	struct appdata *ad = (struct appdata *)data;
 	ad->panel_show = EINA_FALSE;
 	evas_object_hide(ad->input_entry);/*hide the input entry,before showing history area*/

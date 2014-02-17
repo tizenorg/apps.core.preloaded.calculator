@@ -359,7 +359,7 @@ static bool app_create(void *data)
 	/* main widnow */
 	ad->win = _create_win(PACKAGE);
 	if (ad->win == NULL) {
-		return FALSE;
+		return EINA_FALSE;
 	}
 	evas_object_smart_callback_add(ad->win, "profile,changed", win_profile_changed_cb, ad);
 	evas_object_show(ad->win);
@@ -390,7 +390,7 @@ static bool app_create(void *data)
 	ecore_idler_add((Ecore_Task_Cb) _set_input_entry_focus, ad);
 	ecore_idler_add((Ecore_Task_Cb) _load_idle_view, ad);
 	CALC_FUN_END();
-	return TRUE;		//EXIT_SUCCESS
+	return EINA_TRUE;		//EXIT_SUCCESS
 
 }
 

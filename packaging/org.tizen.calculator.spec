@@ -2,7 +2,7 @@
 %define PREFIX /usr/apps/org.tizen.calculator
 Name: org.tizen.calculator
 Version:    0.1.31
-Release:    1
+Release:    0
 Summary: SLP Calculator application
 URL: http://slp-source.sec.samsung.net
 Source: %{name}-%{version}.tar.gz
