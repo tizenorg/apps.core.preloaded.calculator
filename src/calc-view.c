@@ -459,7 +459,7 @@ _calc_view_create_history_entry(Evas_Object * parent)
 	elm_entry_single_line_set(entry, EINA_FALSE);
 	elm_entry_line_wrap_set(entry, ELM_WRAP_WORD);
 	elm_entry_editable_set(entry, EINA_FALSE);
-	elm_entry_magnifier_disabled_set(entry, EINA_TRUE);
+	elm_config_magnifier_enable_set(EINA_FALSE);
 	elm_entry_entry_set(entry, "<align=right>");
 	evas_object_size_hint_weight_set(entry, EVAS_HINT_EXPAND, 0.0);
 	evas_object_size_hint_align_set(entry, EVAS_HINT_FILL, 0.0);
