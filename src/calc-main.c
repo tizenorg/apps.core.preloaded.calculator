@@ -49,6 +49,10 @@ Evas_Object *load_edj(Evas_Object * parent, const char *file, const char *group)
 		}
 		evas_object_size_hint_weight_set(eo, EVAS_HINT_EXPAND,
 						 EVAS_HINT_EXPAND);
+		{
+		  static const int h=2*300,w=2*200;
+		  evas_object_size_hint_min_set(eo, w, h);
+		}
 	}
 	CALC_FUN_END();
 	return eo;
