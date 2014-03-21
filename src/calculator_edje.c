@@ -2501,7 +2501,11 @@ static Evas_Object *_calc_view_create_input_entry(Evas_Object * parent,
 		elm_entry_entry_set(entry, "");
 	}
 	elm_entry_cnp_mode_set(entry, ELM_CNP_MODE_NO_IMAGE);
+#if (ELM_VERSION_MAJOR == 1) && (ELM_VERSION_MINOR < 8)
+	elm_entry_magnifier_disabled_set(entry, EINA_TRUE);
+#else
 	elm_config_magnifier_enable_set(EINA_FALSE);
+#endif
 	elm_entry_cursor_end_set(entry);
 	elm_object_focus_set(entry, EINA_TRUE);
     elm_object_style_set(entry, "black");
