@@ -1,4 +1,3 @@
-#sbs-git:slp/apps/c/calculator calculator 0.1.3 3ce35911eff2a8f151a092f346ab7239d7d0658e
 %define PREFIX /usr/apps/org.tizen.calculator
 Name: org.tizen.calculator
 Version:    0.1.31
@@ -7,7 +6,7 @@ Summary: SLP Calculator application
 URL: http://slp-source.sec.samsung.net
 Source: %{name}-%{version}.tar.gz
 Source1001: org.tizen.calculator.manifest
-License: TIZEN
+License: FLORA-1.1
 Group: tizen/Application
 BuildRequires: cmake
 BuildRequires: pkgconfig(edje)
@@ -36,7 +35,7 @@ LDFLAGS+="-Wl,--rpath=%{PREFIX}/lib -Wl,--as-needed -Wl,--hash-style=both"; expo
 
 cmake . -DCMAKE_INSTALL_PREFIX=%{PREFIX}
 
-make %{?jobs:-j%jobs}
+%__make %{?_smp_mflags}
 
 %install
 rm -rf %{buildroot}
@@ -46,6 +45,7 @@ rm -rf %{buildroot}
 %manifest org.tizen.calculator.manifest
 %defattr(-,root,root,-)
 %attr(-,inhouse,inhouse)
+%license LICENSE
 /usr/apps/org.tizen.calculator/bin/calculator
 /usr/apps/org.tizen.calculator/res/edje/calculator.edj
 /usr/apps/org.tizen.calculator/res/edje/calculator_theme.edj
@@ -54,4 +54,3 @@ rm -rf %{buildroot}
 /usr/apps/org.tizen.calculator/res/locale/*
 /usr/share/packages/org.tizen.calculator.xml
 /usr/share/process-info/calculator.ini
-
