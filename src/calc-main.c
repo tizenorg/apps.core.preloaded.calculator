@@ -319,11 +319,6 @@ static void _on_exit(struct appdata *ad)
 		ad->edje = NULL;
 	}
 
-	if (ad->layout) {
-		evas_object_del(ad->layout);
-		ad->layout = NULL;
-	}
-
 	if (ad->bg) {
 		evas_object_del(ad->bg);
 		ad->bg = NULL;
