@@ -172,7 +172,6 @@ struct appdata {
 	Evas_Object *win;	//main window
 	Evas_Object *bg;
 	Evas_Object *conform;
-	Evas_Object *layout;
 	Evas_Object *edje;
 	Evas_Object *eo;
 
