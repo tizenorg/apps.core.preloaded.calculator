@@ -2591,44 +2591,6 @@ static Evas_Object *__create_bg(Evas_Object *parent)
 	return bg;
 }
 
-/**
-* @description
-* Create the main layout
-*
-* @param[in]	parent	main layout's parent
-* @return		when success return a layout, return NULL oppositely
-* @retval	layout	if success, return the main layout
-* @retval	NULL	if create failed or parent is null, return null
-* @exception
-*/
-static Evas_Object *__calc_view_create_layout_main(Evas_Object *parent)
-{
-	CALC_FUN_BEG();
-
-	if (parent == NULL) {
-		return NULL;
-	}
-
-	Evas_Object *layout = elm_layout_add(parent);
-	if (layout == NULL) {
-		return NULL;
-	}
-
-	elm_layout_theme_set(layout, "layout", "application", "default");
-
-	evas_object_size_hint_weight_set(layout, EVAS_HINT_EXPAND,
-					 EVAS_HINT_EXPAND);
-	elm_object_content_set(parent, layout);
-
-	edje_object_signal_emit(_EDJ(layout), "elm,state,show,indicator",
-				"elm");
-	evas_object_show(layout);
-
-	CALC_FUN_END();
-
-	return layout;
-}
-
 void _btn_clicked_cb(void *data, Evas_Object * obj, void *event_info)
 {
 	CALC_FUN_BEG();
@@ -2733,7 +2695,7 @@ void __calc_view_create_nf_more_btn_cb(void *data, Evas_Object * obj, void *even
 static Eina_Bool  __calc_view_create_navigation_layout(struct appdata *ad)
 {
 	CALC_FUN_BEG();
-	Evas_Object *nf = elm_naviframe_add(ad->layout);
+	Evas_Object *nf = elm_naviframe_add(ad->win);
 	if (nf == NULL) {
 		return EINA_FALSE;
 	}
@@ -2748,6 +2710,8 @@ static Eina_Bool  __calc_view_create_navigation_layout(struct appdata *ad)
 	elm_naviframe_item_title_visible_set(ad->navi_it, EINA_FALSE);
 	ad->more_btn = create_toolbar_more_btn(nf, __calc_view_create_nf_more_btn_cb, ad);
 	elm_object_item_part_content_set(ad->navi_it, "toolbar_more_btn", ad->more_btn);
+	evas_object_size_hint_weight_set(nf, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
+	elm_win_resize_object_add(ad->win, nf);
 	evas_object_show(nf);
 	CALC_FUN_END();
 	return EINA_TRUE;
@@ -2772,14 +2736,11 @@ void calc_view_load(struct appdata *ad)
 	elm_win_resize_object_add(ad->win, ad->conform);
 	elm_object_style_set(ad->conform, "nokeypad");
 	evas_object_show(ad->conform);
-	ad->layout = __calc_view_create_layout_main(ad->conform);
-	ad->edje = load_edj(ad->layout, LAYOUT_EDJ_NAME, GRP_MAIN);
+	ad->edje = load_edj(ad->win, LAYOUT_EDJ_NAME, GRP_MAIN);
 	evas_object_show(ad->edje);
 	evas_object_name_set(ad->edje, "edje");
 
-	if (__calc_view_create_navigation_layout(ad)) {
-		elm_object_part_content_set(ad->layout, "elm.swallow.content", ad->nf);
-	}
+	__calc_view_create_navigation_layout(ad);
 
 	/* inititialize environment variable */
 	locale = localeconv();
